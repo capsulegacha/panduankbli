@@ -1,0 +1,198 @@
+{
+  "kode": "86901",
+  "nama": "AKTIVITAS PELAYANAN KESEHATAN YANG DILAKUKAN OLEH TENAGA KESEHATAN SELAIN DOKTER DAN DOKTER GIGI",
+  "kategori": "Q - Jasa Kesehatan dan Kegiatan Sosial",
+  "ruang_lingkup": "Griya Sehat",
+  "dinas": "Dinas Kesehatan",
+  "persyaratan": {
+    "1": {
+      "judul": "Sarana",
+      "items": {
+        "a": {
+          "item": "Bangunan",
+          "subitems": {
+            "1": "Memenuhi persyaratan administrasi dan teknis bangunan (Dibuktikan dengan melampirkan IMB)",
+            "2": "Memenuhi persyaratan lingkungan sehat (Melampirkan dokumentasi dari kondisi ruangan seperti pada bagian foto toilet, wastafel dengan kelengkapannya, tempat sampah dsb.)",
+            "3": "Memperhatikan fungsi, keamanan, kenyamanan, dalam pelayanan kepada semua orang termasuk orang berkebutuhan khusus (Dibuktikan dengan melampirkan dokumentasi foto APAR, ruang tunggu dengan tempat duduk, foto tangga dengan ramp atau jalur landai untuk akses kursi roda, serta fasilitas keamanan dan kenyamanan yang tersedia di griya sehat lainnya.)"
+          },
+          "keterangan": "Kondisi Bangunan akan ditinjau langsung oleh dinas Kesehatan untuk memastikan bangunan bersifat permanen serta tidak bergabung fisik dengan tempat tinggal atau unit kerja lain"
+        },
+        "b": {
+          "item": "Ruangan paling sedikit terdiri dari",
+          "subitems": {
+            "1": "ruang pendaftaran/ruang tunggu",
+            "2": "ruang konsultasi",
+            "3": "ruang administrasi",
+            "4": "ruang pengobatan tradisional",
+            "5": "ruang mandi / wc",
+            "6": "ruang lain sesuai kebutuhan pelayanan"
+          },
+          "keterangan": "Memastikan fasilitas yang dimiliki harus bersih, terawat dan berfungsi dengan mengupload dokumentasi berupa foto sesuai poin a-f beserta keterangan ruangan."
+        }
+      }
+    },
+    "2": {
+      "judul": "Administrasi",
+      "items": {
+        "a": {
+          "item": "Identitas Pelaku Usaha",
+          "subitems":  {
+              "1": "KTP",
+              "2": "NPWP",
+              "3": "Akta Pendirian yang disahkan oleh KEMENKUMHAM"
+            }
+          
+        },
+        "b": {
+          "item": "Persyaratan Dasar",
+          "subitems": {
+            "1": "KKPR (Kegiatan Kesesuaian Pemanfaatan Ruang) / SKRK",
+            "2": "PBG (Persetujuan Bangunan dan Gedung) / IMB",
+            "3": "SPPL (Surat Pernyataan Kesanggupan Pengelolaan dan Pemantauan Lingkungan Hidup) / UKL-UPL"
+          }
+        },
+        "c": {
+          "item": "Persyaratan Umum Usaha",
+          "subitems": {
+            "1": "Dokumen profil Griya Sehat paling sedikit memuat nama, alamat lengkap, denah ruangan, struktur organisasi, ketenagaan, dan metode pelayanan.",
+            "2": "Dokumen self assessment (https://bit.ly/BerkasSelfAssesmentDapatDiaksesDisini)",
+            "3": "Durasi pemenuhan standar oleh pelaku usaha untuk perizinan usaha baru selama 6 (Enam) bulan sejak NIB diterbitkan"
+          }
+        },
+        "d": {
+          "item": "Persyaratan Khusus Usaha",
+          "subitems": {
+            "1": "Dokumen sarana, prasarana dan peralatan; dan",
+            "2": "Dokumen SIPTKT bagi semua Tenaga Kesehatan Tradisional yang bekerja di Griya Sehat"
+          }
+        }
+      }
+    },
+    "3": {
+      "judul": "Bahan/Alat",
+      "items": {
+        "a": {
+          "item": "Alat yang digunakan di Griya Sehat harus memenuhi yang sesuai di PERMENKES 14 tahun 2021",
+          "subitems": {
+            "1": "Memenuhi standar mutu, keamanan dan keselamatan",
+            "2": "Alat kesehatan dan/atau alat tertentu harus memiliki izin sesuai dengan ketentuan perundang-undangan",
+            "3": "Alat kesehatan harus diuji dan dikalibrasi secara berkala"
+          }
+        }
+      }
+    },
+    "4": {
+      "judul": "Ketenagaan",
+      "items": {
+        "a": {
+          "item": "Struktur organisasi paling sedikit meliputi",
+          "subitems": {
+            "1": "Pimpinan Griya Sehat",
+            "2": "Penanggung jawab palayanan; dan",
+            "3": "Penanggung jawab tata usaha."
+          }
+        },
+        "b": {
+          "item": "Pimpinan Griya Sehat",
+          "subitems": {
+            "1": "Tenaga Kesehatan Tradisional; atau",
+            "2": "Dokter yang memiliki kewenangan tambahan dibidang kesehatan tradisional komplementer"
+          }
+        },
+        "c": {
+          "item": "Penanggung jawab pelayanan dan penanggung jawab tata usaha ditetapkan oleh pimpinan Griya Sehat"
+        },
+        "d": {
+          "item": "SDM paling sedikit terdiri dari atas 2 (dua) orang Tenaga Kesehatan Tradisional vokasi(program diploma tiga/diploma empat) atau profesi, yang memiliki SIPTKT"
+        },
+        "e": {
+          "item": "Penanggung jawab pelayanan merupakan seorang Tenaga Kesehatan Tradisional"
+        }
+      }
+    },
+    "5": {
+      "judul": "Metode/Cara Pelayanan",
+      "items": {
+        "a": {
+          "item": "Pelayanan kesehatan Tradisional Komplementer harus sesuai dengan PKM 14 tahun 2021 meliputi",
+          "subitems": {
+            "1": "memperhatikan kepentingan terbaik Klien",
+            "2": "memiliki potensi pencegahan penyakit, peningkatan kesehatan, penyembuhan, pemulihan kesehatan, dan meningkatkan kualitas hidup Klien secara fisik, mental, dan sosial",
+            "3": "tidak bertentangan dengan norma agama, tidak memberikan pelayanan dalam bentuk mistik/klenik, dan/atau menggunakan pertolongan makhluk gaib",
+            "4": "tidak bertentangan dengan norma yang berlaku di masyarakat, tidak melanggar nilai-nilai kesusilaan, kesopanan, hukum, dan budaya."
+          }
+        },
+        "b": {
+          "item": "Berdasarkan cara pengobatan/perawatan, Pelayanan Kesehatan Tradisional Komplementer dapat menggunakan metode",
+          "subitems": {
+            "1": {
+              "item": "Keterampilan yang meliputi",
+              "subitems": {
+                "a": "petunjuk teknis",
+                "b": "terapi energi",
+                "c": "terapi olah pikir"
+              }
+            },
+            "2": "Ramuan, dapat menggunakan simplisia, obat tradisional racikan sendiri dengan bahan baku yang bersumber dari industri yang telah melaksanakan Cara Pembuatan Obat Tradisional yang Baik (CPOTB), Obat Tradisional yang sesuai dengan farmakope herbal Indonesia (jamu, OHT dan fitofarmaka), dan obat tradisional yang sesuai dengan farmakope lainnya yang diakui",
+            "3": "Kombinasi dengan memadukan antara keterampilan dan ramuan."
+          }
+        },
+        "c": {
+          "item": "Tata laksana perawatan meliputi",
+          "subitems": {
+            "1": "prosedur penetapan kondisi kesehatan individu (prosedur diagnosis)",
+            "2": "penetapan kondisi kesehatan individu (diagnosis); dan/atau",
+            "3": "perawatan/pengobatan."
+          }
+        },
+        "d": {
+          "item": "Penyelenggaraan Pelayanan Kesehatan Tradisional Komplementer mengacu pada Peraturan Menteri Kesehatan yang mengatur mengenai penyelenggaraan Pelayanan kesehatan tradisional komplementer"
+        }
+      }
+    },
+    "6": {
+      "judul": "Prasarana",
+      "items": {
+        "a": {
+          "item": "Prasarana yang diperlukan sebagai berikut",
+          "subitems": {
+            "1": "Instalasi air",
+            "2": "Instalasi listrik",
+            "3": "Instalasi sirkulasi udara",
+            "4": "Sarana pengelolaan limbah",
+            "5": "Pencegahan dan penanggulangan kebakaran",
+            "6": "Healing garden/taman obat keluarga sebagai wahana edukasi",
+            "7": "Sarana lain sesuai kebutuhan."
+          }
+        },
+        "b": {
+          "item": "Papan nama paling sedikit memenuhi ketentuan",
+          "subitems": {
+            "1": {
+              "item": "Papan Nama harus memuat",
+              "subitems": {
+                "a": "Tulisan \"Griya Sehat ................\" (nama griya sehat)",
+                "b": "Menggunakan Bahasa Indonesia",
+                "c": "Nomor sertifikat standar Griya Sehat",
+                "d": "Berukuran panjang 90 cm x lebar 60 cm",
+                "e": "Posisi horizontal",
+                "f": "Warna dasar putih",
+                "g": "Warna tulisan hijau muda shine 60 yellow 100",
+                "h": "Ditulis dengan huruf latin",
+                "i": "Contoh sesuai di PMK 14 tahun 2021"
+              }
+            },
+            "2": {
+              "item": "Peralatan",
+              "subitems": {
+                "a": "Memenuhi standar mutu, keamanan dan keselamatan",
+                "b": "Alat kesehatan dan/atau alat tertentu harus memiliki izin sesuai dengan ketentuan perundang-undangan",
+                "c": "Alat kesehatan harus diuji dan di kalibrasi secara berkala."
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

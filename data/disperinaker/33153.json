@@ -1,0 +1,23 @@
+{
+  "kode": "33153",
+  "nama": "REPARASI PESAWAT TERBANG",
+  "kategori": "C - Industri Pengolahan",
+  "ruang_lingkup": "Reparasi Pesawat Terbang",
+  "dinas": "Dinas Tenaga Kerja dan Perindustrian",
+  "persyaratan": {
+    "1": {
+      "judul": "Berlokasi di Kawasan Peruntukan Industri",
+      "items": {
+        "a": "Mengupload SKRK dan IMB",
+        "b": "Mengupload \"Surat Keterangan Pengecualian Berlokasi di Kawasan Industri\" yang didapatkan melalui https://siinas.kemenperin.go.id/"
+      }
+    },
+    "2": {
+      "judul": "Telah selesai melaksanakan persiapan dan kegiatan pembangunan, pengadaan, pemasangan/instalasi peralatan, dan kesiapan lain yang diperlukan",
+      "items": {
+        "a": "Mengupload foto sarana dan prasarna serta lokasi usahanya",
+        "b": "Mengupload \"Surat Keputusan Telah Selesai Melakukan Persiapan / Konstruksi Dan Siap Produksi\" yang didapatkan melalui https://siinas.kemenperin.go.id/"
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kode": "01262",
+  "nama": "PERKEBUNAN BUAH KELAPA SAWIT",
+  "kategori": "A - Pertanian, Kehutanan dan Perikanan",
+  "ruang_lingkup": "Budi daya kelapa sawit",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": {
+      "judul": "Persyaratan khusus usaha",
+      "items": {
+        "a": "Memiliki sumber daya manusia, sarana, prasarana dan sistem untuk melakukan pengendalian Organisme Pengganggu Tumbuhan (OPT)",
+        "b": "Memiliki sumber daya manusia, sarana, prasarana dan sistem untuk melakukan pembukaan lahan tanpa bakar serta pengendalian kebakaran",
+        "c": "Persetujuan masyarakat hukum adat, untuk lahan yang digunakan seluruhnya atau sebagian berada di atas tanah hak ulayat",
+        "d": "Kesepakatan antara perusahaan perkebunan dengan masyarakat sekitar tentang aktivitas usaha perkebunan mencakup batas-batas wilayah kerja perusahaan perkebunan",
+        "e": "Kesanggupan memfasilitasi pembangunan kebun masyarakat sekitar dilengkapi dengan rencana kerja dan rencana pembiayaan",
+        "f": "Kesanggupan melaksanakan kemitraan dengan Pekebun, karyawan dan masyarakat sekitar perkebunan"
+      }
+    },
+    "2": {
+      "judul": "Persyaratan umum adalah rencana kerja pembangunan kebun termasuk rencana fasilitasi pembangunan kebun masyarakat sekitar"
+    }
+  }
+}

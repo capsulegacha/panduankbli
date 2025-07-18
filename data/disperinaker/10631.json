@@ -1,0 +1,21 @@
+{
+  "kode": "10631",
+  "nama": "INDUSTRI PENGGILINGAN PADI DAN PENYOSOHAN BERAS",
+  "kategori": "C - Industri Pengolahan",
+  "ruang_lingkup": "Industri Penggilingan Padi Dan Penyosohan Beras",
+  "dinas": "Dinas Tenaga Kerja dan Perindustrian",
+  "persyaratan": {
+    "1": {
+      "judul": "Pernyataan kesanggupan memenuhi persyaratan Good Manufacturing Practices (GMP)",
+      "items": {
+        "a": "Melampirkan SOP Perusahaan cara produksi makanan yang baik"
+      }
+    },
+    "2": {
+      "judul": "Persetujuan Lingkungan",
+      "items": {
+        "a": "Melampirkan izin UKL-UPL"
+      }
+    }
+  }
+}

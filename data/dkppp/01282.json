@@ -1,0 +1,30 @@
+{
+  "kode": "01282",
+  "nama": "PERKEBUNAN CENGKEH",
+  "kategori": "A - Pertanian, Kehutanan dan Perikanan",
+  "ruang_lingkup": "Budi daya cengkeh",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": {
+      "judul": "Pernyataan Memiliki sumber daya manusia, sarana, prasarana dan sistem untuk melakukan pembukaan lahan tanpa bakar serta pengendalian kebakaran"
+    },
+    "2": {
+      "judul": "Pernyataan Kesanggupan memfasilitasi pembangunan kebun masyarakat sekitar dilengkapi dengan rencana kerja dan rencana pembiayaan"
+    },
+    "3": {
+      "judul": "Pernyataan Kesanggupan melaksanakan kemitraan dengan Pekebun, karyawan dan masyarakat sekitar perkebunan"
+    },
+    "4": {
+      "judul": "Kesepakatan antara perusahaan perkebunan dengan masyarakat sekitar tentang aktivitas usaha perkebunan mencakup batas-batas wilayah kerja perusahaan perkebunan"
+    },
+    "5": {
+      "judul": "Persyaratan umum adalah rencana kerja pembangunan kebun termasuk rencana fasilitasi pembangunan kebun masyarakat sekitar"
+    },
+    "6": {
+      "judul": "Persetujuan masyarakat hukum adat, untuk lahan yang digunakan seluruhnya atau sebagian berada di atas tanah hak ulayat"
+    },
+    "7": {
+      "judul": "Pernyataan Memiliki sumber daya manusia, sarana, prasarana dan sistem untuk melakukan pengendalian Organisme Pengganggu Tumbuhan (OPT)"
+    }
+  }
+}

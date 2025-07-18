@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block title %}Detail KBLI {{ kbli_code }}{% endblock %}
+
+{% block content %}
+<style>
+  .kbli-detail {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+  .section-title {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    font-weight: 600;
+    color: #0d6efd;
+  }
+  .item-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    background-color: #e7f1ff;
+    border: 1px solid #cfe2ff;
+    border-radius: 6px;
+    margin-right: 8px;
+    font-weight: 600;
+  }
+</style>
+
+<div class="container py-4">
+  <a href="{{ referrer or url_for('index') }}" class="btn btn-outline-secondary mb-3">← Kembali</a>
+
+  <div class="kbli-detail">
+    <h3>KBLI {{ kbli_code }} - {{ data.get('nama', 'N/A') }}</h3>
+    <p>
+      <strong>Kategori:</strong> {{ data.get('kategori', 'N/A') }}<br>
+      <strong>Ruang Lingkup:</strong> {{ data.get('ruang_lingkup', 'N/A') }}<br>
+      <strong>Dinas:</strong> {{ data.get('dinas') or data.get('dinas_folder', 'N/A') }}
+    </p>
+
+    {% if data.persyaratan %}
+      <h5 class="section-title">📋 Persyaratan Perizinan</h5>
+      {% for sec_key, section in data.persyaratan.items() %}
+        <div class="mb-4">
+          <h6><strong>
+            {{ sec_key }}.
+            {% if section is mapping %}
+              {{ section.get('judul', 'Bagian') }}
+            {% else %}
+              {{ section }}
+            {% endif %}
+          </strong></h6>
+
+          {% if section is mapping %}
+            {% if section.get('keterangan') %}
+              <p><em>{{ section.keterangan }}</em></p>
+            {% endif %}
+
+            {% if section.get('items') %}
+              <ul>
+                {% for item_key, item in section['items'].items() %}
+                  <li>
+                    <span class="item-badge">{{ item_key }}</span>
+                    {% if item is mapping %}
+                      {{ item.get('item', '') }}
+                      {% if item.get('keterangan') %}
+                        <div><em>{{ item.keterangan }}</em></div>
+                      {% endif %}
+                      {% if item.get('link') %}
+                        <div><a href="{{ item.link }}" target="_blank">{{ item.link }}</a></div>
+                      {% endif %}
+                    {% else %}
+                      {{ item }}
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+            {% elif section.get('link') %}
+              <div><a href="{{ section.link }}" target="_blank">{{ section.link }}</a></div>
+            {% endif %}
+          {% endif %}
+        </div>
+      {% endfor %}
+    {% else %}
+      <div class="alert alert-info mt-4">Belum ada data persyaratan untuk KBLI ini.</div>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

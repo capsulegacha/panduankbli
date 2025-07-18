@@ -1,0 +1,30 @@
+{
+  "kode": "01270-A",
+  "nama": "PERTANIAN TANAMAN UNTUK BAHAN MINUMAN",
+  "kategori": "A - Pertanian, Kehutanan dan Perikanan",
+  "ruang_lingkup": "Budi daya kopi, kakao",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": {
+      "judul": "Persyaratan umum adalah rencana kerja pembangunan kebun termasuk rencana fasilitasi pembangunan kebun masyarakat sekitar"
+    },
+    "2": {
+      "judul": "Persetujuan masyarakat hukum adat, untuk lahan yang digunakan seluruhnya atau sebagian berada di atas tanah hak ulayat"
+    },
+    "3": {
+      "judul": "Memiliki sumber daya manusia, sarana, prasarana dan sistem untuk melakukan pengendalian Organisme Pengganggu Tumbuhan (OPT)"
+    },
+    "4": {
+      "judul": "Memiliki sumber daya manusia, sarana, prasarana dan sistem untuk melakukan pembukaan lahan tanpa bakar serta pengendalian kebakaran"
+    },
+    "5": {
+      "judul": "Kesepakatan antara perusahaan perkebunan dengan masyarakat sekitar tentang aktivitas usaha perkebunan mencakup batas-batas wilayah kerja perusahaan perkebunan"
+    },
+    "6": {
+      "judul": "Kesanggupan memfasilitasi pembangunan kebun masyarakat sekitar dilengkapi dengan rencana kerja dan rencana pembiayaan"
+    },
+    "7": {
+      "judul": "Kesanggupan melaksanakan kemitraan dengan Pekebun, karyawan dan masyarakat sekitar perkebunan"
+    }
+  }
+}

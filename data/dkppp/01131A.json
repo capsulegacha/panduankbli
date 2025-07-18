@@ -1,0 +1,15 @@
+{
+  "kode": "01131-A",
+  "nama": "PERTANIAN HORTIKULTURA SAYURAN DAUN",
+  "kategori": "A - Pertanian, Kehutanan dan Perikanan",
+  "ruang_lingkup": "Perbenihan sayuran daun",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": {
+      "judul": "Melaporkan kegiatan usaha secara periodic"
+    },
+    "2": {
+      "judul": "Menerapkan peraturan Perbenihan"
+    }
+  }
+}

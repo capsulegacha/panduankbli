@@ -1,0 +1,18 @@
+{
+  "kode": "01199-A",
+  "nama": "PERTANIAN TANAMAN SEMUSIM LAINNYA YTDL",
+  "kategori": "A - Pertanian, Kehutanan dan Perikanan",
+  "ruang_lingkup": "Produksi benih tanaman semusim lain",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": {
+      "judul": "Dokumen asal usul benih (bersertifikat dan berlabel)"
+    },
+    "2": {
+      "judul": "Pencatatan data benih yang diproduksi dan diedarkan"
+    },
+    "3": {
+      "judul": "Pencatatan kegiatan setiap tahapan pembenihan"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "kode": "32906",
+  "nama": "INDUSTRI PRODUKSI RADIOISOTOP",
+  "kategori": "C - Industri Pengolahan",
+  "ruang_lingkup": "Izin Konstruksi Fasilitas Produksi Radioisotop",
+  "dinas": "Dinas Tenaga Kerja dan Perindustrian",
+  "persyaratan": {
+    "1": {
+      "judul": "Dokumen rencana teknis bangunan penahan radiasi",
+      "items": {}
+    },
+    "2": {
+      "judul": "Dokumen rencana bangunan utilitas operasi pemanfaatan sumber Radiasi Pengion",
+      "items": {}
+    },
+    "3": {
+      "judul": "Dokumen program proteksi dan keselamatan radiasi dan dokumen program keamanan zat radioaktif",
+      "items": {}
+    },
+    "4": {
+      "judul": "Dokumen program komisioning",
+      "items": {}
+    },
+    "5": {
+      "judul": "Dokumen kajian keselamatan radiasi dan keamanan zat radioaktif",
+      "items": {}
+    }
+  }
+}

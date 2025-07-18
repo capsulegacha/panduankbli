@@ -1,0 +1,106 @@
+{
+  "kode": "47721",
+  "nama": "APOTEK",
+  "kategori": "G - Perdagangan Besar dan Eceran",
+  "ruang_lingkup": "Perdagangan Eceran Produk Farmasi",
+  "dinas": "Dinas Kesehatan",
+  "persyaratan": {
+    "1": {
+      "judul": "Administrasi",
+      "items": {
+        "a": {
+          "item": "Surat Permohonan pelaku Usaha",
+          "link": "https://bit.ly/SuratPermohonanPelakuUsaha"
+        },
+        "b": {
+          "item": "Akte Badan Hukum bila bukan perseorangan (apoteker)"
+        },
+        "c": {
+          "item": "Surat Perjanjian kerjasama dengan Apoteker yang disahkan oleh notaris"
+        },
+        "d": {
+          "item": "Dokumen SPPL (Surat Pernyataan Kesanggupan Pengelolaan dan Pemantauan Lingkungan Hidup) terakhir, serta surat pernyataan bermaterai bahwa akan melakukan self assesment melalui simona setiap tahun dan pelaporan setiap bulan untuk (perpanjangan ijin apotek). Pelaporan sipnap terakhir. bila belum pernah sipnap, membuat surat pernyataan (format bebas)."
+        },
+        "e": {
+          "item": "surat pernyataan bermaterai bahwa akan melakukan self assesment melalui simona setiap tahun dan pelaporan kefarmasian serta SIPNAP setiap bulan (Apotek baru)"
+        },
+        "f": {
+          "item": "Bukti Pembayarann PAD adalah bukti pembayaran PNBP tahun 2021 (perpanjangan izin)"
+        }
+      }
+    },
+    "2": {
+      "judul": "Lokasi",
+      "items": {
+        "a": {
+          "item": "Foto apotek tampak depan dengan menggunakan gps map camera"
+        },
+        "b": {
+          "item": "IMB/PBG"
+        },
+        "c": {
+          "item": "SKRK/KKPR"
+        },
+        "d": {
+          "item": "Akte Hak milik / Sewa."
+        }
+      }
+    },
+    "3": {
+      "judul": "Bangunan",
+      "keterangan": "Denah seluruh ruangan beserta sarana dan prasarananya",
+      "items": {
+        "a": {
+          "item": "Upload foto Apotek Tampak depan, bagian dalam apotek, ruang tunggu, ruang racik, ruang penerimaan resep, penyerahan obat, ruang konseling. Semua Foto"
+        },
+        "b": {
+          "item": "Menggunakan aplikasi geotag (gps map camera)"
+        }
+      }
+    },
+    "4": {
+      "judul": "SDM yang diupload",
+      "items": {
+        "a": {
+          "item": "Struktur Organisasi"
+        },
+        "b": {
+          "item": "Informasi tentang SDM (KTP,STR dan SIP) dan Direktur ( KTP, Akte Badan Hukum,dan NPWP)"
+        },
+        "c": {
+          "item": "Tugas Pokok dan fungsi SDM"
+        },
+        "d": {
+          "item": "Data jam operasional Apotek"
+        },
+        "e": {
+          "item": "Data jam praktik Apoteker dan jam praktik tenaga kefarmasian lainnya"
+        },
+        "f": {
+          "item": "Tersedia analisa beban kerja (untuk SDM jumlah tenaga sesuai dengan hari dan jam operasional apotek tidak boleh buka bila tidak ada tenaga kefarmasian yang berpraktek, bila 2 shift minimal 3 tenaga kefarmasian dst)"
+        }
+      }
+    },
+    "5": {
+      "judul": "Sarana, Prasarana dan peralatan",
+      "items": {
+        "a": {
+          "item": "Data Sarana, Prasarana dan peralatan"
+        },
+        "b": {
+          "item": "Upload foto [wastafel, toilet, lemari es + termometer + kartu suhu ( 3 foto : lemari es pintu tertutup dengan kartu kontrol suhu dan bagian dalam lemari es terlihat thermometer lemari es, thermometer lemari es) , lemari narkotik-psikotropik ( 3 foto: foto semua pintu tertutup dan terkunci, 1 pintu terbuka dan bagian dalam pintu tertutup dan terkunci, semua pintu terbuka), lemari precursor dan OOT (obat keras dan Bebas terbatas), tempat sampah tertutup, lemari dan rak penyimpanan obat, termohigro ruangan, pendingin ruangan AC, alat pemadam kebakaran (penempatan dan ed), papan nama apotek, papan praktek apoteker, Timbangan gram dan mg / digital, Bukti kalibrasi timbangan, Semua Foto menggunakan aplikasi geotag (gps map camera)]"
+        },
+        "c": {
+          "item": "Daftar isi Peraturan Undang-Undangan yang berlaku terkait praktik kefarmasian",
+          "link": "https://bit.ly/DaftarIsiPeraturanPerundang-Undangan"
+        },
+        "d": {
+          "item": "Form PIO, MESO, catatan pengobatan pasien, konseling dan Home Pharmacy Care (dalam bentuk format jika belum memiliki form tersebut)"
+        },
+        "e": {
+          "item": "Form Surat pesanan, etiket, kartu stok, Copy resep, Nota Penjualan. (dalam bentuk format jika belum memiliki form tersebut)"
+        }
+      }
+    }
+  }
+}

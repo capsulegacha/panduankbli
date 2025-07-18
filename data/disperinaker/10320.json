@@ -1,0 +1,23 @@
+{
+  "kode": "10320",
+  "nama": "INDUSTRI PENGOLAHAN DAN PENGAWETAN BUAH-BUAHAN DAN SAYURAN DALAM KALENG",
+  "kategori": "C - Industri Pengolahan",
+  "ruang_lingkup": "Industri Pengolahan dan Pengawetan Buah-buahan dan Sayuran dalam Kaleng",
+  "dinas": "Dinas Tenaga Kerja dan Perindustrian",
+  "persyaratan": {
+    "1": {
+      "judul": "Berlokasi di Kawasan Industri atau Kawasan Peruntukan Industri",
+      "items": {
+        "a": "Mengupload SKRK dan IMB",
+        "b": "Mengupload \"Surat Keterangan Pengecualian Berlokasi di Kawasan Industri\" yang didapatkan melalui https://siinas.kemenperin.go.id/"
+      }
+    },
+    "2": {
+      "judul": "Telah selesai melaksanakan persiapan dan kegiatan pembangunan, pengadaan, pemasangan/instalasi peralatan, dan kesiapan lain yang diperlukan",
+      "items": {
+        "a": "Mengupload foto sarana dan prasarna serta lokasi usahanya",
+        "b": "Untuk kegiatan usaha selain mikro mengupload \"Surat Keputusan Telah Selesai Melakukan Persiapan / Konstruksi Dan Siap Produksi\" yang didapatkan melalui https://siinas.kemenperin.go.id/"
+      }
+    }
+  }
+}

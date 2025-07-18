@@ -1,0 +1,52 @@
+{
+  "kode": "78423",
+  "nama": "PELATIHAN KERJA INDUSTRI KREATIF SWASTA",
+  "kategori": "M - Jasa Profesional, Ilmiah dan Teknis",
+  "ruang_lingkup": "Pelatihan Kerja Industri Kreatif Swasta",
+  "dinas": "Dinas Tenaga Kerja dan Perindustrian",
+  "persyaratan": {
+    "1": {
+      "judul": "Surat kerjasama dengan lembaga pelatihan kerja yang sudah memperoleh Akreditasi dari lembaga akreditasi lembaga pelatihan kerja (Untuk Pelaku Usaha PMA)",
+      "items": {
+        "a": "Mengupload Dokumen Kerjasama dengan LPK terakreditasi bermeterai cukup (bisa diupload file kosong pdf)"
+      }
+    },
+    "2": {
+      "judul": "Apabila pelaku usaha menggunakan standar kompetensi khusus maka pelaku usaha wajib melampirkan bukti registrasi standar kompetensi khusus dari kementerian yang akan dijadikan acuan pelaksanaan program pelatihan (Untuk Pelaku Usaha PMA)",
+      "items": {
+        "a": "Mengupload Dokumen Registrasi SKK dari Kementerian Ketenagakerjaan (bisa diupload file kosong pdf)"
+      }
+    },
+    "3": {
+      "judul": "Dalam hal usaha pelatihan kerja mempekerjakan tenaga kerja asing (TKA) dilaksanakan sesuai dengan ketentuan perundang-undangan (Untuk Pelaku Usaha PMA)",
+      "items": {
+        "a": "Mengupload Dokumen Hasil Penilaian Kelayakan (bisa diupload file kosong pdf)",
+        "b": "Mengupload Dokumen Pengesahan RPTKA (bisa diupload file kosong pdf)"
+      }
+    },
+    "4": {
+      "judul": "Melampirkan tanda bukti kepemilikan atau sewa atas sarana dan prasarana usaha pelatihan kerja",
+      "items": {
+        "a": "Mengupload Dokumen Bukti Kepemilikan atau Sewa bermeterai cukup"
+      }
+    },
+    "5": {
+      "judul": "Melampirkan profil lembaga pelatihan kerja berupa Dokumen Profil Lembaga yang ditandatangani oleh penanggung jawab LPK memuat",
+      "items": {
+        "a": "struktur organisasi dan uraian tugas",
+        "b": "daftar & CV instruktur dan tenaga pelatihan, sertifikat kompetensi instruktur",
+        "c": "program kerja dan RAB untuk 3 (tiga) tahun",
+        "d": "program PBK",
+        "e": "kapasitas latih per tahun",
+        "f": "daftar & foto sarana dan prasarana pelatihan per program pelatihan"
+      }
+    },
+    "6": {
+      "judul": "Melampirkan identitas dan riwayat hidup penanggung jawab usaha pelatihan kerja",
+      "items": {
+        "a": "Mengupload Dokumen KTP/Paspor Penanggungjawab LPK",
+        "b": "Mengupload CV Penanggungjawab LPK"
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "kode": "01220-A",
+  "nama": "PERTANIAN BUAH-BUAHAN TROPIS DAN SUBTROPIS",
+  "kategori": "A - Pertanian, Kehutanan dan Perikanan",
+  "ruang_lingkup": "Produksi benih kurma",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": {
+      "judul": "Pencatatan data benih yang diproduksi dan diedarkan"
+    },
+    "2": {
+      "judul": "Pencatatan kegiatan setiap tahapan pembenihan"
+    }
+  }
+}

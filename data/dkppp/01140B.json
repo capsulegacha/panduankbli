@@ -1,0 +1,18 @@
+{
+  "kode": "01140-B",
+  "nama": "PERKEBUNAN TEBU",
+  "kategori": "A - Pertanian, Kehutanan dan Perikanan",
+  "ruang_lingkup": "Budi daya Perkebunan tebu",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": {
+      "judul": "Pencatatan kegiatan setiap tahapan pembenihan"
+    },
+    "2": {
+      "judul": "Dokumen asal usul benih (bersertifikat dan berlabel)"
+    },
+    "3": {
+      "judul": "Pencatatan data benih yang diproduksi dan diedarkan"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "kode": "01253",
+  "nama": "PERTANIAN SAYURAN TAHUNAN",
+  "kategori": "A - Pertanian, Kehutanan dan Perikanan",
+  "ruang_lingkup": "Budi daya sayuran tahunan",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": {
+      "judul": "Memiliki AMDAL/UKL/UPL sesuai peraturan perundang-undangan"
+    },
+    "2": {
+      "judul": "Perizinan prasarana sesuai lokasi tempat usaha"
+    }
+  }
+}

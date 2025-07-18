@@ -1,0 +1,168 @@
+{
+  "kode": "81290",
+  "nama": "PEST CONTROL",
+  "kategori": "N - Aktivitas Jasa Lainnya",
+  "ruang_lingkup": "Jasa Pengendalian Hama (Pest Control)",
+  "dinas": "Dinas Kesehatan",
+  "persyaratan": {
+    "1": {
+      "judul": "Administrasi umum",
+      "items": {
+        "a": {
+          "item": "Identitas Pelaku Usaha",
+          "subitems": {
+            "1": {
+              "item": "Perorangan:",
+              "subitems": {
+                "a": {
+                  "item": "KTP"
+                },
+                "b": {
+                  "item": "NPWP"
+                }
+              }
+            },
+            "2": {
+              "item": "Badan Hukum:",
+              "subitems": {
+                "a": {
+                  "item": "KTP"
+                },
+                "b": {
+                  "item": "NPWP"
+                },
+                "c": {
+                  "item": "Akta Pendirian yang disahkan oleh KEMENKUMHAM"
+                }
+              }
+            },
+            "3": {
+              "item": "Badan Usaha:",
+              "subitems": {
+                "a": {
+                  "item": "KTP"
+                },
+                "b": {
+                  "item": "NPWP"
+                },
+                "c": {
+                  "item": "Akta Pendirian yang disahkan oleh KEMENKUMHAM"
+                }
+              }
+            }
+          }
+        },
+        "b": {
+          "item": "Administrasi Umum",
+          "subitems": {
+            "1": {
+              "item": "Surat Permohonan dari pelaku usaha perorangan atau badan hukum",
+              "link": "https://bit.ly/formatsuratpermohonanpestcontrol"
+            },
+            "2": {
+              "item": "Persyaratan Umum:",
+              "subitems": {
+                "a": {
+                  "item": "Pengendalian Vektor dan Binatang Pembawa Penyakit di wilayah kabupaten/kota: Pembayaran Pendapatan Asli Daerah (PAD)."
+                },
+                "b": {
+                  "item": "Pengendalian Vektor dan Binatang Pembawa Penyakit di wilayah pelabuhan, bandar udara, dan lintas batas darat negara:",
+                  "subitems": {
+                    "1": {
+                      "item": "Izin otoritas dari otaritas bandar udara, pelabuhan, atau lintas batas. darat negara; dan"
+                    },
+                    "2": {
+                      "item": "Pembayaran Pendapatan Negara Bukan Pajak (PNBP)"
+                    }
+                  }
+                },
+                "c": {
+                  "item": "Pemenuhan persyaratan oleh pelaku usaha dilaksanakan paling pambat 1(satu) tahun sejak persyaratan NIB diterbitkan OSS."
+                },
+                "d": {
+                  "item": "Jika tidak memiliki bukti PNPB, maka dapat melampirkan file PDF kosong dengan catatan tidak memiliki PNPB"
+                }
+              }
+            }
+          }
+        },
+        "c": {
+          "item": "Data penanggung jawab berkualifikasi Tenaga Entomolog Kesehetan dan/atau Tenaga Kesehatan Lingkungan yang mempunyai sertifikat pelatihan di bidang Pengendalian Vektor dan Binatang Pembawa Penyakit, serta mermiliki surat rekomendasi praktik dari organisasi profesi entomologi Kesehatan"
+        },
+        "d": {
+          "item": "Daftar sarana usaha berupa ruangan, bahan dan peralatan sesuai dengan standar dalam bentuk list."
+        }
+      }
+    },
+    "2": {
+      "judul": "SDM",
+      "items": {
+        "a": {
+          "item": "Daftar SDM pelaksana berkualitas paling rendah SMP/sederajat yang memiliki sertifikasi pelatihan Pengendalian Vektor dan Binatang Pembawa Penyakit yang diselenggarakan pemerintah dan/atau organisasi profesi entomologi kesehatan."
+        },
+        "b": {
+          "item": "Struktur Organisasi SDM usaha Pengendalian Vektor dan Binatang Pembawa Penyakit paling sedikit meliputi penanggung jawab dan tenaga pelaksana lapangan"
+        }
+      }
+    },
+    "3": {
+      "judul": "Sarana dan Peralatan",
+      "items": {
+        "a": {
+          "item": "Ruangan",
+          "subitems": {
+            "1": {
+              "item": "Ruangan paling sedikit terdiri dari 3 (tiga) bagian, yaitu bagian penyimpanan pestisida, bagian penyimpanan bahan dan bagian untuk diskusi/istirahat"
+            },
+            "2": {
+              "item": "Ruangan bagian penyimpanan bahan dan peralatan serta ruangan diskusi/istirahat bebas dari aroma atau kontaminasi pestisida"
+            },
+            "3": {
+              "item": "Ruangan penyimpanan pestisida dilengkapi dengan kamar mandi, wastafel, dan toilet tersendiri"
+            },
+            "4": {
+              "item": "Ruangan harus mudah dibersihkan dan selalu berada dalam kondisi bersih, terawat, serta tahan terhadap proses pembersihan, bahan pembersih, dan desinfektan yang digunakan berulang kali"
+            },
+            "5": {
+              "item": "Ruangan tidak boleh terdapat Vektor dan Binatang Pembawa Penyakit ruangan memiliki sirkulasi udara yang baik."
+            }
+          }
+        },
+        "b": {
+          "item": "Daftar Perlatan dan Bahan",
+          "subitems": {
+            "1": {
+              "item": "Peralatan dan bahan pemeriksaan habitat dan kepadatan Vektor dan Binatang Pembawa Penyakit"
+            },
+            "2": {
+              "item": "Bahan Pengendalian Vektor dan Binatang Pembawa Penyakit"
+            },
+            "3": {
+              "item": "Peralatan Pengendalian Vektor dan Binatang Pembawa Penyakit"
+            },
+            "4": {
+              "item": "Alat Pelindung Diri (APD) Pengendalian Vektor dan Binatang Pembawa Penyakit"
+            },
+            "5": {
+              "item": "Peralatan yang digunakan harus memenuhi Standar Nasional Indonesia (SNI)."
+            }
+          }
+        }
+      }
+    },
+    "4": {
+      "judul": "Persyaratan Lainnya",
+      "items": {
+        "a": {
+          "item": "KKPR (Kegiatan Kesesuaian Pemanfaatan Ruang)"
+        },
+        "b": {
+          "item": "PBG (Persetujuan Bangunan dan Gedung)"
+        },
+        "c": {
+          "item": "SPPL (Surat Pernyataan Kesanggupan Pengelolaan dan Pemantauan Lingkungan Hidup)."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "kode": "01191-A",
+  "nama": "PERTANIAN TANAMAN PAKAN TERNAK",
+  "kategori": "A - Pertanian, Kehutanan dan Perikanan",
+  "ruang_lingkup": "Budi daya tanaman penutup tanah",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": {
+      "judul": "Pencatatan kegiatan setiap tahapan pembenihan"
+    },
+    "2": {
+      "judul": "Pencatatan data benih yang diproduksi dan diedarkan"
+    },
+    "3": {
+      "judul": "Dokumen asal usul benih (bersertifikat dan berlabel)"
+    }
+  }
+}

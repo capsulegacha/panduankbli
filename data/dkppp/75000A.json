@@ -1,0 +1,47 @@
+{
+  "kode": "75000-A",
+  "nama": "AKTIVITAS KESEHATAN HEWAN",
+  "kategori": "M - Jasa Profesional, Ilmiah dan Teknis",
+  "ruang_lingkup": "Ambulatori",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": {
+      "judul": "Tenaga Medik Veteriner dalam melaksanakan Pelayanan Jasa Medik Veteriner wajib memiliki SIP DRH"
+    },
+    "2": {
+      "judul": "Menggunakan dan/atau memperdagangkan obat hewan yang memiliki nomor pendaftaran sesuai dengan ketentuan peraturan perundang-undangan"
+    },
+    "3": {
+      "judul": "Pernyataan memiliki fasilitas, perlengkapan, peralatan, dan/atau instalasi farmasi sesuai dengan yang dipersyaratkan untuk Ambulatori, Klinik Hewan, atau RSH sesuai dengan ketentuan peraturan perundang-undangan mengenai pelayanan jasa medik veteriner"
+    },
+    "4": {
+      "judul": "Pernyataan pada poin a berupa surat keterangan pemenuhan persyaratan teknis yang diterbitkan berdasarkan penilaian teknis oleh Dinas Daerah Kabupaten/Kota"
+    },
+    "5": {
+      "judul": "Memenuhi persyaratan kesejahteraan hewan",
+      "items": {
+        "a": "Rasa bebas dari rasa lapar, haus dan malnutrisi",
+        "b": "Rasa bebas dari rasa tidak nyaman fisik dan suhu udara",
+        "c": "Rasa bebas dari rasa sakit, cedera, dan penyakit",
+        "d": "Rasa bebas dari rasa takut dan tertekan",
+        "e": "Rasa bebas untuk menampilkan perilaku alaminya"
+      }
+    },
+    "6": {
+      "judul": "SIP DRH sebagaimana dimaksud dapat diberikan kepada",
+      "items": {
+        "a": "Tenaga Medik Veteriner dengan status Warga Negara Indonesia",
+        "b": "Tenaga Medik Veteriner dengan status warga negara asing untuk Dokter Hewan Spesialis"
+      }
+    },
+    "7": {
+      "judul": "Tenaga Paramedik Veteriner dan Sarjana Kedokteran hewan dalam memberikan Pelayanan Jasa Medik Veteriner secara mandiri wajib memiliki SIPP dengan rincian SIPP",
+      "items": {
+        "a": "SIPP Keswan untuk Tenaga Paramedik Veteriner kesehatan hewan dan sarjana kedokteran hewan",
+        "b": "SIPP Inseminator untuk Tenaga Paramedik Veteriner inseminasi buatan dan sarjana kedokteran hewan",
+        "c": "SIPP PKb untuk Tenaga Paramedik Veteriner pemeriksaan kebuntingan dan sarjana kedokteran hewan",
+        "d": "SIPP ATR untuk Tenaga Paramedik Veteriner asisten teknik reproduksi dan sarjana kedokteran hewan"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "kode": "01134",
+  "nama": "PERTANIAN HORTIKULTURA SAYURAN UMBI",
+  "kategori": "A - Pertanian, Kehutanan dan Perikanan",
+  "ruang_lingkup": "Budi daya sayuran umbi",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": {
+      "judul": "Memiliki AMDAL/UKL/UPL sesuai peraturan perundang-undangan"
+    }
+  }
+}

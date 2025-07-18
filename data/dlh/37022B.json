@@ -1,0 +1,45 @@
+{
+  "kode": "37022-B",
+  "nama": "TREATMENT DAN PEMBUANGAN AIR LIMBAH BERBAHAYA",
+  "kategori": "E - Pengadaan Air, Pengelolaan Sampah dan Daur Ulang, Pembuangan dan Pembersihan Limbah dan Sampah",
+  "ruang_lingkup": "Instalasi pengolahan air limbah (IPAL) industri",
+  "dinas": "Dinas Lingkungan Hidup",
+  "persyaratan": {
+    "1": {
+      "judul": "Menyampaikan sistem dan penanganan kondisi darurat (copy statement SOP tanggap darurat dari persetujuan lingkungan)"
+    },
+    "2": {
+      "judul": "Menyampaikan wilayah atau area pelayanan (upload layout dan/atau lokasi pelayanan)"
+    },
+    "3": {
+      "judul": "Pengelolaan lumpur IPAL usaha dan/atau kegiatan (copy statement pengelolaan lumpur usaha dan/atau kegiatan dari persetujuan lingkungan)"
+    },
+    "4": {
+      "judul": "Menyampaikan dokumen persetujuan lingkungan (lembar pengesahan dokumen perling)"
+    },
+    "5": {
+      "judul": "Menyampaikan dokumen kontrak kerja sama dengan penghasil dan/atau pengangkut air limbah (IPAL) usaha dan/atau kegiatan (form kerjasama)"
+    },
+    "6": {
+      "judul": "Menyampaikan dokumen mekanisme kerja (SOP) pengolahan air limbah (IPAL) usaha dan/atau kegiatan (copy statement SOP pengolahan air limbah (IPAL) usaha dan/atau kegiatan, sistem manajemen lingkungan serta struktur organisasi dari persetujuan lingkungan)"
+    },
+    "7": {
+      "judul": "Menyampaikan jenis dan karakteristik air limbah (IPAL) usaha dan/atau kegiatan yang diolah (copy statement jenis dan karakteristik air limbah (IPAL) usaha dan/atau kegiatan yang diolah dari persetujuan lingkungan)"
+    },
+    "8": {
+      "judul": "Menyampaikan kapasitas pengolahan dan perpipaan air limbah (IPAL) usaha dan/atau kegiatan dan bukti perhitungan cakupan daerah pelayanan (copy statement kapasitas pengolahan air limbah domestik yang diolah dari persetujuan lingkungan)"
+    },
+    "9": {
+      "judul": "Menyampaikan layout dan disain teknologi pengolahan air limbah (IPAL) usaha dan/atau kegiatan yang dapat mengolah sampai memenuhi baku mutu air limbah dalam bentuk diagram dan menjelaskan dekripsi teknologi (copy statement disain teknologi dari persetujuan lingkungan)"
+    },
+    "10": {
+      "judul": "Menyampaikan layout lokasi laboratorium atau draft dokumen kontrak kerja sama dengan laboratorium untuk mengontrol air limbah (IPAL) usaha dan/atau kegiatan yang masuk"
+    },
+    "11": {
+      "judul": "Menyampaikan layout sistem perpipaan yang terkoneksi dengan sumber air limbah dan pengolahan air limbah"
+    },
+    "12": {
+      "judul": "Menyampaikan nama, lokasi, dan koordinat titik penaatan air limbah, titik pembuangan air limbah, titik pemantauan badan air penerima disertai dengan layout (copy layout titik penaatan dan pemantauan dari persetujuan lingkungan)"
+    }
+  }
+}

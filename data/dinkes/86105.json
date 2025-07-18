@@ -1,0 +1,192 @@
+{
+  "kode": "86105",
+  "nama": "AKTIVITAS KLINIK SWASTA",
+  "kategori": "Q - Aktivitas Kesehatan Manusia dan Aktivitas Sosial",
+  "ruang_lingkup": "Seluruh Klinik Pratama dan Utama Swasta",
+  "dinas": "Dinas Kesehatan",
+  "persyaratan": {
+    "1": {
+      "judul": "Surat Izin Praktik (SIP) semua tenaga kesehatan yang bekerja di Klinik",
+      "items": {
+        "a": {
+          "item": "Upload semua SIP semua tenaga kesehatan beserta bukti tanda terima pendaftaran SIP (surat ijin praktik dokter/perawat/apoteker penanggung jawab) pada website sswalfa.surabaya.go.id"
+        },
+        "b": {
+          "item": "Pada klinik pratama diwajibkan memiliki 1 dokter umum sebagai penanggung jawab klinik"
+        },
+        "c": {
+          "item": "Pada klinik utama diwajibkan memiliki 2 dokter spesialis di klinik utama (1 dokter spesialis bisa merangkap sebagai penanggung jawab)"
+        }
+      }
+    },
+    "2": {
+      "judul": "Sertifikat standar usaha Klinik atau surat izin operasional Klinik sebelumnya yang masih berlaku (opsional bagi Klinik dengan perpanjangan atau perubahan perizinan)",
+      "items": {
+        "a": {
+          "item": "KTP pemilik dan KTP dokter penanggung jawab"
+        },
+        "b": {
+          "item": "Akta perusahaan"
+        },
+        "c": {
+          "item": "Sertifikat tanah"
+        },
+        "d": {
+          "item": "Perjanjian sewa (jika status lahan adalah sewa)"
+        },
+        "e": {
+          "item": "IMB sesuai peruntukan"
+        },
+        "f": {
+          "item": "Surat keterangan domisili dari kelurahan setempat"
+        }
+      }
+    },
+    "3": {
+      "judul": "Self Assessment Klinik",
+      "items": {
+        "a": {
+          "item": "Self Assessment Klinik Sesuai Permenkes 14 Tahun 2021",
+          "link": "https://bit.ly/BerkasSelfAssesmentDapatDiaksesDisini"
+        },
+        "b": {
+          "item": "Surat Pernyataan Bersedia Memenuhi Persyaratan Dan Kewajiban Dalam Kurun Waktu Tiga Bulan Semenjak NIB Diterbitkan",
+          "link": "https://bit.ly/BerkasPoint2-12DapatDiaksesDisini"
+        },
+        "c": {
+          "item": "Surat penunjukan sebagai penanggung jawab Klinik",
+          "link": "https://bit.ly/BerkasPoint2-12DapatDiaksesDisini"
+        },
+        "d": {
+          "item": "Surat Pernyataan kesanggupan sebagai penanggung jawab Klinik",
+          "link": "https://bit.ly/BerkasPoint2-12DapatDiaksesDisini"
+        },
+        "e": {
+          "item": "Surat Pernyataan Kesanggupan Mentaati Peraturan Yang Berlaku",
+          "link": "https://bit.ly/BerkasPoint2-12DapatDiaksesDisini"
+        },
+        "f": {
+          "item": "Surat Pernyataan Tidak Menggunakan Obat-Obatan Sedatif, Dan Tidak Melakukan General Anestesi Maupun Regional Anestesi",
+          "link": "https://bit.ly/BerkasPoint2-12DapatDiaksesDisini"
+        },
+        "g": {
+          "item": "Surat Pernyataan Jenis Tindakan (Tabel : No/Jenis Tindakan/Pelaksana)",
+          "link": "https://bit.ly/BerkasPoint2-12DapatDiaksesDisini"
+        },
+        "h": {
+          "item": "Surat Pernyataan Bahwa Pelayanan Yang Dilakukan Klinik Merupakan Tanggung Jawab Dokter Penanggung Jawab",
+          "link": "https://bit.ly/BerkasPoint2-12DapatDiaksesDisini"
+        },
+        "i": {
+          "item": "Surat Pernyataan 5 Aspek",
+          "link": "https://bit.ly/BerkasPoint2-12DapatDiaksesDisini"
+        },
+        "j": {
+          "item": "Surat Pernyataan Komitmen Covid-19",
+          "link": "https://bit.ly/BerkasPoint2-12DapatDiaksesDisini"
+        },
+        "k": {
+          "item": "Surat Pernyataan Kebenaran dan Keabsahan Dokumen",
+          "link": "https://bit.ly/BerkasPoint2-12DapatDiaksesDisini"
+        },
+        "l": {
+          "item": "Surat Pernyataan Beriklan Sesuai Permenkes 1787",
+          "link": "https://bit.ly/BerkasPoint2-12DapatDiaksesDisini"
+        }
+      }
+    },
+    "4": {
+      "judul": "Profil Klinik",
+      "items": {
+        "a": {
+          "item": "Profil Klinik meliputi latar belakang, alamat, visi dan misi"
+        },
+        "b": {
+          "item": "Daftar peralatan Klinik dilengkapi dengan sertifikat kalibrasi; bapeten; PME"
+        },
+        "c": {
+          "item": "Daftar Jam pelayanan"
+        },
+        "d": {
+          "item": "Daftar, Jenis dan Tarif Pelayanan"
+        },
+        "e": {
+          "item": "Denah ruangan"
+        },
+        "f": {
+          "item": "Dokumentasi seluruh ruangan dilengkapi dengan penjelasan"
+        },
+        "g": {
+          "item": "Denah lokasi (Penanda Google Map dan Titik Koordinat Klinik)"
+        }
+      }
+    },
+    "5": {
+      "judul": "Perjanjian kerja sama pembuangan limbah bahan berbahaya dan beracun (B3)",
+      "items": {
+        "a": {
+          "item": "Dokumen Perjanjian Kerjasama Pembuangan Limbah"
+        },
+        "b": {
+          "item": "Dokumen Lingkungan, SPPL (Surat Pernyataan Kesanggupan Pengelolaan dan Pemantauan Lingkungan Hidup) Atau UKL UPL di Lengkapi Dengan Dokumen TPS Dan IPAL (dilengkapi dengan alat IPAL beserta instalasinya)"
+        }
+      }
+    },
+    "6": {
+      "judul": "Izin Mempekerjakan Tenaga Asing (IMTA) (opsional bila ada Tenaga Kerja Warga Negara Asing (TK-WNA))",
+      "items": {
+        "a": {
+          "item": "Dokumen IMTA untuk tenaga kerja asing"
+        }
+      }
+    },
+    "7": {
+      "judul": "Dokumen perubahan NIB (opsional bagi Klinik dengan perubahan perizinan terkait penggantian badan hukum)"
+    },
+    "8": {
+      "judul": "Daftar obat-obatan",
+      "items": {
+        "a": {
+          "item": "Daftar Obat Untuk Pelayanan Farmasi (Tabel No/Obat/Jumlah/Exp. Date)"
+        },
+        "b": {
+          "item": "Melakukan MOU Penanganan TB-HIV dengan puskesmas terdekat"
+        }
+      }
+    },
+    "9": {
+      "judul": "Daftar nama SDM Klinik",
+      "items": {
+        "a": {
+          "item": "Struktur Organisasi dengan Bagan Nama"
+        },
+        "b": {
+          "item": "Daftar Ketenagaan"
+        },
+        "c": {
+          "item": "Dokumen STR"
+        },
+        "d": {
+          "item": "Sertifikat Kompetensi"
+        },
+        "e": {
+          "item": "Minimal 1 dokter umum sebagai penanggung jawab"
+        },
+        "f": {
+          "item": "Minimal 2 dokter umum. (Salah satu dokter bisa menjadi penanggung jawab)"
+        }
+      }
+    },
+    "10": {
+      "judul": "Surat keterangan dari dinas kesehatan kabupaten/kota mengenai pertimbangan persetujuan pendirian Klinik (opsional bagi Klinik dengan perizinan baru)",
+      "items": {
+        "a": {
+          "item": "Surat keterangan dari dinas kesehatan kabupaten/kota"
+        }
+      }
+    },
+    "11": {
+      "judul": "Surat pernyataan penggantian badan hukum, nama klinik, kepemilikan modal, jenis klinik dan/atau alamat klinik yang ditandatangani oleh pemilik klinik (opsional bagi Klinik dengan perubahan perizinan)"
+    }
+  }
+}

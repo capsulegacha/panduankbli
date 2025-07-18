@@ -1,0 +1,23 @@
+{
+  "kode": "01121-A",
+  "nama": "PERTANIAN PADI HIBRIDA",
+  "kategori": "A - Pertanian, Kehutanan dan Perikanan",
+  "ruang_lingkup": "Usaha perbenihan padi hibrida",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": {
+      "judul": "Persyaratan perizinan berusaha meliputi",
+      "items": {
+        "a": "Keterangan Kelayakan Teknis sebagai produsen atau pengedar benih dari Institusi Pengawasan dan Sertifikasi Benih",
+        "b": "Sesuai ketentuan Lembaga OSS Keterangan memiliki atau menguasai sarana untuk produksi benih atau untuk peredaran benih",
+        "c": "Keterangan memiliki tenaga kerja yang mempunyai pengetahuan dan keterampilan di bidang perbenihan",
+        "d": "Tempat Usaha Produksi atau Peredaran Benih sesuai dengan persyaratan usaha",
+        "e": "Membuktikan lokasi produksi benih bukan daerah endemis (akan disediakan informasi spasial)",
+        "f": "Perizinan Lingkungan"
+      }
+    },
+    "2": {
+      "judul": "Membuktikan lokasi produksi benih bukan daerah endemis (akan disediakan informasi spasial)"
+    }
+  }
+}

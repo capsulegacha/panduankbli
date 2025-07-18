@@ -1,0 +1,32 @@
+{
+  "kode": "10297",
+  "nama": "INDUSTRI PENDINGINAN/PENGESAN BIOTA AIR LAINNYA",
+  "kategori": "C - Industri Pengolahan",
+  "ruang_lingkup": "Industri Pendinginan/Pengesan Biota Air Lainnya",
+  "dinas": "Dinas Tenaga Kerja dan Perindustrian",
+  "persyaratan": {
+    "1": {
+      "judul": "Berlokasi di Kawasan Peruntukan Industri",
+      "items": {
+        "a": "Mengupload SKRK dan IMB",
+        "b": "Mengupload \"Surat Keterangan Pengecualian Berlokasi di Kawasan Industri\" yang didapatkan melalui https://siinas.kemenperin.go.id/"
+      }
+    },
+    "2": {
+      "judul": "Skala usaha menengah dan besar",
+      "items": {
+        "a": "Memiliki SKP paling lama 3 (tiga) bulan setelah perizinan berusaha terbit",
+        "b": "Memiliki Sertifikat Penerapan PMMT/HACCP sepanjang dipersyaratkan di negara tujuan ekspor dipenuhi pada saat akan melakukan ekspor",
+        "c": "Laporan kegiatan usaha setiap 6 (enam) bulan sekali, paling sedikit meliputi: 1) Jenis dan kapasitas sarana dan prasarana, teknologi yang digunakan; 2) Omzet; 3) Tenaga kerja; 4) Asal bahan baku; 5) Jenis dan volume ikan; dan 6) Jenis dan volume produk yang dihasilkan",
+        "d": "Dalam hal usaha memanfaatkan insentif dan penanaman modal, laporan realisasi modal dan tenaga kerja setiap 3 (tiga) bulan sekali"
+      }
+    },
+    "3": {
+      "judul": "Skala usaha menengah dan besar",
+      "items": {
+        "a": "Membuat rencana usaha yang paling sedikit memuat: 1) Jenis usaha; 2) Sumber dan nilai investasi; 3) Jenis dan asal bahan baku; 4) Sarana produksi yang digunakan; 5) Tata letak dan gambaran proses produksi; dan 6) Wilayah pemasaran",
+        "b": "Durasi pemenuhan rencana usaha: 1) Paling lama 3 (tiga) hari kerja untuk Perizinan Berusaha yang diterbitkan oleh Menteri; dan 2) Paling lama 5 (lima) hari kerja untuk Perizinan Berusaha yang diterbitkan oleh Gubernur"
+      }
+    }
+  }
+}

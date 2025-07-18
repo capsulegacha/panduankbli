@@ -1,0 +1,15 @@
+{
+  "kode": "01139",
+  "nama": "PERTANIAN SAYURAN, BUAH DAN ANEKA UMBI LAINNYA",
+  "kategori": "A - Pertanian, Kehutanan dan Perikanan",
+  "ruang_lingkup": "Budi daya sayuran lainnya",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": {
+      "judul": "Perizinan prasarana sesuai lokasi tempat usaha"
+    },
+    "2": {
+      "judul": "Memiliki AMDAL/UKL/UPL sesuai peraturan perundang-undangan"
+    }
+  }
+}

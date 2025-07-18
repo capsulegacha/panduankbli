@@ -1,0 +1,27 @@
+{
+  "kode": "01135-A",
+  "nama": "PERTANIAN ANEKA UMBI PALAWIJA",
+  "kategori": "A - Pertanian, Kehutanan dan Perikanan",
+  "ruang_lingkup": "Usaha perbenihan aneka umbi palawija",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": {
+      "judul": "Tempat usaha produksi atau peredaran benih sesuai dengan persyaratan usaha"
+    },
+    "2": {
+      "judul": "Perizinan lingkungan"
+    },
+    "3": {
+      "judul": "Membuktikan lokasi produksi benih bukan daerah endemis (akan disediakan informasi spasial)"
+    },
+    "4": {
+      "judul": "Keterangan memiliki tenaga kerja yang mempunyai pengetahuan dan keterampilan di bidang perbenihan"
+    },
+    "5": {
+      "judul": "Keterangan memiliki atau menguasai sarana untuk produksi benih atau untuk peredaran benih"
+    },
+    "6": {
+      "judul": "Keterangan kelayakan teknis sebagai produsen atau pengedar benih dari Institusi Pengawasan dan Sertifikasi Benih"
+    }
+  }
+}

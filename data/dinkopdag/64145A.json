@@ -1,0 +1,59 @@
+{
+  "kode": "64145-A",
+  "nama": "KOPERASI SIMPAN PINJAM DAN PEMBIAYAAN SYARIAH PRIMER (KSPPS PRIMER)",
+  "kategori": "K - Jasa Keuangan dan Asuransi",
+  "ruang_lingkup": "Usaha KSPPS Primer",
+  "dinas": "Dinas Koperasi Usaha Kecil dan Menengah dan Perdagangan",
+  "persyaratan": {
+    "1": {
+      "judul": "Bukti setoran Modal Usaha Awal pada Koperasi berupa bukti penempatan modal pada rekening tabungan atas nama Koperasi pada bank Syariah untuk KSPPS Primer, disertai dengan bukti setoran modal masing-masing anggota"
+    },
+    "2": {
+      "judul": "Memiliki Rencana Kerja selama 3 (tiga) tahun yang menjelaskan mengenai rencana permodalan, rencana kegiatan usaha, serta rencana bidang organisasi dan sumber daya manusia",
+      "link": "https://bit.ly/berkasdapatdiaksesdisini"
+    },
+    "3": {
+      "judul": "Administrasi dan pembukuan pada KSPPS Primer",
+      "link": "https://bit.ly/berkasdapatdiaksesdisini"
+    },
+    "4": {
+      "judul": "Pengurus dan Pengawas harus memiliki riwayat hidup dengan melampirkan surat pernyataan bermaterai yang telah ditandatangani",
+      "items": {
+        "a": "Tidak tercatat dalam daftar kredit macet di sektor jasa keuangan",
+        "b": "Tidak pernah dihukum karena melakukan tindak pidana di bidang usaha jasa keuangan dan/atau perekonomian berdasarkan putusan pengadilan yang telah mempunyai kekuatan hukum tetap",
+        "c": "Tidak pernah dinyatakan pailit atau menyebabkan suatu badan usaha dinyatakan pailit berdasarkan putusan pengadilan yang telah mempunyai kekuatan hukum tetap dalam waktu 5 (lima) tahun terakhir"
+      },
+      "link": "https://bit.ly/berkasdapatdiaksesdisini"
+    },
+    "5": {
+      "judul": "Surat keterangan lulus uji kelayakan dan kepatutan untuk Pengurus dan Pengawas yang dikeluarkan oleh Menteri, gubernur, atau bupati/walikota sesuai dengan kewenangannya"
+    },
+    "6": {
+      "judul": "Surat pernyataan bermaterai yang ditandatangani oleh Pengurus yang berisi komitmen dalam hal terdapat kelebihan dana",
+      "items": {
+        "a": "Giro, deposito berjangka, tabungan, sertifikat deposito pada bank",
+        "b": "Simpanan dan Simpanan Berjangka pada KSPPS dan lembaga keuangan lainnya",
+        "c": "Pembelian instrumen saham dan obligasi di pasar modal",
+        "d": "Pengembangan dana tabungan melalui sarana investasi lainnya berupa: 1) Investasi langsung, dalam bentuk penyertaan modal dan pemberian Pinjaman kepada Koperasi lain melalui kerja sama antar-Koperasi, 2) Pembiayaan sindikasi untuk suatu proyek jangka pendek dengan Risiko rendah dan memiliki pendapatan yang tinggi atau moderat"
+      },
+      "link": "https://bit.ly/berkasdapatdiaksesdisini"
+    },
+    "7": {
+      "judul": "Surat pernyataan mengenai informasi Penerima Manfaat (Beneficial Owner) di Koperasi yang ditandatangani oleh Pengurus",
+      "link": "https://bit.ly/berkasdapatdiaksesdisini"
+    },
+    "8": {
+      "judul": "Mempunyai peraturan tentang prinsip mengenali pengguna jasa",
+      "link": "https://bit.ly/berkasdapatdiaksesdisini"
+    },
+    "9": {
+      "judul": "Sertifikasi kompetensi di bidang keuangan Koperasi bagi Pengelola"
+    },
+    "10": {
+      "judul": "Bukti kepemilikan dan/atau sewa kantor, papan nama Koperasi, dan sarana kerja"
+    },
+    "11": {
+      "judul": "Laundering (goaml) dari Pusat Pelaporan dan Analisis Transaksi Keuangan"
+    }
+  }
+}

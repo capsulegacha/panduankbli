@@ -1,0 +1,43 @@
+{
+  "kode": "49214",
+  "nama": "ANGKUTAN BUS KOTA",
+  "kategori": "H - Transportasi dan Pergudangan",
+  "ruang_lingkup": "Angkutan Bus Kota Dalam Trayek",
+  "dinas": "Dinas Perhubungan",
+  "persyaratan": {
+      "1": {
+        "judul": "Memasang alat pemantauan pergerakan kendaraan secara elektronik.",
+        "keterangan": "Melampirkan dokumentasi foto GPS dan tampilan software pelacakan."
+      },
+      "2": {
+        "judul": "Memenuhi Standar Pelayanan Minimal angkutan orang dalam trayek;",
+        "keterangan": "Dibuktikan dengan surat sertifikat kelayakan kendaraan DISHUB"
+      },
+      "3": {
+        "judul": "Memiliki dan/atau bekerjasama dengan pihak lain yang mampu menyediakan fasilitas pemeliharaan kendaraan bermotor;",
+        "keterangan": "Dibuktikan dengan MoU dan foto bukti lahan dengan penyedia fasilitas pemeliharaan kendaraan bermotor"
+      },
+      "4": {
+        "judul": "Memiliki dan/atau menguasai tempat penyimpanan;",
+        "keterangan": "Dibuktikan dengan melampirkan sertifikat tanah"
+      },
+      "5": {
+        "judul": "Memiliki paling sedikit 5 (lima) kendaraan yang dibuktikan dengan salinan STNK, SRUT (untuk kendaraan baru), bukti lulus uji berkala dan foto kendaraan;"
+      },
+      "6": {
+        "judul": "Menerapkan sistem pemesanan secara elektronik;",
+        "keterangan": "Dibuktikan dengan melampirkan dokumentasi aplikasi pemesanan elektronik, namun jika tidak memiliki aplikasi pemesanan elektronik dapat melampirkan dokumentasi pemesanan tiket secara manual"
+      },
+      "7": {
+        "judul": "Menyiapkan dokumen Sistem Manajemen Keselamatan;"
+      },
+      "8": {
+        "judul": "Menyusun rencana bisnis (business plan) Perusahaan Angkutan Umum;"
+      },
+      "9": {
+        "judul": "Kesesuaian dengan perencanaan kebutuhan kendaraan (kuota) yang ditetapkan;",
+        "keterangan": "Melampirkan gambar denah parkir kendaraan."
+      }
+    }
+  
+}

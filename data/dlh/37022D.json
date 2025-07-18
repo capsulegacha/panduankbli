@@ -1,0 +1,45 @@
+{
+  "kode": "37022-D",
+  "nama": "Treatment dan Pembuangan Air Limbah Berbahaya",
+  "kategori": "E - Pengadaan Air, Pengelolaan Sampah dan Daur Ulang, Pembuangan dan Pembersihan Limbah dan Sampah",
+  "ruang_lingkup": "Instalasi pengolahan air limbah (IPAL) domestik termasuk fasilitas penunjangnya dengan kapasitas melayani ≥20.000 jiwa atau 2.000 m3/hari",
+  "dinas": "Dinas Lingkungan Hidup",
+  "persyaratan": {
+    "1": {
+      "judul": "Menyampaikan dokumen kontrak kerja sama dengan penghasil dan/atau pengangkut air limbah domestik (form kerjasama)\\"
+    },
+    "2": {
+      "judul": "Menyampaikan dokumen mekanisme kerja (SOP) pengolahan air limbah domestik (copy statement SOP pengolahan air limbah domestik, sistem manajemen lingkungan serta struktur organisasi dari persetujuan lingkungan)"
+    },
+    "3": {
+      "judul": "Menyampaikan dokumen persetujuan lingkungan (lembar pengesahan dokumen perling)"
+    },
+    "4": {
+      "judul": "Menyampaikan jenis dan karakteristik air limbah domestik yang diolah (copy statement jenis dan karakteristik air limbah domestik yang diolah dari persetujuan lingkungan)"
+    },
+    "5": {
+      "judul": "Menyampaikan kapasitas pengolahan dan perpipaan air limbah domestik dan bukti perhitungan cakupan daerah pelayanan (copy statement kapasitas pengolahan air limbah domestik yang diolah dari persetujuan lingkungan)"
+    },
+    "6": {
+      "judul": "Menyampaikan layout dan disain teknologi pengolahan air limbah domestik yang dapat mengolah sampai memenuhi baku mutu air limbah dalam bentuk diagram dan menjelaskan dekripsi teknologi (copy statement disain teknologi dari persetujuan lingkungan)"
+    },
+    "7": {
+      "judul": "Menyampaikan layout lokasi laboratorium atau draft dokumen kontrak kerja sama dengan laboratorium untuk mengontrol air limbah domestik yang masuk"
+    },
+    "8": {
+      "judul": "Menyampaikan layout sistem perpipaan yang terkoneksi dengan sumber air limbah dan pengolahan air limbah"
+    },
+    "9": {
+      "judul": "Menyampaikan nama, lokasi, dan koordinat titik penaatan air limbah, titik pembuangan air limbah, titik pemantauan badan air penerima disertai dengan layout (copy layout titik penaatan dan pemantauan dari persetujuan lingkungan)"
+    },
+    "10": {
+      "judul": "Menyampaikan sistem dan penanganan kondisi darurat (copy statement SOP tanggap darurat dari persetujuan lingkungan)"
+    },
+    "11": {
+      "judul": "Menyampaikan wilayah atau area pelayanan (upload layout dan/atau lokasi pelayanan)"
+    },
+    "12": {
+      "judul": "Pengelolaan lumpur IPAL domestik (copy statement pengelolaan lumpur domestik dari persetujuan lingkungan)"
+    }
+  }
+}

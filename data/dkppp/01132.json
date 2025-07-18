@@ -1,0 +1,21 @@
+{
+  "kode": "01132",
+  "nama": "PERTANIAN HORTIKULTURA SAYURAN DAUN",
+  "kategori": "A - Pertanian, Kehutanan dan Perikanan",
+  "ruang_lingkup": "Budi daya buah",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": {
+      "judul": "Pernyataan ketersediaan sarana prasarana yang memadai untuk usaha budidaya (dilengkapi dokumen. perizinan sarana prasarana jika diperlukan)"
+    },
+    "2": {
+      "judul": "Membuat rencana usaha"
+    },
+    "3": {
+      "judul": "Peryataan ketersediaan tenaga kerja yang terampil untuk usaha budi daya"
+    },
+    "4": {
+      "judul": "Pernyataan menerapkan GAP terutama menjaga konservasi lahan dan air serta tata kelola limbah"
+    }
+  }
+}

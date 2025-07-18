@@ -1,0 +1,15 @@
+{
+  "kode": "56101",
+  "nama": "RESTORAN",
+  "kategori": "I - Penyediaan Akomodasi dan Penyediaan Makan Minum",
+  "ruang_lingkup": "Restoran dengan jumlah tempat duduk tamu 101-200 unit",
+  "dinas": "Dinas Kebudayaan, Kepemudaan dan Olahraga serta Pariwisata",
+  "persyaratan": {
+    "1": {
+      "judul": "UKL-UPL/AMDAL",
+      "items": {
+        "a": "UKL-UPL/AMDAL"
+      }
+    }
+  }
+}

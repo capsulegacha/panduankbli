@@ -1,0 +1,24 @@
+{
+  "kode": "01230",
+  "nama": "PERTANIAN BUAH JERUK",
+  "kategori": "A - Pertanian, Kehutanan dan Perikanan",
+  "ruang_lingkup": "Budi daya buah jeruk",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": {
+      "judul": "Pernyataan ketersediaan tenaga kerja yang terampil untuk usaha Budi daya"
+    },
+    "2": {
+      "judul": "Pernyataan ketersediaan sarana prasarana yang memadai untuk usaha Budi daya (dilengkapi dokumen perizinan sarana prasarana jika diperlukan)"
+    },
+    "3": {
+      "judul": "Membuat rencana usaha"
+    },
+    "4": {
+      "judul": "Pernyataan menerapkan GAP terutama menjaga konservasi lahan dan air serta tata kelola limbah"
+    },
+    "5": {
+      "judul": "Pernyataan memliki/ menguasai lahan/kebun untuk usaha Budi daya yang sesuai dengan RUTW"
+    }
+  }
+}

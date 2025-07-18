@@ -1,0 +1,64 @@
+{
+  "kode": "64148-D",
+  "nama": "UNIT SIMPAN PINJAM DAN PEMBIAYAAN SYARIAH KOPERASI SEKUNDER (USPPS KOPERASI SEKUNDER)",
+  "kategori": "K - Jasa Keuangan dan Asuransi",
+  "ruang_lingkup": "Jaringan Pelayanan Kantor Kas USPPS Sekunder",
+  "dinas": "Dinas Koperasi Usaha Kecil dan Menengah dan Perdagangan",
+  "persyaratan": {
+    "1": {
+      "judul": "Izin Usaha dan telah melaksanakan kegiatan simpan pinjam paling singkat 2 (dua) tahun",
+      "keterangan": "Dibuktikan dengan pelaksanaan rapat anggaran tahunan, selama 2 tahun"
+    },
+    "2": {
+      "judul": "Laporan keuangan tahunan Koperasi dalam 2 (dua) tahun terakhir"
+    },
+    "3": {
+      "judul": "Hasil audit dari akuntan publik dengan opini wajar"
+    },
+    "4": {
+      "judul": "Hasil tingkat pemeriksaan kesehatan yang dinyatakan sehat pada 1 (satu) tahun terakhir",
+      "keterangan": "Dapat mengajukan permohonan pengawasan atau pemeriksaaan kesehatan koperasi pada dinas koperasi usaha kecil dan menengah dan perdagangan Surabaya"
+    },
+    "5": {
+      "judul": "Anggaran dasar Koperasi"
+    },
+    "6": {
+      "judul": "Rencana Kerja Jaringan Pelayanan Kantor Kas paling singkat 1 (satu) tahun",
+      "items": {
+        "a": "Rencana penghimpunan dan penyaluran dana dari dan untuk anggota",
+        "b": "Surat pernyataan yang ditandatangani oleh Pengurus bahwa: 1) Transaksi simpan pinjam tidak ada penghimpunan dana dari masyarakat untuk kepentingan Koperasi maupun pribadi, 2) Tidak mempunyai produk Pinjaman kepada masyarakat, termasuk Pinjaman secara online",
+        "c": "Surat bukti konfirmasi dan permohonan registrasi user pelaporan go anti money laundering (goaml) dari Pusat Pelaporan dan Analisis Transaksi Keuangan"
+      }
+    },
+    "7": {
+      "judul": "Mempunyai peraturan tentang prinsip mengenali pengguna jasa",
+      "link": "https://bit.ly/BerkasDapatDiaksesDisini"
+    },
+    "8": {
+      "judul": "Bukti penerimaan surat pemberitahuan tahunan pajak dalam 1 (satu) tahun terakhir"
+    },
+    "9": {
+      "judul": "Mempunyai anggota Badan hukum Koperasi di daerah yang akan dibuka jaringan pelayanannya"
+    },
+    "10": {
+      "judul": "Modal Kerja paling sedikit Rp1.500.000.000,00 (satu miliar lima ratus juta rupiah)"
+    },
+    "11": {
+      "judul": "Rencana Kerja Jaringan Pelayanan Kantor Cabang paling singkat 1 (satu) tahun",
+      "items": {
+        "a": "Rencana penghimpunan dan penyaluran dana dari dan untuk anggota",
+        "b": "Surat pernyataan yang ditandatangani oleh Pengurus bahwa: 1) Transaksi simpan pinjam tidak ada penghimpunan dana dari masyarakat untuk kepentingan Koperasi maupun pribadi, 2) Tidak mempunyai produk Pinjaman kepada masyarakat, termasuk Pinjaman secara online",
+        "c": "Surat bukti konfirmasi dan permohonan registrasi user pelaporan go anti money laundering (goaml) dari Pusat Pelaporan dan Analisis Transaksi Keuangan"
+      }
+    },
+    "12": {
+      "judul": "Bukti kepemilikan dan/atau sewa kantor, papan nama Koperasi, dan sarana kerja"
+    },
+    "13": {
+      "judul": "Daftar nama dan riwayat hidup calon pimpinan dan daftar nama calon karyawan Jaringan Pelayanan Kantor Kas USPPS Koperasi Sekunder"
+    },
+    "14": {
+      "judul": "Sertifikat kompetensi calon kepala Jaringan Pelayanan Kantor Kas USPPS Koperasi Sekunder"
+    }
+  }
+}

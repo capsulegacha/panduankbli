@@ -1,0 +1,30 @@
+{
+  "kode": "75000-C",
+  "nama": "AKTIVITAS KESEHATAN HEWAN",
+  "kategori": "M - Jasa Profesional, Ilmiah dan Teknis",
+  "ruang_lingkup": "Rumah Sakit Hewan",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": {
+      "judul": "Persyaratan khusus",
+      "keterangan": "Surat bukti kepemilikan atau kontrak lahan dan bangunan unit pelayanan kesehatan hewan"
+    },
+    "2": {
+      "judul": "Persyaratan Umum",
+      "items": {
+        "a": "Pernyataan memiliki fasilitas, perlengkapan, peralatan, dan/atau instalasi farmasi sesuai dengan yang dipersyaratkan untuk Ambulatori, Klinik Hewan, atau RSH sesuai dengan ketentuan peraturan perundang-undangan",
+        "b": "Rasa bebas dari rasa tidak nyaman fisik dan suhu udara",
+        "c": "Rasa bebas dari rasa sakit, cedera, dan penyakit",
+        "d": "Rasa bebas dari rasa takut dan tertekait",
+        "e": "Rasa bebas untuk menampilkan perilaku alaminya",
+        "f": "Rasa bebas dari rasa lapar, haus dan malnutrisi",
+        "g": "Menggunakan dan/atau memperdagangkan obat hewan yang memiliki nomor pendaftaran sesuai dengan ketentuan peraturan perundang-undangan",
+        "h": "Memiliki instalasi pembuangan limbah klinik dan rumah sakit hewan atau bekerjasama dengan Lembaga lain dalam pengelolaan limbah",
+        "i": "Memenuhi persyaratan kesejahteraan hewan",
+        "j": "Pernyataan pada poin a berupa surat keterangan pemenuhan persyaratan teknis yang diterbitkan berdasarkan penilaian teknis oleh Dinas Daerah Kabupaten/Kota",
+        "k": "Memiliki perizinan pemakaian radiologi atau x ray dari Badan Pengawas Tenaga nuklir (BAPETEN)"
+      },
+      "keterangan": "Persyaratan lima poin Animal Welfare dibuktikan dengan melampirkan surat pernyataan kesanggupan serta bertanda tangan (Surat dapat dibuat menyesuaikan format pelaku usaha masing-masing). Persyaratan point H dibuktikan dengan melampirkan surat izin pembuangan limbah bagi rumah sakit hewan yang memiliki fasilitas pengelolaan limbah. Bagi rumah sakit hewan yang tidak memiliki fasilitas pengelolaan limbah dapat melampirkan surat kerja sama dengan rumah sakit lain yang memiliki fasilitas pengelolaan limbah. Melampirkan Surat Keterangan Pemenuhan Persyaratan Teknis Untuk SIVET yang diperoleh melalui SSW ALFA"
+    }
+  }
+}

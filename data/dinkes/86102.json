@@ -1,0 +1,60 @@
+{
+  "kode": "86102",
+  "nama": "SELURUH PUSKESMAS",
+  "kategori": "Q - Jasa Kesehatan dan Kegiatan Sosial",
+  "ruang_lingkup": "Pusat Kesehatan Masyarakat (Puskesmas)",
+  "dinas": "Dinas Kesehatan",
+  "persyaratan": {
+    "1": {
+      "judul": "Persyaratan Puskesmas",
+      "items": {
+        "1": {
+          "item": "Surat permohonan bermaterai asli"
+        },
+        "2": {
+          "item": "Self assessment puskesmas (Permenkes 14 thn 2021 halaman 668 sd selesai, ditandatangani kepala puskesmas)"
+        },
+        "3": {
+          "item": "Surat Perintah Melaksanakan Tugas Kepala Puskesmas"
+        },
+        "4": {
+          "item": "NIB Puskesmas beserta kelengkapannya"
+        },
+        "5": {
+          "item": "Semua berkas yang diupload di sistem OSS"
+        },
+        "6": {
+          "item": "Izin Operasional Puskesmas ASLI (lama)"
+        },
+        "7": {
+          "item": "Print melalui aplikasi ASPAK, ketenagaan, sarpras, peralatan"
+        },
+        "8": {
+          "item": "Profil puskesmas dengan kapus terkini",
+          "subitems": {
+            "a": {
+              "item": "Struktur organisasi"
+            },
+            "b": {
+              "item": "Visi & misi"
+            }
+          }
+        },
+        "9": {
+          "item": "Foto terkini puskesmas",
+          "subitems": {
+            "a": {
+              "item": "Foto nampak depan"
+            },
+            "b": {
+              "item": "Foto setiap ruangan puskesmas"
+            },
+            "c": {
+              "item": "Foto alat IPAL"
+            }
+          }
+        }
+      }
+    }
+  }
+}

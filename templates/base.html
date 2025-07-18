@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Klinik Investasi{% endblock %}</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="{{ url_for('index') }}">
+            Klinik Investasi<span class="dot text-primary">.</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('index') }}#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}">About</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+{% block content %}{% endblock %}
+
+<!-- FOOTER -->
+<footer class="text-white pt-5";">
+    <div class="container pb-4">
+        <div class="row">
+
+            <!-- Judul Klinik -->
+            <div class="col-12 mb-3">
+                <a class="navbar-brand text-white fs-4" href="{{ url_for('index') }}">
+                    Klinik Investasi<span class="dot text-primary">.</span>
+                </a>
+            </div>
+
+            <!-- Link Terkait -->
+            <div class="col-md-4 mb-4">
+                <h5 class="fw-bold mb-3 text-white">Link Terkait</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="https://oss.go.id"
+                          class="text-white-50 text-decoration-underline text-decoration-hover"
+                          target="_blank">
+                          OSS (Online Single Submission)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://oss.go.id/informasi/kbli-berbasis-risiko"
+                          class="text-white-50 text-decoration-underline"
+                          target="_blank">
+                          Panduan KBLI 2020
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Alamat -->
+            <div class="col-md-4 mb-4">
+                <h5 class="fw-bold mb-3 text-white">Klinik Investasi Surabaya</h5>
+                <p class="text-white-50 mb-2">
+                    Mal Pelayanan Publik Siola Lt. 1<br>
+                    Jl. Tunjungan No.1-3, Genteng, Kec. Genteng,<br>
+                    Surabaya, Jawa Timur 60275
+                </p>
+            </div>
+
+            <!-- Kontak & Jam -->
+            <div class="col-md-4 mb-4">
+                <h5 class="fw-bold mb-3 text-white">Kontak & Jam Kerja</h5>
+                <p class="text-white-50 mb-1"><strong>Jam Kerja:</strong></p>
+                <p class="text-white-50 mb-2">
+                    Senin–Kamis: 08.00 – 15.00 WIB<br>
+                    Jumat: 08.00 – 14.00 WIB<br>
+                    Sabtu: 09.00 - 12.00 WIB
+                </p>
+                <p class="text-white-50 mb-1"><i class='bx bx-envelope'></i> klinikinvestasisurabaya@gmail.com</p>
+                <p class="text-white-50 mb-0">
+                    <i class='bx bxl-whatsapp'></i>
+                    <a href="https://wa.me/6285234982434"
+                      class="text-white-50 text-decoration-underline text-decoration-hover"
+                      target="_blank">
+                      WA TAKON SOBAT
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="text-center py-3" style="background-color: #000;">
+        <small class="text-white-50">© 2025 Klinik Investasi Surabaya</small>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+{% block scripts %}{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "kode": "01111-B",
+  "nama": "PERTANIAN JAGUNG",
+  "kategori": "A - Pertanian, Kehutanan dan Perikanan",
+  "ruang_lingkup": "Usaha perbenihan jagung",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": "Keterangan memiliki tenaga kerja yang mempunyai pengetahuan dan keterampilan di bidang perbenihan",
+    "2": "Tempat usaha produksi atau peredaran benih sesuai dengan persyaratan usaha",
+    "3": "Perizinan Lingkungan",
+    "4": "Membuktikan lokasi produksi benih bukan daerah endemis (akan disediakan informasi spasial)",
+    "5": "Keterangan memiliki atau menguasai sarana untuk produksi benih atau untuk peredaran benih",
+    "6": "Keterangan kelayakan teknis sebagai produsen atau pengedar benih dari Institusi Pengawasan dan Sertifikasi Benih"
+  }
+}

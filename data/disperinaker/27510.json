@@ -1,0 +1,168 @@
+{
+  "kode": "27510",
+  "nama": "INDUSTRI PERALATAN LISTRIK RUMAH TANGGA",
+  "kategori": "C - Industri Pengolahan",
+  "ruang_lingkup": "Industri Peralatan Listrik Rumah Tangga",
+  "dinas": "Dinas Tenaga Kerja dan Perindustrian",
+  "persyaratan": {
+    "1": {
+      "judul": "Retribusi",
+      "items": {
+        "a": "Retribusi"
+      }
+    },
+    "2": {
+      "judul": "Permohonan Baru Izin Edar Alat Kesehatan Dalam Negeri Kelas A, B, C dan D",
+      "items": {
+        "a": "Dokumen Quality Management System, dengan ketentuan: SNI ISO 9001/ISO 9001 dan/atau SNI ISO 13485/ISO 13485 mengikuti tahun termutakhir yang diterbitkan oleh lembaga sertifikasi terakreditasi nasional maupun internasional, mencantumkan nama dan alamat produsen sesuai sertifikat produksi, masih berlaku dengan ruang lingkup mencakup jenis alat kesehatan yang didaftarkan. Sertifikat CE jika mencantumkan CE bernomor pada penandaan. Sertifikat Cara Pembuatan Alat Kesehatan yang Baik (CPAKB) yang dikeluarkan oleh Kementerian Kesehatan jika sudah memiliki",
+        "b": "Declaration of Conformity atau surat pernyataan kesesuaian standar dari produsen merupakan dokumen yang menyatakan kesesuaian alat kesehatan yang didaftarkan terhadap standar alat kesehatan yang digunakan dalam pembuatan alat kesehatan dan salinan naskah standar tersebut, seperti: SNI produk, ISO produk, Farmakope, dan lain-lain",
+        "c": "Informasi Produk, meliputi: Uraian alat merupakan keterangan yang berkaitan tentang alat kesehatan yang didaftarkan. Deskripsi dan fitur alat merupakan keterangan yang berkaitan dengan ciri khas alat kesehatan yang didaftarkan. Tujuan penggunaan merupakan keterangan yang menjelaskan tentang tujuan penggunaan dari alat kesehatan yang didaftarkan sesuai dengan yang ditetapkan oleh produsen dan dicantumkan dalam bahasa Indonesia",
+        "d": "Spesifikasi dan Jaminan Mutu: Spesifikasi kinerja alat Informasi yang diberikan berupa: Spesifikasi teknis merupakan karakteristik fungsional dari alat kesehatan yang dihasilkan untuk membuktikan dengan kesesuaian prinsip utama alat kesehatan. Parameter kesesuaian alat kesehatan meliputi: gambar alat kesehatan, spesifikasi kimia, fisika, elektrik, mekanis, biologi, piranti lunak, sterilitas, stabilitas dan realibilitas",
+        "e": "Persyaratan Penandaan: Melampirkan contoh penandaan dengan ketentuan: Penandaan dan informasi Alat Kesehatan dilaksanakan untuk melindungi masyarakat dari informasi yang tidak obyektif, tidak lengkap serta menyesatkan. Penandaan dan informasi Alat Kesehatan harus memenuhi persyaratan yang berisi keterangan mengenai keamanan, kemanfaatan, petunjuk penggunaan dan/atau informasi lain yang diperlukan"
+      }
+    },
+    "3": {
+      "judul": "Administrasi Umum",
+      "items": {
+        "a": "KTP pimilik",
+        "b": "NPWP Badan",
+        "c": "Akte pendirian sampai dengan perubahan",
+        "d": "Sertifikat hak atas tanah dan atau kalau sewa disertakan surat perjanjian sewa menyewa sesuai lokasi usaha/surat pinjam pakai"
+      }
+    },
+    "4": {
+      "judul": "Alur proses produksi",
+      "items": {
+        "a": "Alur atau flowchart proses produksi dari awal sampai akhir"
+      }
+    },
+    "5": {
+      "judul": "Bangunan dan Prasarana",
+      "items": {
+        "a": "Tersedianya bangunan dan prasarana alat untuk leksanakan kegiatan produksi industri secara masal serta melampirkan dokumentasi"
+      }
+    },
+    "6": {
+      "judul": "Bukti Pembayaran Penerimaan Negara Bukan Pajak (PNBP)",
+      "items": {
+        "a": "Kondisional apabila memang di wajibkan sesuai peraturan yang berlaku"
+      }
+    },
+    "7": {
+      "judul": "SDM",
+      "items": {
+        "a": "Menggunggah daftar nama, jumlah karyawan, beserta kualifikasi yang dimiliki seperti Pendidikan terakhir dan sertifikasi kompetensi"
+      }
+    },
+    "8": {
+      "judul": "Daftar induk dokumen untuk penerapan sistem manajemen mutu CPAKB",
+      "items": {
+        "a": "Daftar jenis Alat Kesehatan yang akan diproduksi",
+        "b": "Daftar produk yang diproduksi",
+        "c": "Layout bangunan",
+        "d": "Pedoman mutu"
+      }
+    },
+    "9": {
+      "judul": "Durasi pemenuhan standar CPAKB oleh Pelaku Usaha adalah 2 (dua) tahun sejak permohonan pada OSS disetujui",
+      "items": {
+        "a": "Durasi pemenuhan standar CPAKB oleh Pelaku Usaha adalah 2 (dua) tahun sejak permohonan pada OSS disetujui"
+      }
+    },
+    "10": {
+      "judul": "Izin Produksi Alat Kesehatan (jika ada)",
+      "items": {
+        "a": "Izin Produksi Alat Kesehatan (jika ada)"
+      }
+    },
+    "11": {
+      "judul": "Laporan Akhir Rencana Induk Pembangunan/Master Plan Rencana Produksi",
+      "items": {
+        "a": "Laporan produksi alat kesehatan secara elektronik (jika ada)"
+      }
+    },
+    "12": {
+      "judul": "Peralatan",
+      "items": {
+        "a": "Peralatan"
+      }
+    },
+    "13": {
+      "judul": "Khusus permohonan perpanjangan, perubahan, dan perpanjangan dengan perubahan",
+      "items": {
+        "a": "Izin edar lama dan jika ada beserta lampiran",
+        "b": "Surat pernyataan ada atau tidak ada perubahan data yang bermeterai cukup",
+        "c": "Surat pernyataan tidak ada efek samping bermeterai cukup"
+      }
+    },
+    "14": {
+      "judul": "Permohonan Baru Izin Edar Alat Kesehatan Dalam Negeri Kelas A Tertentu berupa Notifikasi Untuk persyaratan teknis hanya terdiri dari",
+      "items": {
+        "a": "Dokumen Quality Management System",
+        "b": "Declaration of Conformity dari pabrikan",
+        "c": "Material/bahan baku",
+        "d": "Spesifikasi kinerja alat",
+        "e": "Contoh penandaan",
+        "f": "Petunjuk penggunaan yang berisi guna dan cara penggunaan"
+      }
+    },
+    "15": {
+      "judul": "Permohonan baru, perpanjangan, perubahan dan perpanjangan dengan perubahan",
+      "items": {
+        "a": "Izin produksi alat kesehatan yang masih berlaku dan mencantumkan kategori dan jenis produk yang didaftar",
+        "b": "Izin distribusi alat kesehatan yang masih berlaku yang mencantumkan kelompok produk sesuai alat kesehatan yang didaftarkan, jika produk didaftarkan oleh distributor pemilik produk atau distributor yang ditunjuk oleh produsen",
+        "c": "Surat perjanjian kerja sama antara pemilik produk dengan produsen/distributor yang telah disahkan notaris dengan masa berlaku minimal 2 (dua) tahun, jika produk didaftarkan oleh pemilik produk atau distributor yang ditunjuk oleh produsen",
+        "d": "Surat pernyataan bersedia melepas keagenan yang bermeterai cukup",
+        "e": "Sertifikat merek yang masih berlaku",
+        "f": "Surat pernyataan keaslian dokumen yang bermeterai cukup",
+        "g": "Pakta integritas dalam rangka pencegahan korupsi, kolusi dan nepotisme yang bermeterai cukup",
+        "h": "Bukti pembayaran Penerimaan Negara Bukan Pajak (PNBP). Biaya PNBP yang telah dibayarkan tidak dapat dikembalikan. Selain persyaratan di atas, khusus permohonan baru, juga harus menyampaikan: Standard Operating Procedure (SOP) atau Prosedur Tetap (Protap) dan sistem pencatatan mengenai penanganan keluhan pelanggan (complaint handling), kejadian tidak diinginkan, penarikan kembali produk (product recall) dan informasi produk lain terkait post market untuk permohonan baru"
+      }
+    },
+    "16": {
+      "judul": "Permohonan Perpanjangan, Perubahan, dan Perpanjangan dengan Perubahan Izin Edar Alat Kesehatan Dalam Negeri kelas A, B, C dan D",
+      "items": {
+        "a": "Penandaan lama yang telah disetujui",
+        "b": "Penandaan yang saat ini berlaku (baru), mengikuti ketentuan penandaan izin edar Alat Kesehatan Dalam Negeri Kelas A, B, C dan D",
+        "c": "Untuk alat kesehatan yang mengandung/memancarkan radiasi pengion harus melampirkan Izin Pemanfaatan Tenaga Nuklir yang dikeluarkan oleh instansi berwenang yang masih berlaku dan mencantumkan nama dan tipe yang didaftarkan",
+        "d": "Data pendukung dari produsen, atau bukti pengakuan dari Kementerian/Lembaga atau instansi lainnya yang menjelaskan mengenai klaim yang tercantum pada penandaan yang disertai metode uji/ standar uji, gambar, data hasil uji atau sertifikat tergantung masing-masing klaim. Klaim yang tidak sesuai dengan penandaan lama terkait mutu dan efektifitas produk tidak diperbolehkan tercantum pada penandaan baru",
+        "e": "Daftar aksesori atau varian produk atau tipe/kode produk (jika ada)",
+        "f": "Data dukung daftar aksesori atau varian produk atau tipe/kode produk (jika ada)"
+      }
+    },
+    "17": {
+      "judul": "Permohonan Perpanjangan, Perubahan, dan Perpanjangan dengan Perubahan Izin Edar Alat Kesehatan Dalam Negeri Kelas A Tertentu",
+      "items": {
+        "a": "Penandaan lama yang telah disetujui",
+        "b": "Penandaan baru, mengikuti ketentuan penandaan izin edar Alat Kesehatan Dalam Negeri Kelas A tertentu",
+        "c": "Data pendukung dari produsen, atau bukti pengakuan dari Kementerian/Lembaga atau instansi lainnya yang menjelaskan mengenai klaim yang tercantum pada penandaan yang disertai metode uji/ standar uji, gambar, data hasil uji atau sertifikat tergantung masing-masing klaim. Klaim yang tidak sesuai dengan penandaan lama terkait mutu dan efektifitas produk tidak diperbolehkan tercantum pada penandaan baru",
+        "d": "Daftar aksesori atau varian produk atau tipe/kode produk (jika ada)",
+        "e": "Data dukung daftar aksesori atau varian produk atau tipe/kode produk (jika ada)"
+      }
+    },
+    "18": {
+      "judul": "Produsen alat kesehatan Risiko Tinggi dan Risiko Menengah Tinggi wajib melakukan sertifikasi CPAKB setiap 5 (lima) tahun sekali",
+      "items": {
+        "a": "Produsen alat kesehatan Risiko Tinggi dan Risiko Menengah Tinggi wajib melakukan sertifikasi CPAKB setiap 5 (lima) tahun sekali"
+      }
+    },
+    "19": {
+      "judul": "Prosedur dan rekaman mutu",
+      "items": {
+        "a": "Dokumen manual mutu merupakan dokumen tertulis yang berisi petunjuk praktis mengenai cara, langkah atau prosedur tentang bagaimana SPMI ditetapkan, dilaksanakan, dievaluasi, dikendalikan, dan ditingkatkan mutunya dalam berbagai Standar SPMI secara berkelanjutan oleh pelaku usaha"
+      }
+    },
+    "20": {
+      "judul": "Telah melaksanakan audit internal",
+      "items": {
+        "a": "Mengupload hasil audit internal Perusahaan"
+      }
+    },
+    "21": {
+      "judul": "Telah melaksanakan kajian/tinjauan manajemen",
+      "items": {
+        "a": "Telah melaksanakan kajian/tinjauan manajemen"
+      }
+    }
+  }
+}

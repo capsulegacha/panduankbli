@@ -1,0 +1,16 @@
+{
+  "kode": "10219",
+  "nama": "INDUSTRI PENGOLAHAN DAN PENGAWETAN LAINNYA UNTUK IKAN",
+  "kategori": "C - Industri Pengolahan",
+  "ruang_lingkup": "Industri Pengolahan dan Pengawetan Lainnya untuk Ikan",
+  "dinas": "Dinas Tenaga Kerja dan Perindustrian",
+  "persyaratan": {
+    "1": {
+      "judul": "Berlokasi di Kawasan Peruntukan Industri",
+      "items": {
+        "a": "Mengupload SKRK dan IMB",
+        "b": "Mengupload \"Surat Keterangan Pengecualian Berlokasi di Kawasan Industri\" yang didapatkan melalui https://siinas.kemenperin.go.id/"
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "kode": "10413",
+  "nama": "INDUSTRI MINYAK MENTAH KELAPA SAWIT (CRUDE PALM OIL)",
+  "kategori": "C - Industri Pengolahan",
+  "ruang_lingkup": "Seluruh (pertanian)",
+  "dinas": "Dinas Tenaga Kerja dan Perindustrian",
+  "persyaratan": {
+    "1": {
+      "judul": "Terintegrasi dengan kebun kelapa sawit (KBLI 01262)",
+      "items": {}
+    }
+  }
+}

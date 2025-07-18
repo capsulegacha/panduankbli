@@ -1,0 +1,60 @@
+{
+  "kode": "64144-A",
+  "nama": "UNIT SIMPAN PINJAM KOPERASI SEKUNDER (USP KOPERASI SEKUNDER)",
+  "kategori": "K - Jasa Keuangan dan Asuransi",
+  "ruang_lingkup": "Usaha USP Koperasi Sekunder",
+  "dinas": "Dinas Koperasi Usaha Kecil dan Menengah dan Perdagangan",
+  "persyaratan": {
+    "1": {
+      "judul": "Bukti setoran Modal Tetap USP Koperasi Sekunder berupa penempatan modal pada rekening tabungan pada bank umum untuk Koperasi yang memiliki USP Koperasi Sekunder, disertai dengan bukti setoran modal masing-masing anggota",
+      "keterangan": "Paling sedikit: a) Rp750.000.000,00 untuk wilayah keanggotaan dalam daerah kabupaten/kota, b) Rp1.500.000.000,00 untuk wilayah keanggotaan lintas daerah kabupaten/kota dalam 1 provinsi, c) Rp3.000.000.000,00 untuk wilayah keanggotaan lintas daerah provinsi"
+    },
+    "2": {
+      "judul": "Memiliki Rencana Kerja selama 3 (tiga) tahun yang menjelaskan mengenai rencana permodalan, rencana kegiatan usaha, serta rencana bidang organisasi dan sumber daya manusia",
+      "link": "https://bit.ly/BerkasDapatDiaksesDisini"
+    },
+    "3": {
+      "judul": "Administrasi dan pembukuan pada USP Koperasi Sekunder",
+      "link": "https://bit.ly/BerkasDapatDiaksesDisini"
+    },
+    "4": {
+      "judul": "Pengurus dan Pengawas harus memiliki riwayat hidup dengan melampirkan surat pernyataan bermaterai yang telah ditandatangani",
+      "items": {
+        "a": "Tidak tercatat dalam daftar kredit macet di sektor jasa keuangan",
+        "b": "Tidak pernah dihukum karena melakukan tindak pidana di bidang usaha jasa keuangan dan/atau perekonomian berdasarkan putusan pengadilan yang telah mempunyai kekuatan hukum tetap",
+        "c": "Tidak pernah dinyatakan pailit atau menyebabkan suatu badan usaha dinyatakan pailit berdasarkan putusan pengadilan yang telah mempunyai kekuatan hukum tetap dalam waktu 5 (lima) tahun terakhir"
+      },
+      "link": "https://bit.ly/BerkasDapatDiaksesDisini"
+    },
+    "5": {
+      "judul": "Surat keterangan lulus uji kelayakan dan kepatutan untuk Pengurus dan Pengawas yang dikeluarkan oleh Menteri, gubernur, atau bupati/walikota sesuai dengan kewenangannya"
+    },
+    "6": {
+      "judul": "Surat pernyataan bermaterai yang ditandatangani oleh Pengurus yang berisi komitmen dalam hal terdapat kelebihan dana",
+      "items": {
+        "a": "Giro, deposito berjangka, tabungan, sertifikat deposito pada bank",
+        "b": "Simpanan dan Simpanan Berjangka pada KSP dan lembaga keuangan lainnya",
+        "c": "Pembelian instrumen saham dan obligasi di pasar modal",
+        "d": "Pengembangan dana tabungan melalui sarana investasi lainnya berupa: 1) investasi langsung, dalam bentuk penyertaan modal dan pemberian Pinjaman kepada Koperasi lain melalui kerja sama antar-Koperasi, 2) pembiayaan sindikasi untuk suatu proyek jangka pendek dengan Risiko rendah dan memiliki pendapatan yang tinggi atau moderat"
+      },
+      "link": "https://bit.ly/BerkasDapatDiaksesDisini"
+    },
+    "7": {
+      "judul": "Surat pernyataan mengenai informasi Penerima Manfaat (Beneficial Owner) di Koperasi yang ditandatangani oleh Pengurus",
+      "link": "https://bit.ly/BerkasDapatDiaksesDisini"
+    },
+    "8": {
+      "judul": "Mempunyai peraturan tentang prinsip mengenali pengguna jasa",
+      "link": "https://bit.ly/BerkasDapatDiaksesDisini"
+    },
+    "9": {
+      "judul": "Sertifikasi kompetensi di bidang keuangan Koperasi bagi Pengelola"
+    },
+    "10": {
+      "judul": "Bukti kepemilikan dan/atau sewa kantor, papan nama Koperasi, dan sarana kerja"
+    },
+    "11": {
+      "judul": "Surat bukti konfirmasi dan permohonan registrasi user pelaporan go anti money laundering (goAML) dari Pusat Pelaporan dan Analisis Transaksi Keuangan"
+    }
+  }
+}

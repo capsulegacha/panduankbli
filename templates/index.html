@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+
+{% block title %}Klinik Investasi - Surabaya{% endblock %}
+
+{% block content %}
+<style>
+    .kbli-card {
+        background: white;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+    }
+
+    .kbli-card:hover {
+        transform: translateY(-5px);
+    }
+</style>
+
+<!-- SLIDER -->
+<div class="owl-carousel owl-theme hero-slider">
+    <!-- Slide 1 -->
+    <div class="slide slide1 position-relative">
+        <div class="overlay"></div>
+        <div class="container text-white text-center d-flex align-items-center justify-content-center" style="min-height: 500px;">
+            <div class="w-100 px-3">
+                <h1 class="display-3 fw-bold">PANDUAN PERSYARATAN PERIZINAN BERUSAHA</h1>
+                <p class="mt-4 lead fw-normal">
+                    Sistem informasi untuk memudahkan pelaku usaha dalam memahami dan 
+                    memenuhi persyaratan perizinan berusaha berdasarkan KBLI 2020.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide slide2 position-relative">
+        <div class="overlay"></div>
+        <div class="container text-white text-center d-flex align-items-center justify-content-center" style="min-height: 500px;">
+            <div class="w-100 px-3">
+                <h1 class="display-3 fw-bold">CARI PERSYARATAN TIAP KBLI DENGAN MUDAH</h1>
+                <h2 class="fw-bold">Berdasarkan kode KBLI, ruang lingkup, atau kategori usaha</h2>
+                <p class="mt-4 lead fw-normal">
+                    Temukan persyaratan lengkap yang dapat membantu melengkapi proses 
+                    perizinan sesuai KBLI yang Anda butuhkan.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide slide3 position-relative">
+        <div class="overlay"></div>
+        </div>
+    </div>
+</div>
+
+<!-- SEARCH & RESULTS -->
+<div class="container py-4" id="results">
+    <form method="get" action="{{ url_for('index') }}#results">
+        <div class="input-group mb-4">
+            <input type="text" class="form-control" name="q" placeholder="Cari KBLI atau usaha..." value="{{ query }}">
+            <button class="btn btn-primary" type="submit">Cari</button>
+        </div>
+    </form>
+
+    {% if results %}
+        <h5>Ditemukan {{ results|length }} hasil:</h5>
+        {% for r in results %}
+            <div class="kbli-card mb-3">
+                <h5><strong>KBLI {{ r.kode }}</strong> - {{ r.nama }}</h5>
+                <p><strong>Kategori:</strong> {{ r.kategori }}<br>
+                    <strong>Ruang Lingkup:</strong> {{ r.ruang_lingkup }}<br>
+                    <strong>Dinas:</strong> {{ r.dinas }}</p>
+                <a href="{{ url_for('kbli_detail', kode=r.kode) }}" class="btn btn-outline-primary btn-sm">Lihat Detail</a>
+            </div>
+        {% endfor %}
+    {% elif query %}
+        <div class="alert alert-warning">Tidak ditemukan hasil untuk kata kunci: <strong>{{ query }}</strong></div>
+    {% endif %}
+</div>
+
+<hr class="my-4">
+<div class="container">
+    <h5 class="mb-3">📚 Semua KBLI per Dinas</h5>
+    <div class="accordion mb-5" id="accordionDinas">
+        {% for dinas, daftar in grouped_by_dinas.items() %}
+            {% set dinas_id = loop.index %}
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading{{ dinas_id }}">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ dinas_id }}">
+                        {{ dinas }}
+                    </button>
+                </h2>
+                <div id="collapse{{ dinas_id }}" class="accordion-collapse collapse" aria-labelledby="heading{{ dinas_id }}" data-bs-parent="#accordionDinas">
+                    <div class="accordion-body">
+                        <ul class="list-group list-group-flush">
+                            {% for kode, nama in daftar %}
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div><strong>{{ kode }}</strong> - {{ nama }}</div>
+                                    <a href="{{ url_for('kbli_detail', kode=kode) }}" class="btn btn-sm btn-outline-primary">Lihat</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

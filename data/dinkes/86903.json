@@ -1,0 +1,45 @@
+{
+  "kode": "86903",
+  "nama": "LAB MEDIS KELAS PRATAMA",
+  "kategori": "Q - Jasa Kesehatan dan Kegiatan Sosial",
+  "ruang_lingkup": "Lab Medis Kelas Pratama",
+  "dinas": "Dinas Kesehatan",
+  "persyaratan": {
+    "1": {
+      "judul": "Administrasi Umum",
+      "items": {
+        "a": "Surat Permohonan pelaku Usaha (Format Menyesuaikan)",
+        "b": "Akte Badan Hukum",
+        "c": "Dokumen SPPL (Surat Pernyataan Kesanggupan Pengelolaan dan Pemantauan Lingkungan Hidup)",
+        "d": "IMB/PBG",
+        "e": "SKRK/KKPR",
+        "f": "Akte Hak milik / Sewa",
+        "g": "Profil Lab meliputi latar belakang, alamat, visi dan misi.",
+        "h": "Daftar peralatan Lab dilengkapi dengan sertifikat kalibrasi; bapeten; PME",
+        "i": "Daftar Jam pelayanan",
+        "j": "Daftar, Jenis dan Tarif Pelayanan",
+        "k": "Denah ruangan",
+        "l": "Dokumentasi seluruh ruangan dilengkapi dengan penjelasan",
+        "m": "Denah lokasi (Penanda Google Map dan Titik Koordinat Klinik)"
+      }
+    },
+    "2": {
+      "judul": "Organisasi",
+      "items": {
+        "a": "Struktur Organisasi",
+        "b": "Informasi tentang SDM (KTP, STR dan SIP) dan Direktur (KTP, Akte Badan Hukum, dan NPWP)",
+        "c": "Tugas Pokok dan fungsi SDM",
+        "d": "Data jam operasional Lab"
+      }
+    },
+    "3": {
+      "judul": "Sarana, Prasarana alat Fasilitas Lab Medis",
+      "items": {
+        "a": "Denah seluruh ruangan beserta sarana dan prasarananya",
+        "b": "Foto bangunan tampak depan dengan menggunakan GPS Map Camera",
+        "c": "Data Sarana, Prasarana dan peralatan",
+        "d": "Upload foto semua sarana dan prasana serta alat fasilitas Lab Medis beserta keterangannya (Semua Foto menggunakan aplikasi geotag / GPS Map Camera)"
+      }
+    }
+  }
+}

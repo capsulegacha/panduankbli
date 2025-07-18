@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}Login Admin - Klinik Investasi{% endblock %}
+
+{% block content %}
+<section class="py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-5">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body p-4">
+                        <div class="text-center mb-4">
+                            <i class='bx bxs-lock-alt bx-lg text-primary'></i>
+                            <h4 class="fw-bold mt-2">Login Admin</h4>
+                            <p class="text-muted mb-0">Masukkan password untuk mengakses panel admin</p>
+                        </div>
+
+                        {% if error %}
+                            <div class="alert alert-danger">{{ error }}</div>
+                        {% endif %}
+
+                        <form method="post">
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <div class="input-group">
+                                    <input type="password" name="password" class="form-control" id="password" placeholder="Masukkan password" required>
+                                    <button type="button" class="btn btn-outline-secondary" id="togglePassword">
+                                        <i class='bx bx-show'></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Masuk</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="text-center text-muted mt-3" style="font-size: 0.9rem;">
+                    © 2025 Klinik Investasi Surabaya
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    const toggle = document.getElementById('togglePassword');
+    const input = document.getElementById('password');
+
+    toggle.addEventListener('click', () => {
+        const isVisible = input.type === 'text';
+        input.type = isVisible ? 'password' : 'text';
+        toggle.innerHTML = isVisible
+            ? "<i class='bx bx-show'></i>"
+            : "<i class='bx bx-hide'></i>";
+    });
+</script>
+{% endblock %}

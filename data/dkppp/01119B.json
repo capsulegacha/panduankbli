@@ -1,0 +1,18 @@
+{
+  "kode": "01119-B",
+  "nama": "PERTANIAN SEREALIA LAINNYA, ANEKA KACANG DAN BIJI-BIJIAN PENGHASIL MINYAK LAINNYA",
+  "kategori": "A - Pertanian, Kehutanan dan Perikanan",
+  "ruang_lingkup": "Usaha budi daya (meliputi antara lain penyedia saprodi yang tepat, pertanaman, pemeliharaan, panen, dan/atau pascapanen) tanaman serelia lainnya, aneka kacang",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": {
+      "judul": "Perizinan Lingkungan"
+    },
+    "2": {
+      "judul": "Bukti penguasaan lahan usaha"
+    },
+    "3": {
+      "judul": "Rencana kerja usaha budi daya"
+    }
+  }
+}

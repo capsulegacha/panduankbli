@@ -1,0 +1,30 @@
+{
+  "kode": "38211-B",
+  "nama": "TREATMENT DAN PEMBUANGAN LIMBAH DAN SAMPAH TIDAK BERBAHAYA",
+  "kategori": "E - Pengadaan Air, Pengelolaan Sampah dan Daur Ulang, Pembersihan dan Kegiatan Remediasi",
+  "ruang_lingkup": "Pengolahan sampah yang tidak berbahaya menghasilkan produk berupa bahan bakar alternatif/substitusi, biofuel, biogas, dan lainnya (contoh kegiatan pengolahan sampah yang masuk dalam kelompok ini meliputi : fasilitas pengolahan sampah menghasilkan RDF, SRF, atau jumputan padat, biogas, biokonversi maggot (Black Soldier Fly), dsb )",
+  "dinas": "Dinas Lingkungan Hidup",
+  "persyaratan": {
+    "1": {
+      "judul": "Dokumen studi kelayakan yang paling sedikit memuat:",
+      "items": {
+        "a": "Jumlah sampah yang akan diolah dalam satuan ton per hari, komposisi, dan karakteristik sampah",
+        "b": "Kelayakan teknis, ekonomi, dan keuangan",
+        "c": "Kajian lingkungan, sosial, hukum, dan kelembagaan"
+      }
+    },
+    "2": {
+      "judul": "Perencanaan teknik yang paling sedikit memuat:",
+      "items": {
+        "a": "gambar teknis",
+        "b": "spesifikasi teknis",
+        "c": "memo disain",
+        "d": "volume pekerjaan",
+        "e": "rencana anggaran biaya",
+        "f": "jadwal pelaksanaan",
+        "g": "spesifikasi produk yang dihasilkan dari hasil pengolahan (contoh: spesifikasi bahan bakar substitusi yang dihasilkan)"
+      }
+    },
+    "3": "Dokumen Standard Operating Procedure (SOP) pengelolaan sampah"
+  }
+}

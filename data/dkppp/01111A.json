@@ -1,0 +1,13 @@
+{
+  "kode": "01111-A",
+  "nama": "PERTANIAN JAGUNG",
+  "kategori": "A - Pertanian, Kehutanan dan Perikanan",
+  "ruang_lingkup": "Usaha budi daya (meliputi antara lain penyediaan saprodi yang tepat, pertanaman, pemeliharaan, panen, dan/atau pascapanen) tanaman jagung",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": "Lahan usaha berlokasi di kabupaten/kota",
+    "2": "Lahan usaha berlokasi di lintas kabupaten/kota",
+    "3": "Lahan usaha berlokasi di lintas provinsi",
+    "4": "PMA"
+  }
+}

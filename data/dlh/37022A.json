@@ -1,0 +1,44 @@
+{
+  "kode": "37022-A",
+  "nama": "TREATMENT DAN PEMBUANGAN AIR LIMBAH BERBAHAYA",
+  "kategori": "E - Pengadaan Air, Pengelolaan Sampah dan Daur Ulang, Pembuangan dan Pembersihan Limbah dan Sampah",
+  "ruang_lingkup": "Instalasi pengolahan lumpur tinja (PILT) termasu fasilitas penunjangan dengan kapasitas ≥50m3/hari, dan/atau",
+  "dinas": "Dinas Lingkungan Hidup",
+  "persyaratan": {
+    "1": {
+      "judul": "Menyampaikan dokumen kontrak kerja sama dengan penghasil dan/atau pengangkut lumpur tinja (form kerjasama)",
+      "keterangan": "Melampirkan MoU atau surat kerja sama antara pengusaha atau pemohon dengan IPLT"
+    },
+    "2": {
+      "judul": "Menyampaikan dokumen persetujuan lingkungan (lembar pengesahan dokumen perling)",
+      "keterangan": "Dokumen persetujuan lingkungan IPLT"
+    },
+    "3": {
+      "judul": "Menyampaikan jenis dan karakteristik lumpur tinja yang diolah (copy statement jenis dan karakteristik lumpur tinja yang diolah dari persetujuan lingkungan)",
+      "keterangan": "Melampirkan hasil uji lab lumpur tinja"
+    },
+    "4": {
+      "judul": "Menyampaikan kapasitas pengolahan lumpur tinja dan bukti perhitungan cakupan daerah pelayanan (copy statement kapasitas pengolahan lumpur tinja yang diolah dari persetujuan lingkungan)",
+      "keterangan": "Melampirkan tabel volume lumpur tinja dan daerah pengambilan sumber tinja yang diolah setiap bulan"
+    },
+    "5": {
+      "judul": "Menyampaikan layout dan disain teknologi pengolahan lumpur tinja yang dapat mengolah sampai memenuhi baku mutu air limbah dalam bentuk diagram dan menjelaskan dekripsi teknologi (copy statement disain teknologi dari persetujuan lingkungan)",
+      "keterangan": "⁠Melampirkan gambar desain teknis instalasi pengolahan lumpur tinja"
+    },
+    "6": {
+      "judul": "Menyampaikan layout lokasi laboratorium atau draft dokumen kontrak kerja sama dengan laboratorium untuk mengontrol lumpur tinja yang masuk"
+    },
+    "7": {
+      "judul": "Menyampaikan nama, lokasi, dan koordinat titik penaatan air limbah, titik pembuangan air limbah, titik pemantauan badan air penerima disertai dengan"
+    },
+    "8": {
+      "judul": "Menyampaikan sistem dan penanganan kondisi darurat (copy statement SOP tanggap darurat dari persetujuan lingkungan)"
+    },
+    "9": {
+      "judul": "Pengelolaan lumpur IPLT (copy statement pengelolaan lumpur dari persetujuan lingkungan)"
+    },
+    "10": {
+      "judul": "Menyampaikan dokumen mekanisme kerja (SOP) pengolahan lumpur tinja (copy statement SOP pengolahan lumpur tinja, sistem manajemen lingkungan serta struktur organisasi dari persetujuan lingkungan)"
+    }
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "kode": "86101",
+  "nama": "RUMAH SAKIT PEMERINTAH KELAS C DAN D",
+  "kategori": "Q - Jasa Kesehatan dan Kegiatan Sosial",
+  "ruang_lingkup": "Rumah Sakit Pemerintah Kelas C dan D",
+  "dinas": "Dinas Kesehatan",
+  "persyaratan": {
+    "1": {
+      "judul": "Administrasi Umum",
+      "items": {
+        "a": {
+          "item": "Persyaratan umum",
+          "subitems": {
+            "1": {
+              "item": "Dokumen sertifikat badan hukum RS"
+            },
+            "2": {
+              "item": "Dokumen profil RS"
+            }
+          }
+        },
+        "b": {
+          "item": "Persyaratan baru",
+          "subitems": {
+            "1": {
+              "item": "Dokumen persyaratan umum point 1a"
+            },
+            "2": {
+              "item": "Surat permohonan izin operasional RS (materai)"
+            },
+            "3": {
+              "item": "Surat pengangkatan sebagai penanggung jawab RS oleh pemilik (materai)"
+            },
+            "4": {
+              "item": "Surat pernyataan kesanggupan sebagai penanggung jawab (materai)"
+            },
+            "5": {
+              "item": "Dokumen komitmen untuk melakukan akreditasi oleh Lembaga Akreditasi RS"
+            },
+            "6": {
+              "item": "Surat keterangan kesesuaian peruntukan lokasi dan lahan serta pertimbangan kebutuhan RS dari Dinkes Kota"
+            }
+          }
+        },
+        "c": {
+          "item": "Persyaratan perpanjangan izin",
+          "subitems": {
+            "1": {
+              "item": "Dokumen persyaratan umum point 1a"
+            },
+            "2": {
+              "item": "Dokumen izin berusaha RS yang masih berlaku"
+            },
+            "3": {
+              "item": "Surat permohonan izin operasional RS (materai)"
+            },
+            "4": {
+              "item": "Surat pengangkatan sebagai penanggung jawab RS oleh pemilik (materai)"
+            },
+            "5": {
+              "item": "Surat pernyataan kesanggupan sebagai penanggung jawab (materai)"
+            },
+            "6": {
+              "item": "Dokumen bukti akreditasi"
+            }
+          }
+        },
+        "d": {
+          "item": "Persyaratan perubahan izin",
+          "subitems": {
+            "a": {
+              "item": "Dokumen persyaratan umum point 1a"
+            },
+            "b": {
+              "item": "Surat permohonan izin operasional RS (materai)"
+            },
+            "c": {
+              "item": "Surat pengangkatan sebagai penanggung jawab RS oleh pemilik (materai)"
+            },
+            "d": {
+              "item": "Surat pernyataan kesanggupan sebagai penanggung jawab (materai)"
+            },
+            "e": {
+              "item": "Dokumen izin berusaha RS yang masih berlaku"
+            },
+            "f": {
+              "item": "Dokumen surat pernyataan penggantian badan hukum, nama RS, kepemilikan modal, jenis RS, klasifikasi RS, dan/atau alamat RS, yang ditandatangani pemilik RS"
+            }
+          }
+        }
+      }
+    },
+    "2": {
+      "judul": "Teknis (poin-poin dokumen sesuai PMK 14/2021 hal 625-628)",
+      "items": {
+        "a": {
+          "item": "Persyaratan izin baru",
+          "subitems": {
+            "1": {
+              "item": "Dokumen Feasibility Study"
+            },
+            "2": {
+              "item": "Dokumen Detail Engineering Design"
+            },
+            "3": {
+              "item": "Master plan"
+            },
+            "4": {
+              "item": "Dokumen/bukti uji fungsi dan/atau uji coba untuk alkes baru"
+            },
+            "5": {
+              "item": "Dokumen kalibrasi untuk alat kesehatan yang wajib dikalibrasi"
+            }
+          }
+        },
+        "b": {
+          "item": "Persyaratan perpanjangan izin/perubahan izin",
+          "subitems": {
+            "1": {
+              "item": "Master plan"
+            },
+            "2": {
+              "item": "Dokumen/bukti uji fungsi dan/atau uji coba untuk alkes baru"
+            },
+            "3": {
+              "item": "Dokumen kalibrasi untuk alkes yang wajib dikalibrasi"
+            }
+          }
+        }
+      }
+    },
+    "3": {
+      "judul": "Lokasi",
+      "items": {
+        "a": "Informasi geotag RS",
+        "b": "Surat keterangan dari Dinas PUPR terkait keamanan dan keselamatan lahan (SLF)",
+        "c": "IMB, SKRK, Dok Lingkungan",
+        "d": "Sertifikat tanah"
+      }
+    },
+    "4": {
+      "judul": "Bangunan, Prasarana dan Alat Kesehatan",
+      "items": {
+        "a": {
+          "item": "Dokumen Self Assessment bangunan dan Gedung"
+        },
+        "b": {
+          "item": "Dokumen Self Assessment alat Kesehatan"
+        },
+        "c": {
+          "item": "Dokumen Tempat tidur yang ditandatangani oleh pimpinan RS, menjelaskan tentang:",
+          "subitems": {
+            "1": {
+              "item": "Total Tempat tidur"
+            },
+            "2": {
+              "item": "Tempat tidur kelas standar (sesuai kepesertaan JKN)"
+            },
+            "3": {
+              "item": "Tempat tidur rawat inap (selain kepesertaan JKN)"
+            },
+            "4": {
+              "item": "Tempat tidur Intensif"
+            },
+            "5": {
+              "item": "Tempat tidur isolasi"
+            }
+          }
+        }
+      }
+    },
+    "5": {
+      "judul": "Struktur Organisasi SDM dan SDM",
+      "items": {
+        "a": {
+          "item": "Dokumen struktur organisasi RS"
+        },
+        "b": {
+          "item": "Dokumen Self Assessment SDM (lampiran 2)"
+        },
+        "c": {
+          "item": "Analisis Beban Kerja karyawan"
+        },
+        "d": {
+          "item": "Dokumen SIP semua nakes RS"
+        }
+      }
+    },
+    "6": {
+      "judul": "Pelayanan",
+      "items": {
+        "a": {
+          "item": "Dokumen Self Assessment pelayanan"
+        },
+        "b": {
+          "item": "SK Pelayanan unggulan dan SDM yang terlibat di pelayanan unggulan"
+        },
+        "c": {
+          "item": "SOP"
+        }
+      }
+    },
+    "7": {
+      "judul": "Persyaratan Izin Lainnya",
+      "keterangan": "Mohon dicantumkan jenis dokumen yang diunggah pada baris catatan di bawah",
+      "items": {
+        "a": {
+          "item": "Izin lain yang terkait (BAPETEN, izin TPS, izin IPAL, uji berkala petir, listrik, genset, lift, kebakaran, pesawat uap, dll)"
+        },
+        "b": {
+          "item": "Hospital Bylaws/Medical Staff By-Laws"
+        },
+        "c": {
+          "item": "MoU dengan instansi lain"
+        },
+        "d": {
+          "item": "Hasil pemeriksaan lab sanitasi 6 bulan terakhir"
+        }
+      }
+    }
+  }
+}

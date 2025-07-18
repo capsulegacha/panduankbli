@@ -1,0 +1,15 @@
+{
+  "kode": "01131-B",
+  "nama": "PERTANIAN HORTIKULTURA SAYURAN DAUN",
+  "kategori": "A - Pertanian, Kehutanan dan Perikanan",
+  "ruang_lingkup": "Budi daya sayuran daun",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": {
+      "judul": "Perizinan prasarana sesuai lokasi tempat usaha"
+    },
+    "2": {
+      "judul": "Memiliki AMDAL/UKL/UPL sesuai peraturan perundang-undangan"
+    }
+  }
+}

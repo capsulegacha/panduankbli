@@ -1,0 +1,58 @@
+{
+  "kode": "37012",
+  "nama": "PENGUMPULAN AIR LIMBAH BERBAHAYA",
+  "kategori": "E - Pengadaan Air, Pengelolaan Sampah dan Daur Ulang, Pembuangan dan Pembersihan Limbah dan Sampah",
+  "ruang_lingkup": "Pengumpulan dan pengangkutan air limbah domestic baik dari rumah tangga maupun usaha dan/atau kegiatan dengan kapasitas >5 M3/angkutan dan atau kegiatan untuk semua besaran kapasitas dengan angkutan/moda pengakut air limbah.",
+  "dinas": "Dinas Lingkungan Hidup",
+  "persyaratan": {
+    "1": {
+      "judul": "Persetujuan Layak Angkut dari Kementerian Perhubungan"
+    },
+    "2": {
+      "judul": "Bukti kepemilikan alat angkut dan/atau dokumen sewa kendaraan seperti berupa scan STNK, BPKB, Bukti Sewa. (apabila milik sendiri harus melengkapi scan STNK dan BPKB sedangkan apabila sewa maka dilengkapi scan bukti sewa dan STNK)"
+    },
+    "3": {
+      "judul": "Dokumen kerja sama antara penghasil air limbah dan pengolah air limbah (treatment dan pembuangan air limbah) yang masih berlaku (form kerjasama)"
+    },
+    "4": {
+      "judul": "Memiliki dokumen manifest. (upload from manifest penghasil, pengangkut, penerima air limbah dan instansi yang bertanggung jawab)"
+    },
+    "5": {
+      "judul": "Memiliki dokumen pengangkutan air limbah, yang disetujui pimpinan perusahaan dan minimal memuat jenis dan jumlah alat angkut, sumber dan nama dan karakteristik air limbah yang diangkut, wilayah kerja usaha dan/atau kegiatan atau cakupan pelayanan, prosedur penanganan air limbah dalam kondisi darurat, peralatan dan prosedur bongkar muat untuk penanganan air limbah dan dokumentasi alat angkut air limbah yang telah diberikan tanda jenis air limbah yang akan diangkut, sistem manajemen lingkungan serta struktur organisasi. (draft atau dokumen pengangkutan yang disetujui oleh pimpinan perusahaan)"
+    },
+    "6": {
+      "judul": "Persyaratan Teknis Khusus Alat angkut kereta api (opsional bila mengajukan alat angkut kereta api)",
+      "items": {
+        "a": "Memiliki gerbong yang disesuaikan dengan jenis air limbah (foto gerbong dan informasi jenis air limbah yang diangkut)",
+        "b": "Sertifikat pelatihan K3 masing-masing masinis (komitmen dari pimpinan perusahan untuk memiliki masinis yang tersertifikasi K3)"
+      }
+    },
+    "7": {
+      "judul": "Persyaratan Teknis Khusus Alat angkut jalan umum (opsional bila mengajukan alat angkut jalan umum)",
+      "items": {
+        "a": "Menggunakan alat angkut kendaraan roda 4 (empat) atau lebih (upload foto kendaraan)",
+        "b": "Mencantumkan nama dan nomor telepon perusahaan pada sisi kendaraan (upload foto sisi kendaraan)",
+        "c": "Informasi jenis air limbah, yang dilekatkan pada masing-masing kendaraan (upload foto informasi/tulisan/stiker jenis air limbah)",
+        "d": "Dilengkapi dengan lampu rotari (foto lampu rotari yang terpasang di kendaraan)",
+        "e": "STNK masing-masing kendaraan (upload copy STNK)",
+        "f": "Sertifikat pelatihan K3 masing-masing pengemudi (komitmen dari pimpinan perusahan untuk memiliki pengemudi yang tersertifikasi K3)"
+      }
+    },
+    "8": {
+      "judul": "Persyaratan Teknis Khusus Alat angkut laut, sungai, danau dan penyeberangan (opsional bila mengajukan alat angkut laut, sungai, danau dan penyeberangan)",
+      "items": {
+        "a": "Memiliki bukti kepemilikan alat angkut kapal atau dokumen sewa (copy bukti kepemilikan atau dokumen sewa)",
+        "b": "Sertifikat pelatihan K3 masing-masing nakhoda (komitmen dari pimpinan perusahan untuk memiliki nahkoda yang tersertifikasi K3)"
+      }
+    },
+    "9": {
+      "judul": "Piranti GPS pada kendaraan pengangkut air limbah (foto GPS pada kendaraan)"
+    },
+    "10": {
+      "judul": "Spesifikasi material wadah/tangki yang digunakan untuk mengangkut air limbah (upload jenis spesifikasi material wadah/tangki yang digunakan untuk mengangkut air limbah)"
+    },
+    "11": {
+      "judul": "Usia Maksimal Kendaraan 20 tahun (upload scan STNK"
+    }
+  }
+}

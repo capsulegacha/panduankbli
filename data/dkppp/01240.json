@@ -1,0 +1,21 @@
+{
+  "kode": "01240",
+  "nama": "PERTANIAN BUAH APEL DAN BUAH BATU (POME AND STONE FRUITS)",
+  "kategori": "A - Pertanian, Kehutanan dan Perikanan",
+  "ruang_lingkup": "Budi daya buah buah batu (poma and stone fruit)",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": {
+      "judul": "Pernyataan ketersediaan tenaga kerja yang terampil untuk usaha Budi daya"
+    },
+    "2": {
+      "judul": "Pernyataan ketersediaan sarana prasarana yang memadai untuk usaha Budi daya (dilengkapi dokumen perizinan sarana prasarana jika diperlukan)"
+    },
+    "3": {
+      "judul": "Pernyataan menerapkan GAP terutama menjaga konservasi lahan dan air serta tata kelola limbah"
+    },
+    "4": {
+      "judul": "Pernyataan memliki/ menguasai lahan/kebun untuk usaha Budi daya yang sesuai dengan RUTW"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kode": "01122-A",
+  "nama": "PERTANIAN PADI INBRIDA",
+  "kategori": "A - Pertanian, Kehutanan dan Perikanan",
+  "ruang_lingkup": "Usaha perbenihan padi inbrida",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": {
+      "judul": "Keterangan Kelayakan Teknis sebagai produsen atau pengedar benih dari Institusi Pengawasan dan Sertifikasi Benih"
+    },
+    "2": {
+      "judul": "Tempat usaha produksi atau peredaran benih sesuai dengan persyaratan usaha"
+    },
+    "3": {
+      "judul": "Perizinan Lingkungan"
+    },
+    "4": {
+      "judul": "Membuktikan lokasi produksi benih bukan daerah endemis (akan disediakan informasi spasial)"
+    },
+    "5": {
+      "judul": "Keterangan memiliki tenaga kerja yang mempunyai pengetahuan dan keterampilan di bidang perbenihan"
+    },
+    "6": {
+      "judul": "Keterangan memiliki atau menguasai sarana untuk produksi benih atau untuk peredaran benih"
+    }
+  }
+}

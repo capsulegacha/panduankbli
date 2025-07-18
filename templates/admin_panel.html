@@ -1,0 +1,236 @@
+{% extends "base.html" %}
+
+{% block title %}Admin Panel - Klinik Investasi{% endblock %}
+
+{% block content %}
+<style>
+  .readonly-mode {
+    background-color: #f8f9fa !important;
+    border: 1px solid #ced4da !important;
+    color: #6c757d;
+    cursor: default;
+  }
+  .editable:not(:disabled) {
+    background-color: #ffffff !important;
+    border: 1px solid #ced4da !important;
+    color: #212529;
+  }
+</style>
+
+<section class="py-5">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h3 class="fw-bold mb-0">Panel Admin</h3>
+      <div class="d-flex gap-2">
+        <a href="{{ url_for('upload_kbli') }}" class="btn btn-success btn-sm">
+          <i class='bx bx-upload'></i> Tambah KBLI
+        </a>
+        <a href="{{ url_for('logout') }}" class="btn btn-outline-danger btn-sm">
+          <i class='bx bx-log-out'></i> Logout
+        </a>
+      </div>
+    </div>
+
+    <!-- Pencarian -->
+    <form method="get" action="{{ url_for('admin') }}" class="mb-4">
+      <div class="input-group">
+        <input type="text" class="form-control" name="q" placeholder="Cari KBLI atau usaha..." value="{{ request.args.get('q', '') }}">
+        <button class="btn btn-primary" type="submit">Cari</button>
+      </div>
+    </form>
+
+    {% if all_kode %}
+    <div class="mb-5">
+      <h5>Ditemukan {{ all_kode|length }} KBLI:</h5>
+      <ul class="list-group mt-3">
+        {% for kode in all_kode %}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <div><strong>{{ kode }}</strong> - {{ data_dict[kode].get('nama', '') }}</div>
+          <a href="{{ url_for('admin', kode=kode) }}" class="btn btn-sm btn-outline-primary">Edit</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% elif request.args.get("q") %}
+    <div class="alert alert-warning mt-3">
+      Tidak ditemukan KBLI dengan kata kunci: <strong>{{ request.args.get("q") }}</strong>
+    </div>
+    {% endif %}
+
+    {% if data %}
+    <form method="post" action="{{ url_for('save') }}" enctype="multipart/form-data" id="editForm">
+      <input type="hidden" name="kode" value="{{ kode }}">
+
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h4 class="mb-0">KBLI {{ kode }}</h4>
+        <div class="text-end">
+          <button type="button" class="btn btn-primary btn-sm px-4" id="toggleModeBtn" onclick="toggleEdit()">
+            Mode: <span id="modeLabel">Edit</span>
+          </button>
+          <div class="form-text mt-1 text-muted" style="font-size: 0.85rem;">
+            Klik untuk toggle mode edit atau lihat
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label>Nama KBLI</label>
+        <input type="text" name="nama" class="form-control editable readonly-mode" value="{{ data.nama }}">
+      </div>
+
+      <div class="mb-3">
+        <label>Kategori</label>
+        <input type="text" name="kategori" class="form-control editable readonly-mode" value="{{ data.kategori }}">
+      </div>
+
+      <div class="mb-3">
+        <label>Ruang Lingkup</label>
+        <textarea name="ruang_lingkup" class="form-control editable readonly-mode" rows="3">{{ data.ruang_lingkup }}</textarea>
+      </div>
+
+      <div class="mb-3">
+        <label>Dinas</label>
+        <input type="text" name="dinas" class="form-control editable readonly-mode" value="{{ data.dinas }}">
+      </div>
+
+      {% if data.persyaratan %}
+      <hr class="my-4">
+      <h5 class="mb-3">📋 Persyaratan Perizinan</h5>
+
+      <div id="persyaratan-container">
+        {% for sec_key, section in data.persyaratan.items() %}
+        <div class="mb-4 border p-3 rounded" id="bagian-{{ sec_key }}" data-index="{{ sec_key }}">
+          <div class="d-flex justify-content-between align-items-center">
+            <label class="form-label fw-bold mb-2">Nomor {{ sec_key }}</label>
+            <button type="button" class="btn btn-sm btn-danger editable" onclick="removeBagian('{{ sec_key }}')">🗑 Hapus Nomor</button>
+          </div>
+          <textarea name="persyaratan_{{ sec_key }}_judul" class="form-control editable readonly-mode mb-3 auto-expand" rows="2">{{ section.judul }}</textarea>
+
+          {% if section["items"] is mapping %}
+          <div id="items-{{ sec_key }}">
+            {% for item_key, item_val in section["items"].items() %}
+            <div class="mb-2 item-wrapper d-flex gap-2">
+              <div class="flex-grow-1">
+                <label class="form-label">Item {{ item_key }}</label>
+                <textarea name="persyaratan_{{ sec_key }}_item_{{ item_key }}" class="form-control editable readonly-mode auto-expand" rows="2">{{ item_val }}</textarea>
+              </div>
+              <button type="button" class="btn btn-sm btn-outline-danger editable mt-4" onclick="removeItem(this)">🗑</button>
+            </div>
+            {% endfor %}
+          </div>
+
+          <button type="button" class="btn btn-sm btn-outline-secondary mt-2 editable" onclick="addItem('{{ sec_key }}')">➕ Tambah Item</button>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+
+      <div class="text-start mt-3">
+        <button type="button" class="btn btn-outline-success btn-sm editable" onclick="tambahBagian()">➕ Tambah Nomor</button>
+      </div>
+      {% endif %}
+
+      <div class="mt-4 d-grid">
+        <button type="submit" class="btn btn-primary editable">💾 Simpan Perubahan</button>
+      </div>
+    </form>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function toggleEdit() {
+  const inputs = document.querySelectorAll('.editable');
+  const label = document.getElementById('modeLabel');
+  const isDisabled = inputs[0].disabled;
+
+  inputs.forEach(i => {
+    i.disabled = !isDisabled;
+    i.classList.toggle('readonly-mode', !isDisabled);
+  });
+
+  label.textContent = isDisabled ? 'Edit' : 'Lihat';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  toggleEdit();  // default mode: edit
+});
+</script>
+
+<script>
+function addItem(secKey) {
+  const container = document.getElementById(`items-${secKey}`);
+  const existing = container.querySelectorAll("textarea").length;
+  const nextChar = String.fromCharCode(97 + existing);
+
+  const div = document.createElement("div");
+  div.className = "mb-2 item-wrapper d-flex gap-2";
+  div.innerHTML = `
+    <div class="flex-grow-1">
+      <label class="form-label">Item ${nextChar}</label>
+      <textarea name="persyaratan_${secKey}_item_${nextChar}" class="form-control editable readonly-mode auto-expand" rows="2"></textarea>
+    </div>
+    <button type="button" class="btn btn-sm btn-outline-danger editable mt-4" onclick="removeItem(this)">🗑</button>
+  `;
+  container.appendChild(div);
+}
+
+function removeItem(btn) {
+  const div = btn.closest('.item-wrapper');
+  if (div) div.remove();
+}
+
+function removeBagian(secKey) {
+  const div = document.getElementById(`bagian-${secKey}`);
+  if (div) div.remove();
+}
+
+function tambahBagian() {
+  const container = document.getElementById('persyaratan-container');
+  const sections = container.querySelectorAll('[data-index]');
+  const nextIndex = sections.length + 1;
+
+  const div = document.createElement('div');
+  div.className = "mb-4 border p-3 rounded";
+  div.setAttribute("id", "bagian-" + nextIndex);
+  div.setAttribute("data-index", nextIndex);
+  div.innerHTML = `
+    <div class="d-flex justify-content-between align-items-center">
+      <label class="form-label fw-bold mb-2">Nomor ${nextIndex}</label>
+      <button type="button" class="btn btn-sm btn-danger editable" onclick="removeBagian('${nextIndex}')">🗑 Hapus Nomor</button>
+    </div>
+    <textarea name="persyaratan_${nextIndex}_judul" class="form-control editable readonly-mode mb-3 auto-expand" rows="2" placeholder="Judul"></textarea>
+
+    <div id="items-${nextIndex}">
+      <div class="mb-2 item-wrapper d-flex gap-2">
+        <div class="flex-grow-1">
+          <label class="form-label">Item a</label>
+          <textarea name="persyaratan_${nextIndex}_item_a" class="form-control editable readonly-mode auto-expand" rows="2" placeholder="Isi item a"></textarea>
+        </div>
+        <button type="button" class="btn btn-sm btn-outline-danger editable mt-4" onclick="removeItem(this)">🗑</button>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-sm btn-outline-secondary mt-2 editable" onclick="addItem('${nextIndex}')">➕ Tambah Item</button>
+  `;
+  container.appendChild(div);
+}
+</script>
+
+<script>
+document.addEventListener('input', function(e) {
+  if (e.target.tagName === 'TEXTAREA' && e.target.classList.contains('auto-expand')) {
+    e.target.style.height = 'auto';
+    e.target.style.height = e.target.scrollHeight + 'px';
+  }
+});
+window.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('textarea.auto-expand').forEach(t => {
+    t.style.height = 'auto';
+    t.style.height = t.scrollHeight + 'px';
+  });
+});
+</script>
+{% endblock %}

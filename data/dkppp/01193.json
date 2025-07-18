@@ -1,0 +1,24 @@
+{
+  "kode": "01193",
+  "nama": "PERTANIAN TANAMAN BUNGA",
+  "kategori": "A - Pertanian, Kehutanan dan Perikanan",
+  "ruang_lingkup": "Budi daya tanaman bunga",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": {
+      "judul": "Pernyataan memiliki/ menguasai lahan/kebun untuk usaha Budi daya yang sesuai dengan RUTW"
+    },
+    "2": {
+      "judul": "Pernyataan ketersediaan sarana prasarana yang memadai untuk usaha Budi daya (dilengkapi dokumen perizinan sarana prasarana jika diperlukan)"
+    },
+    "3": {
+      "judul": "Membuat rencana usaha"
+    },
+    "4": {
+      "judul": "Peryataan ketersediaan tenaga kerja yang terampil untuk usaha budi daya"
+    },
+    "5": {
+      "judul": "Pernyataan menerapkan GAP terutama menjaga konservasi lahan dan air, serta tata kelola limbah"
+    }
+  }
+}

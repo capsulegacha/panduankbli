@@ -1,0 +1,21 @@
+{
+  "kode": "71203",
+  "nama": "JASA INSPEKSI PERIODIKSA",
+  "kategori": "M - Jasa Profesional, Ilmiah dan Teknis",
+  "ruang_lingkup": "Khusus untuk kegiatan pemeriksaan suatu desain produk, produk, jasa dan proses. kegiatan ini mencakup pemeriksaan, peralatan tekan, preshipment, proses produksi, pemeliharaan atau perawatan",
+  "dinas": "Dinas Tenaga Kerja dan Perindustrian",
+  "persyaratan": {
+    "1": {
+      "judul": "Telah selesai melaksanakan persiapan dan kegiatan pembangunan, pengadaan, pemasangan/instalasi peralatan, dan kesiapan lain yang diperlukan",
+      "items": {
+        "a": "Mengajukan surat \"Surat Keputusan Telah Selesai Melakukan Persiapan / Konstruksi Dan Siap Produksi\" melalui https://siinas.kemenperin.go.id/"
+      }
+    },
+    "2": {
+      "judul": "Memenuhi standar pemeriksaan dan pengujian Kesehatan dan Keselamatan Kerja (K3)",
+      "items": {
+        "a": "Persyaratan keselamatan kerja (K3) melampirkan dokumentasi minimal berupa foto apar, kotak P3K, Intalasi Listrik, jalur evakuasi, pintu darurat, dan titik kumpul"
+      }
+    }
+  }
+}

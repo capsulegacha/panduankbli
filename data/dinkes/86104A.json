@@ -1,0 +1,110 @@
+{
+  "kode": "86104-A",
+  "nama": "KLINIK PRATAMA PEMERINTAH",
+  "kategori": "Q - Jasa Kesehatan dan Kegiatan Sosial",
+  "ruang_lingkup": "Klinik Pratama Pemerintah",
+  "dinas": "Dinas Kesehatan",
+  "persyaratan": {
+    "1": {
+      "judul": "Profil Klinik",
+      "items": {
+        "a": "Profil Klinik meliputi latar belakang, alamat, visi dan misi.",
+        "b": "Daftar peralatan Klinik dilengkapi dengan sertifikat kalibrasi; bapeten; PME",
+        "c": "Daftar Jam pelayanan",
+        "d": "Daftar, Jenis dan Tarif Pelayanan",
+        "e": "Denah ruangan",
+        "f": "Dokumentasi seluruh ruangan dilengkapi dengan penjelasan",
+        "g": "Denah lokasi (Penanda Google Map dan Titik Koordinat Klinik)"
+      }
+    },
+    "2": {
+      "judul": "Self Assessment Klinik",
+      "items": {
+        "a": "Self Asessment Klinik Sesuai Permenkes 14 Tahun 2021 (https://bit.ly/BerkasSelfAssesmentDapatDiaksesDisini)",
+        "b": "Surat Pernyataan Bersedia Memenuhi Persyaratan Dan Kewajiban Dalam Kurun Waktu Tiga Bulan Semenjak NIB Diterbitkan",
+        "c": "Surat penunjukan sebagai penanggung jawab Klinik",
+        "d": "Surat Pernyataan kesanggupan sebagai penanggung jawab Klinik",
+        "e": "Surat Pernyataan Kesanggupan Mentaati Peraturan Yang Berlaku",
+        "f": "Surat Pernyataan Tidak Menggunakan Obat-Obatan Sedatif, Dan Tidak Melakukan General Anestesi Maupun Regional Anestesi",
+        "g": "Surat Pernyataan Jenis Tindakan (Tabel: No/Jenis Tindakan/Pelaksana)",
+        "h": "Surat Pernyataan Bahwa Pelayanan Yang Dilakukan Klinik Merupakan Tanggung Jawab Dokter Penanggung Jawab",
+        "i": "Surat Pernyataan 5 Aspek",
+        "j": "Surat Pernyataan Komitmen Covid-19",
+        "k": "Surat Pernyataan Kebenaran dan Keabsahan Dokumen",
+        "l": "Surat Pernyataan Beriklan Sesuai Permenkes 1787 (https://bit.ly/BerkasPoint2-12DapatDiaksesDisini)"
+      }
+    },
+    "3": {
+      "judul": "Daftar Obat-Obatan",
+      "items": {
+        "a": "Daftar Obat Untuk Pelayanan Farmasi (Tabel No/Obat/Jumlah/Exp. Date)",
+        "b": "Melakukan Mou Penanganan TB-HIV dengan puskesmas terdekat"
+      }
+    },
+    "4": {
+      "judul": "Daftar Nama SDM Klinik",
+      "items": {
+        "1": "Struktur Organisasi dengan Bagan Nama",
+        "2": "Daftar Ketenagaan",
+        "3": "Dokumen STR",
+        "4": "Sertifikat Kompetensi",
+        "5": "Minimal 1 dokter umum sebagai penanggung jawab",
+        "6": "Minimal 2 dokter umum. (Salah satu dokter bisa menjadi penanggung jawab)"
+      }
+    },
+    "5": {
+      "judul": "Surat Izin Praktik (SIP) semua Tenaga Kesehatan yang bekerja di Klinik",
+      "items": {
+        "-": "Upload semua sip semua tenaga kesehatan tanda terima online aplikasi ssw alfa dan minimal harus ada satu penanggung jawab dokter umum untuk klinik pratama"
+      }
+    },
+    "6": {
+      "judul": "Perjanjian kerja sama pembuangan limbah bahan berbahaya dan beracun (B3)",
+      "items": {
+        "a": "Dokumen Perjanjian Kerjasama Pembuangan Limbah",
+        "b": "Dokumen Lingkungan, SPPL (Surat Pernyataan Kesanggupan Pengelolaan dan Pemantauan Lingkungan Hidup) Atau UKL UPL di Lengkapi Dengan Dokumen TPS Dan IPAL"
+      }
+    },
+    "7": {
+      "judul": "Surat keterangan dari Dinas Kesehatan Kabupaten/Kota mengenai pertimbangan persetujuan pendirian Klinik (opsional bagi Klinik dengan perizinan baru)",
+      "items": {
+        "1": "KTP pemilik dan KTP dokter penanggung jawab",
+        "2": "Akta perusahaan",
+        "3": "Sertifikat perusahaan",
+        "4": "Perjanjian sewa (Jika Status lahan adalah sewa)",
+        "5": "IMB sesuai peruntukan",
+        "6": "Surat keterangan domisili dari kelurahan setempat"
+      }
+    },
+    "8": {
+      "judul": "Sertifikat standar usaha Klinik atau surat izin operasional Klinik sebelumnya yang masih berlaku (opsional bagi Klinik dengan perpanjangan atau perubahan perizinan)",
+      "items": {
+        "a": "KTP pemilik dan KTP dokter penanggung jawab",
+        "b": "Akta perusahaan",
+        "c": "Sertifikat tanah",
+        "d": "Perjanjian sewa (jika status lahan adalah sewa)",
+        "e": "IMB sesuai peruntukan",
+        "f": "Surat keterangan domisili dari kelurahan setempat"
+      }
+    },
+    "9": {
+      "judul": "Surat pernyataan penggantian badan hukum, nama klinik, kepemilikan modal, jenis klinik dan/ atau alamat klinik yang ditandatangani oleh pemilik klinik (opsional bagi Klinik dengan perubahan perizinan)",
+      "items": {
+        "-": "Surat pernyataan penggantian yang diperlukan"
+      }
+    },
+    "10": {
+      "judul": "Dokumen perubahan NIB (opsional bagi Klinik dengan perubahan perizinan terkait penggantian badan hukum)",
+      "items": {
+        "a": "Foto Klinik Seluruh Lantai Seluruh Ruangan",
+        "b": "NIB"
+      }
+    },
+    "11": {
+      "judul": "Izin Mempekerjakan Tenaga Asing (IMTA) (opsional bila ada Tenaga Kerja Warga Negara Asing (TK-WNA)",
+      "items": {
+        "-": "Dokumen IMTA sesuai ketentuan yang berlaku"
+      }
+    }
+  }
+}

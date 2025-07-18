@@ -1,0 +1,20 @@
+{
+  "kode": "71206",
+  "nama": "JASA COMMISSIONING PROSES INDUSTRIAL, QUALITY ASSURANCE (QA), DAN QUALITY CONTROL (QC)",
+  "kategori": "M - Jasa Profesional, Ilmiah dan Teknis",
+  "ruang_lingkup": "Jasa Commissioning Proses Industrial, Quality Assurance (QA), dan Quality Control (QC)",
+  "dinas": "Dinas Tenaga Kerja dan Perindustrian",
+  "persyaratan": {
+    "1": {
+      "judul": "Standar Penetapan Kemampuan Badan Usaha Jasa Konstruksi",
+      "items": {}
+    },
+    "2": {
+      "judul": "Telah selesai melaksanakan persiapan dan kegiatan pembangunan, pengadaan, pemasangan/instalasi peralatan, dan kesiapan lain yang diperlukan",
+      "items": {
+        "a": "Mengupload foto sarana dan prasarna serta lokasi usahanya",
+        "b": "Mengupload \"Surat Keputusan Telah Selesai Melakukan Persiapan / Konstruksi Dan Siap Produksi\" yang didapatkan melalui https://siinas.kemenperin.go.id/"
+      }
+    }
+  }
+}

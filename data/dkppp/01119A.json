@@ -1,0 +1,27 @@
+{
+  "kode": "01119-A",
+  "nama": "PERTANIAN SEREALIA LAINNYA, ANEKA KACANG DAN BIJI-BIJIAN PENGHASIL MINYAK LAINNYA",
+  "kategori": "A - Pertanian, Kehutanan dan Perikanan",
+  "ruang_lingkup": "Usaha perbenihan serelia lainnya, aneka kacang",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": {
+      "judul": "Keterangan memiliki tenaga kerja yang mempunyai pengetahuan dan keterampilan di bidang perbenihan"
+    },
+    "2": {
+      "judul": "Perizinan Lingkungan"
+    },
+    "3": {
+      "judul": "Membuktikan lokasi produksi benih bukan daerah endemis (akan disediakan informasi spasial)"
+    },
+    "4": {
+      "judul": "Keterangan memiliki atau menguasai sarana untuk produksi benih"
+    },
+    "5": {
+      "judul": "Keterangan Kelayakan Teknis sebagai produsen atau pengedar benih dari Institusi Pengawasan dan Sertifikasi Benih"
+    },
+    "6": {
+      "judul": "Tempat usaha produksi atau peredaran benih sesuai dengan persyaratan usaha"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "kode": "01111-D",
+  "nama": "PERTANIAN JAGUNG",
+  "kategori": "A - Pertanian, Kehutanan dan Perikanan",
+  "ruang_lingkup": "Usaha budi daya (meliputi antara lain penyedian saprodi yang tepat, pertanaman, pemeliharaan, panen, dan/atau pascapanen) tanaman gandum",
+  "tingkat_risiko": "Tinggi",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": "Perizinan lingkungan",
+    "2": "Membuktikan lokasi produksi benih bukan daerah endemis (akan disediakan informasi spasial)",
+    "3": "Keterangan memiliki tenaga kerja yang mempunyai pengetahuan dan keterampilan",
+    "4": "Keterangan memiliki atau menguasai sarana untuk produksi benih atau untuk peredaran benih",
+    "5": "Keterangan kelayakan teknis sebagai produsen atau pengedar benih dari Institusi Pengawasan dan Sertifikasi Benih",
+    "6": "Tempat usaha produksi atau peredaran benih sesuai dengan persyaratan usaha"
+  }
+}

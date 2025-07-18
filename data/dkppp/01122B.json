@@ -1,0 +1,18 @@
+{
+  "kode": "01122-B",
+  "nama": "PERTANIAN PADI INBRIDA",
+  "kategori": "A - Pertanian, Kehutanan dan Perikanan",
+  "ruang_lingkup": "Usaha budi daya (meliputi antara lain penyedia saprodi yang tepat, pertanaman, pemeliharaan, panen, dan/atau pascapanen) tanaman padi inbrida",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": {
+      "judul": "Bukti penguasaan lahan usaha"
+    },
+    "2": {
+      "judul": "Perizinan Lingkungan"
+    },
+    "3": {
+      "judul": "Rencana kerja usaha budi daya"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kode": "01137-B",
+  "nama": "PERTANIAN BIT GULA DAN TANAMAN PEMANIS BUKAN TEBU",
+  "kategori": "A - Pertanian, Kehutanan dan Perikanan",
+  "ruang_lingkup": "Budi daya bit",
+  "dinas": "Dinas Ketahanan Pangan dan Pertanian",
+  "persyaratan": {
+    "1": {
+      "judul": "Persetujuan masyarakat hukum adat, untuk lahan yang digunakan seluruhnya atau sebagian berada di atas tanah hak ulayat"
+    },
+    "2": {
+      "judul": "Memiliki sumber daya manusia, sarana, prasarana dan sistem untuk melakukan pengendalian organisme pengganggu tumbuhan (OPT)"
+    },
+    "3": {
+      "judul": "Memiliki sumber daya manusia, sarana, prasarana dan sistem untuk melakukan pembukaan lahan tanpa bakar serta pengendalian kebakaran"
+    },
+    "4": {
+      "judul": "Kesepakatan antara perusahaan perkebunan dengan masyarakat sekitar tentang aktivitas usaha perkebunan mencakup batas-batas wilayah kerja perusahaan perkebunan"
+    },
+    "5": {
+      "judul": "Kesanggupan memfasilitasi pembangunan kebun masyarakat sekitar dilengkapi dengan rencana kerja dan rencana pembiayaan"
+    },
+    "6": {
+      "judul": "Kesanggupan melaksanakan kemitraan dengan Pekebun, karyawan dan masyarakat sekitar perkebunan"
+    },
+    "7": {
+      "judul": "Rencana kerja pembangunan kebun termasuk rencana fasilitasi pembangunan kebun masyarakat sekitar"
+    }
+  }
+}

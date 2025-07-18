@@ -1,0 +1,20 @@
+{
+  "kode": "71201",
+  "nama": "JASA SERTIFIKASI",
+  "kategori": "M - Jasa Profesional, Ilmiah dan Teknis",
+  "ruang_lingkup": "Khusus untuk kegiatan uji fisik, kimia, biologi, kelistrikan, mekanik dan analisis dari semua jenis material dan produk yang mencakup kegiatan pengujian di bidang kesehater nakanan, kontrol yang berhubungan dengan produksi makanan, uji akustik dan vibrasi (getar), uji komposisi dan kemurnian mineral dan sebagainya, uji karakteristik fisik dan kinerja material seperti kekuatan, ketebalan, daya tahan, radioaktif dan lain-lain, uji kualifikasi dan ketahanan, uji kinerja dari mesin keseluruhan seperti motor, automobil, perlengkapan elektronik, pengujian perangkat telekomunikasi",
+  "dinas": "Dinas Tenaga Kerja dan Perindustrian",
+  "persyaratan": {
+    "1": {
+      "judul": "Telah selesai melaksanakan persiapan dan kegiatan pembangunan, pengadaan, pemasangan/instalasi peralatan, dan kesiapan lain yang diperlukan",
+      "items": {
+        "a": "Mengupload foto sarana dan prasarna serta lokasi usahanya",
+        "b": "Mengupload \"Surat Keputusan Telah Selesai Melakukan Persiapan / Konstruksi Dan Siap Produksi\" yang didapatkan melalui https://siinas.kemenperin.go.id/"
+      }
+    },
+    "2": {
+      "judul": "Berlokasi di Kawasan Peruntukan Industri apabila berpotensi menimbulkan pencemaran lingkungan yang berdampak luas",
+      "items": {}
+    }
+  }
+}

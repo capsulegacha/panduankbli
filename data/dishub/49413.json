@@ -1,0 +1,43 @@
+{
+  "kode": "49413",
+  "nama": "ANGKUTAN PERKOTAAN BUKAN BUS, DALAM TRAYEK",
+  "kategori": "H - Transportasi dan Pergudangan",
+  "ruang_lingkup": "Angkutan Perkotaan Bukan Bus Dalam Trayek",
+  "dinas": "Dinas Perhubungan",
+  "persyaratan": {
+      "1": {
+        "judul": "Menerapkan sistem pemesanan secara elektronik;",
+        "keterangan": "Dibuktikan dengan melampirkan dokumentasi aplikasi pemesanan elektronik, namun jika tidak memiliki aplikasi pemesanan elektronik dapat melampirkan dokumentasi pemesanan tiket secara manual"
+      },
+      "2": {
+        "judul": "Memiliki paling sedikit 5 (lima) kendaraan yang dibuktikan dengan salinan STNK, SRUT (untuk kendaraan baru), bukti lulus uji berkala dan foto kendaraan;"
+      },
+      "3": {
+        "judul": "Memiliki dan/atau menguasai tempat penyimpanan;",
+        "keterangan": "Dibuktikan dengan melampirkan sertifikat tanah"
+      },
+      "4": {
+        "judul": "Memiliki dan/atau bekerjasama dengan pihak lain yang mampu menyediakan fasilitas pemeliharaan kendaraan bermotor;",
+        "keterangan": "Dibuktikan dengan MoU dan foto bukti lahan dengan penyedia fasilitas pemeliharaan kendaraan bermotor"
+      },
+      "5": {
+        "judul": "Memenuhi Standar Pelayanan Minimal angkutan orang dalam trayek;",
+        "keterangan": "Dibuktikan dengan surat sertifikat kelayakan kendaraan DISHUB"
+      },
+      "6": {
+        "judul": "Memasang alat pemantauan pergerakan kendaraan secara elektronik.",
+        "keterangan": "Melampirkan dokumentasi foto GPS dan tampilan software pelacakan."
+      },
+      "7": {
+        "judul": "Kesesuaian dengan perencanaan kebutuhan kendaraan (kuota) yang ditetapkan;",
+        "keterangan": "Melampirkan gambar denah parkir kendaraan"
+      },
+      "8": {
+        "judul": "Menyiapkan dokumen Sistem Manajemen Keselamatan;"
+      },
+      "9": {
+        "judul": "Menyusun rencana bisnis (business plan) Perusahaan Angkutan Umum;"
+      }
+    }
+  
+}
