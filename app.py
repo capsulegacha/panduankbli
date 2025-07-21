@@ -84,12 +84,14 @@ def parse_docx_to_persyaratan(file):
     doc = Document(file)
     persyaratan = {}
     meta = {
-        "ruang_lingkup": ""
+        "ruang_lingkup": "",
+        "nama": ""
     }
 
+    paragraphs = [p.text.strip() for p in doc.paragraphs if p.text.strip()]
     current_section = None
     section_counter = 1
-    item_index = 0 
+    item_index = 0
 
     def is_heading(text):
         return (
@@ -104,22 +106,44 @@ def parse_docx_to_persyaratan(file):
             and len(text.split()) <= 6
         )
 
-    for para in doc.paragraphs:
-        text = para.text.strip()
-        if not text:
-            continue
+    i = 0
+    while i < len(paragraphs):
+        text = paragraphs[i]
 
-        # Tangkap RUANG LINGKUP: ...
+        # --- Tangkap RUANG LINGKUP dan Nama KBLI ---
         if re.match(r'^\s*RUANG LINGKUP\s*:', text.upper()):
             ruang_lingkup = re.sub(r'^\s*RUANG LINGKUP\s*:\s*', '', text, flags=re.IGNORECASE).strip()
-            meta["ruang_lingkup"] = ruang_lingkup
-            continue
 
-        # Lewati kalimat pembuka
+            # Deteksi nama di sekitar ruang lingkup
+            nama = ""
+            if i >= 2 and not re.search(r'KBLI\s*\d+', paragraphs[i - 2], re.IGNORECASE):
+                nama = paragraphs[i - 2].strip()
+            elif i + 1 < len(paragraphs):
+                next_line = paragraphs[i + 1].strip()
+                if not is_heading(next_line) and not is_intro(next_line):
+                    nama = next_line
+
+            if not nama:
+                nama = ruang_lingkup
+
+            meta["ruang_lingkup"] = ruang_lingkup.title()
+            meta["nama"] = nama.upper()
+            i += 1
+            break
+        i += 1
+
+    # Lewati hingga masuk ke bagian persyaratan
+    while i < len(paragraphs):
+        text = paragraphs[i]
         if is_intro(text):
-            continue
+            i += 1
+            break
+        i += 1
 
-        # Heading bagian
+    # Parsing bagian persyaratan
+    while i < len(paragraphs):
+        text = paragraphs[i]
+
         if is_heading(text):
             heading = re.sub(r'^\d+[\.\)]\s*', '', text).rstrip(":").strip()
             current_section = {
@@ -128,9 +152,9 @@ def parse_docx_to_persyaratan(file):
             }
             persyaratan[str(section_counter)] = current_section
             section_counter += 1
-            item_index = 0  # reset ke huruf a
+            item_index = 0
         elif current_section:
-            # Konversi angka ke huruf seperti a, b, ..., z, aa, ab, ...
+            # Gunakan huruf a, b, c... aa, ab...
             if item_index < 26:
                 item_key = ascii_lowercase[item_index]
             else:
@@ -140,6 +164,8 @@ def parse_docx_to_persyaratan(file):
 
             current_section["items"][item_key] = text
             item_index += 1
+
+        i += 1
 
     if not persyaratan:
         raise ValueError("Dokumen tidak mengandung struktur persyaratan yang dapat dibaca.")
@@ -256,7 +282,7 @@ def upload_kbli():
             session.pop("new_kbli_kode", None)
 
             session["new_kbli_data"] = {
-                "nama": "",
+                "nama": meta.get("nama", "").upper(),
                 "kategori": "",
                 "ruang_lingkup": meta.get("ruang_lingkup", "").title(),
                 "dinas": "",
