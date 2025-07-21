@@ -260,12 +260,12 @@ def upload_kbli():
         file = request.files.get("file")
 
         if not kode or not file or not file.filename.endswith(".docx"):
-            flash("Kode KBLI dan file Word wajib diisi.")
+            flash("Kode KBLI dan file Word wajib diisi.", "warning")
             return redirect(request.url)
 
         all_data = load_all_kbli_data()
         if kode in all_data:
-            flash(f"KBLI dengan kode {kode} sudah ada. Silakan cari dan edit melalui pencarian di panel admin.")
+            flash(f"KBLI dengan kode {kode} sudah ada. Silakan cari dan edit melalui pencarian di panel admin.", "warning")
             session.pop("new_kbli_data", None)
             session.pop("new_kbli_kode", None)
             return redirect(request.url)
@@ -273,7 +273,7 @@ def upload_kbli():
         try:
             persyaratan, meta = parse_docx_to_persyaratan(file)
             if not persyaratan:
-                flash("Dokumen tidak mengandung persyaratan yang dapat dibaca.")
+                flash("Dokumen tidak mengandung persyaratan yang dapat dibaca.", "warning")
                 return redirect(request.url)
             
             persyaratan = sort_persyaratan({"persyaratan": persyaratan})["persyaratan"]
@@ -299,7 +299,7 @@ def upload_kbli():
             return redirect(url_for("admin", kode=kode, draft="1"))
 
         except Exception as e:
-            flash(f"Gagal membaca dokumen: {e}")
+            flash(f"Gagal membaca dokumen: {e}", "danger")
             return redirect(request.url)
 
     return render_template(
