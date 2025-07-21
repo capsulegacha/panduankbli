@@ -102,18 +102,28 @@
       </div>
 
       <div class="mb-3">
-        <label>Kategori</label>
-        <input type="text" name="kategori" class="form-control editable readonly-mode" value="{{ data.kategori }}">
-      </div>
-
-      <div class="mb-3">
         <label>Ruang Lingkup</label>
         <textarea name="ruang_lingkup" class="form-control editable readonly-mode" rows="3">{{ data.ruang_lingkup }}</textarea>
       </div>
 
       <div class="mb-3">
+        <label>Kategori</label>
+        <select name="kategori" class="form-select editable readonly-mode">
+          <option value="">-- Pilih Kategori --</option>
+          {% for k in kategori_list %}
+            <option value="{{ k }}" {% if data.kategori == k %}selected{% endif %}>{{ k }}</option>
+          {% endfor %}
+        </select>
+      </div>
+
+      <div class="mb-3">
         <label>Dinas</label>
-        <input type="text" name="dinas" class="form-control editable readonly-mode" value="{{ data.dinas }}">
+        <select name="dinas" class="form-select editable readonly-mode">
+          <option value="">-- Pilih Dinas --</option>
+          {% for d in dinas_list %}
+            <option value="{{ d }}" {% if data.dinas == d %}selected{% endif %}>{{ d }}</option>
+          {% endfor %}
+        </select>
       </div>
 
       {% if data.persyaratan %}

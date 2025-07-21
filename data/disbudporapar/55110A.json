@@ -1,0 +1,11 @@
+{
+  "nama": "HOTEL BINTANG",
+  "kategori": "I - Penyediaan Akomodasi Dan Penyediaan Makan Minum",
+  "ruang_lingkup": "Hotel Dengan Luas Bangunan >10.000 M2",
+  "dinas": "Dinas Kebudayaan, Kepemudaan dan Olah Raga serta Pariwisata",
+  "persyaratan": {
+    "1": {
+      "judul": "UKL-UPL/AMDAL"
+    }
+  }
+}

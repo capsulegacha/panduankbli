@@ -1,6 +1,7 @@
 from flask import Flask, flash, render_template, request, redirect, url_for, session
 from docx import Document
 from werkzeug.utils import secure_filename
+from reference_data import KATEGORI_LIST, DINAS_LIST, map_dinas_ke_folder
 import os
 import re
 import json
@@ -244,7 +245,9 @@ def admin():
         data=data,
         kode=kode,
         all_kode=all_kode,
-        data_dict=all_data
+        data_dict=all_data,
+        kategori_list=KATEGORI_LIST,
+        dinas_list=DINAS_LIST
     )
 
 @app.route('/admin/upload', methods=['GET', 'POST'])
@@ -299,7 +302,12 @@ def upload_kbli():
             flash(f"Gagal membaca dokumen: {e}")
             return redirect(request.url)
 
-    return render_template("admin_upload.html")
+    return render_template(
+        "admin_upload.html",
+        kategori_list=KATEGORI_LIST,
+        dinas_list=DINAS_LIST,
+        data=None
+    )
 
 @app.route('/admin/add_manual', methods=['POST'])
 def add_kbli_manual():
@@ -331,7 +339,7 @@ def add_kbli_manual():
         "persyaratan": {}
     }
 
-    folder_name = data.get("dinas", "LAINNYA").upper().replace(" ", "_")
+    folder_name = map_dinas_ke_folder.get(data.get("dinas"), "LAINNYA")
     file_path = DATA_DIR / folder_name / f"{kode}.json"
     os.makedirs(file_path.parent, exist_ok=True)
 
@@ -402,7 +410,7 @@ def save():
 
     data["persyaratan"] = persyaratan
 
-    folder_name = data.get("dinas_folder") or "LAINNYA"
+    folder_name = map_dinas_ke_folder.get(data.get("dinas"), "LAINNYA")
     file_path = DATA_DIR / folder_name / f"{kode}.json"
     os.makedirs(file_path.parent, exist_ok=True)
 
