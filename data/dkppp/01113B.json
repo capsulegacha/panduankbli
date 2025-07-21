@@ -5,11 +5,23 @@
   "ruang_lingkup": "Usaha perbenihan kedelai",
   "dinas": "Dinas Ketahanan Pangan dan Pertanian",
   "persyaratan": {
-    "1": "Keterangan kelayakan teknis sebagai produsen atau pengedar benih dari Institusi Pengawasan dan Sertifikasi Benih",
-    "2": "Keterangan memiliki tenaga kerja yang mempunyai pengetahuan dan keterampilan di bidang perbenihan",
-    "3": "Keterangan memiliki atau menguasai sarana untuk produksi benih atau untuk peredaran benih",
-    "4": "Tempat usaha produksi atau peredaran benih sesuai dengan persyaratan usaha",
-    "5": "Perizinan lingkungan",
-    "6": "Membuktikan lokasi produksi benih bukan daerah endemis (akan disediakan informasi spasial)"
+    "1": {
+      "judul": "Keterangan kelayakan teknis sebagai produsen atau pengedar benih dari Institusi Pengawasan dan Sertifikasi Benih"
+    },
+    "2": {
+      "judul": "Keterangan memiliki tenaga kerja yang mempunyai pengetahuan dan keterampilan di bidang perbenihan"
+    },
+    "3": {
+      "judul": "Keterangan memiliki atau menguasai sarana untuk produksi benih atau untuk peredaran benih"
+    },
+    "4": {
+      "judul": "Tempat usaha produksi atau peredaran benih sesuai dengan persyaratan usaha"
+    },
+    "5": {
+      "judul": "Perizinan lingkungan"
+    },
+    "6": {
+      "judul": "Membuktikan lokasi produksi benih bukan daerah endemis (akan disediakan informasi spasial)"
+    }
   }
 }
