@@ -9,15 +9,38 @@
     color: #6c757d;
     cursor: default;
   }
+
   .editable:not(:disabled) {
     background-color: #ffffff !important;
     border: 1px solid #ced4da !important;
     color: #212529;
   }
+
+  /* 🔴 Tambahan ini: ubah warna border tombol hapus */
+  .btn-outline-danger {
+    border-color: #dc3545 !important;
+    color: #dc3545 !important;
+  }
+
+  .btn-outline-danger:hover {
+    background-color: #dc3545 !important;
+    color: white !important;
+  }
 </style>
 
 <section class="py-5">
   <div class="container">
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for msg in messages %}
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            {{ msg }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
     <h3 class="mb-4">Tambah KBLI Baru</h3>
 
     <!-- Metode Upload -->
@@ -132,7 +155,7 @@ function addSection() {
   const nextId = max + 1;
 
   const html = `
-    <div class="mb-4 border p-3 rounded" id="bagian-${nextId}">
+    <div class="mb-4 border p-3 rounded bagian-wrapper" id="bagian-${nextId}" data-index="${nextId}">
       <label class="form-label fw-bold">Nomor ${nextId}</label>
       <textarea name="persyaratan_${nextId}_judul"
                 class="form-control editable readonly-mode auto-expand mb-3"
@@ -181,11 +204,6 @@ function removeItem(button) {
   if (itemDiv) itemDiv.remove();
 }
 
-function removeBagian(id) {
-  const div = document.getElementById(`bagian-${id}`);
-  if (div) div.remove();
-}
-
 // Auto-expand
 document.addEventListener('input', function (e) {
   if (e.target.classList.contains('auto-expand')) {
@@ -193,5 +211,97 @@ document.addEventListener('input', function (e) {
     e.target.style.height = (e.target.scrollHeight) + 'px';
   }
 });
+</script>
+
+<script>
+function removeItem(button) {
+  const itemDiv = button.closest('.item-wrapper');
+  const sectionDiv = button.closest('.bagian-wrapper');
+  const itemsContainer = sectionDiv.querySelector('[id^="items-"]');
+  if (itemDiv && itemsContainer) {
+    itemDiv.remove();
+    reindexItems(itemsContainer);
+  }
+}
+
+function reindexItems(container) {
+  const textareas = container.querySelectorAll('textarea');
+  textareas.forEach((textarea, idx) => {
+    const label = textarea.closest('.item-wrapper').querySelector('label');
+    const letter = String.fromCharCode(97 + idx); // a, b, c ...
+    
+    if (label) label.textContent = `Item ${letter}`;
+    
+    const nameParts = textarea.name.split('_');
+    nameParts[nameParts.length - 1] = letter;
+    textarea.name = nameParts.join('_');
+
+    textarea.placeholder = `Isi item ${letter}`;
+  });
+}
+
+function removeBagian(id) {
+  const div = document.getElementById(`bagian-${id}`);
+  if (div) {
+    div.remove();
+    reindexBagian();
+  }
+}
+
+function reindexBagian() {
+  const sections = document.querySelectorAll('.bagian-wrapper');
+  sections.forEach((section, idx) => {
+    const newIndex = idx + 1;
+    const oldIndex = section.getAttribute('data-index');
+
+    // Update wrapper ID dan data-index
+    section.id = `bagian-${newIndex}`;
+    section.setAttribute('data-index', newIndex);
+
+    // Update label "Nomor n"
+    const label = section.querySelector('label.fw-bold');
+    if (label) label.textContent = `Nomor ${newIndex}`;
+
+    // Update judul textarea
+    const judul = section.querySelector(`textarea[name^="persyaratan_${oldIndex}_judul"]`);
+    if (judul) {
+      judul.name = `persyaratan_${newIndex}_judul`;
+    }
+
+    // Update ID container items
+    const itemsContainer = section.querySelector(`#items-${oldIndex}`);
+    if (itemsContainer) {
+      itemsContainer.id = `items-${newIndex}`;
+    }
+
+    // Reindex setiap item di dalamnya
+    const itemWrappers = section.querySelectorAll('.item-wrapper');
+    itemWrappers.forEach((wrapper, itemIdx) => {
+      const textarea = wrapper.querySelector('textarea');
+      const itemKey = String.fromCharCode(97 + itemIdx); // 'a', 'b', ...
+
+      // Update name dan placeholder
+      if (textarea) {
+        const nameParts = textarea.name.split('_');
+        nameParts[1] = `${newIndex}`; // ganti nomor
+        nameParts[nameParts.length - 1] = itemKey; // ganti huruf
+        textarea.name = nameParts.join('_');
+        textarea.placeholder = `Isi item ${itemKey}`;
+      }
+
+      // Update label
+      const label = wrapper.querySelector('label');
+      if (label) label.textContent = `Item ${itemKey}`;
+    });
+
+    // Update tombol tambah item
+    const addItemBtn = section.querySelector('button[onclick^="addItem("]');
+    if (addItemBtn) addItemBtn.setAttribute("onclick", `addItem('${newIndex}')`);
+
+    // Update tombol hapus bagian
+    const hapusBtn = section.querySelector('button[onclick^="removeBagian("]');
+    if (hapusBtn) hapusBtn.setAttribute("onclick", `removeBagian('${newIndex}')`);
+  });
+}
 </script>
 {% endblock %}
