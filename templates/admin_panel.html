@@ -10,10 +10,22 @@
     color: #6c757d;
     cursor: default;
   }
+
   .editable:not(:disabled) {
     background-color: #ffffff !important;
     border: 1px solid #ced4da !important;
     color: #212529;
+  }
+
+  /* 🔴 Tambahan ini: ubah warna border tombol hapus */
+  .btn-outline-danger {
+    border-color: #dc3545 !important;
+    color: #dc3545 !important;
+  }
+
+  .btn-outline-danger:hover {
+    background-color: #dc3545 !important;
+    color: white !important;
   }
 </style>
 
@@ -30,6 +42,17 @@
         </a>
       </div>
     </div>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, msg in messages %}
+          <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+            {{ msg }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
 
     <!-- Pencarian -->
     <form method="get" action="{{ url_for('admin') }}" class="mb-4">
@@ -79,18 +102,28 @@
       </div>
 
       <div class="mb-3">
-        <label>Kategori</label>
-        <input type="text" name="kategori" class="form-control editable readonly-mode" value="{{ data.kategori }}">
-      </div>
-
-      <div class="mb-3">
         <label>Ruang Lingkup</label>
         <textarea name="ruang_lingkup" class="form-control editable readonly-mode" rows="3">{{ data.ruang_lingkup }}</textarea>
       </div>
 
       <div class="mb-3">
+        <label>Kategori</label>
+        <select name="kategori" class="form-select editable readonly-mode">
+          <option value="">-- Pilih Kategori --</option>
+          {% for k in kategori_list %}
+            <option value="{{ k }}" {% if data.kategori == k %}selected{% endif %}>{{ k }}</option>
+          {% endfor %}
+        </select>
+      </div>
+
+      <div class="mb-3">
         <label>Dinas</label>
-        <input type="text" name="dinas" class="form-control editable readonly-mode" value="{{ data.dinas }}">
+        <select name="dinas" class="form-select editable readonly-mode">
+          <option value="">-- Pilih Dinas --</option>
+          {% for d in dinas_list %}
+            <option value="{{ d }}" {% if data.dinas == d %}selected{% endif %}>{{ d }}</option>
+          {% endfor %}
+        </select>
       </div>
 
       {% if data.persyaratan %}
@@ -99,28 +132,28 @@
 
       <div id="persyaratan-container">
         {% for sec_key, section in data.persyaratan.items() %}
-        <div class="mb-4 border p-3 rounded" id="bagian-{{ sec_key }}" data-index="{{ sec_key }}">
+        <div class="mb-4 border p-3 rounded bagian-wrapper" id="bagian-{{ sec_key }}" data-index="{{ sec_key }}">
           <div class="d-flex justify-content-between align-items-center">
             <label class="form-label fw-bold mb-2">Nomor {{ sec_key }}</label>
-            <button type="button" class="btn btn-sm btn-danger editable" onclick="removeBagian('{{ sec_key }}')">🗑 Hapus Nomor</button>
+            <button type="button" class="btn btn-sm btn-outline-danger editable" onclick="removeBagian('{{ sec_key }}')">🗑 Hapus Nomor</button>
           </div>
           <textarea name="persyaratan_{{ sec_key }}_judul" class="form-control editable readonly-mode mb-3 auto-expand" rows="2">{{ section.judul }}</textarea>
 
           {% if section["items"] is mapping %}
-          <div id="items-{{ sec_key }}">
-            {% for item_key, item_val in section["items"].items() %}
-            <div class="mb-2 item-wrapper d-flex gap-2">
-              <div class="flex-grow-1">
-                <label class="form-label">Item {{ item_key }}</label>
-                <textarea name="persyaratan_{{ sec_key }}_item_{{ item_key }}" class="form-control editable readonly-mode auto-expand" rows="2">{{ item_val }}</textarea>
-              </div>
-              <button type="button" class="btn btn-sm btn-outline-danger editable mt-4" onclick="removeItem(this)">🗑</button>
-            </div>
-            {% endfor %}
-          </div>
-
-          <button type="button" class="btn btn-sm btn-outline-secondary mt-2 editable" onclick="addItem('{{ sec_key }}')">➕ Tambah Item</button>
+            <div id="items-{{ sec_key }}">
+              {% for item_key, item_val in section["items"]|dictsort %}
+                <div class="mb-2 item-wrapper d-flex gap-2">
+                  <div class="flex-grow-1">
+                    <label class="form-label">Item {{ item_key }}</label>
+                    <textarea name="persyaratan_{{ sec_key }}_item_{{ item_key }}" class="form-control editable readonly-mode auto-expand" rows="2">{{ item_val }}</textarea>
+                  </div>
+                  <button type="button" class="btn btn-sm btn-outline-danger editable mt-4" onclick="removeItem(this)">🗑</button>
+                </div>
+              {% endfor %}
+            </div> <!-- ✅ TUTUP div items di sini -->
+            <button type="button" class="btn btn-sm btn-outline-secondary mt-2 editable" onclick="addItem('{{ sec_key }}')">➕ Tambah Item</button>
           {% endif %}
+
         </div>
         {% endfor %}
       </div>
@@ -133,6 +166,14 @@
       <div class="mt-4 d-grid">
         <button type="submit" class="btn btn-primary editable">💾 Simpan Perubahan</button>
       </div>
+
+      <div class="mt-4 d-flex justify-content-between">
+        <a href="{{ url_for('admin') }}" class="btn btn-outline-secondary">← Kembali</a>
+        <button type="button" class="btn btn-outline-danger" onclick="confirmDelete('{{ kode }}')">
+          🗑 Hapus KBLI
+        </button>
+      </div>
+    </div>
     </form>
     {% endif %}
   </div>
@@ -182,11 +223,6 @@ function removeItem(btn) {
   if (div) div.remove();
 }
 
-function removeBagian(secKey) {
-  const div = document.getElementById(`bagian-${secKey}`);
-  if (div) div.remove();
-}
-
 function tambahBagian() {
   const container = document.getElementById('persyaratan-container');
   const sections = container.querySelectorAll('[data-index]');
@@ -232,5 +268,107 @@ window.addEventListener('DOMContentLoaded', () => {
     t.style.height = t.scrollHeight + 'px';
   });
 });
+</script>
+
+<script>
+function confirmDelete(kode) {
+  if (!confirm("Yakin ingin menghapus KBLI " + kode + "?")) {
+    return;
+  }
+
+  const password = prompt("Masukkan password admin untuk konfirmasi:");
+  if (!password) return;
+
+  const form = document.createElement("form");
+  form.method = "POST";
+  form.action = "{{ url_for('delete_kbli') }}";
+
+  const inputKode = document.createElement("input");
+  inputKode.type = "hidden";
+  inputKode.name = "kode";
+  inputKode.value = kode;
+
+  const inputPass = document.createElement("input");
+  inputPass.type = "hidden";
+  inputPass.name = "password";
+  inputPass.value = password;
+
+  form.appendChild(inputKode);
+  form.appendChild(inputPass);
+  document.body.appendChild(form);
+  form.submit();
+}
+</script>
+
+<script>
+function removeItem(button) {
+  const itemDiv = button.closest('.item-wrapper');
+  const sectionDiv = button.closest('.bagian-wrapper');
+  const itemsContainer = sectionDiv.querySelector('[id^="items-"]');
+  if (itemDiv && itemsContainer) {
+    itemDiv.remove();
+    reindexItems(itemsContainer);
+  }
+}
+
+function reindexItems(container) {
+  const textareas = container.querySelectorAll('textarea');
+  textareas.forEach((textarea, idx) => {
+    const label = textarea.closest('.item-wrapper').querySelector('label');
+    const letter = String.fromCharCode(97 + idx); // a, b, c ...
+    
+    if (label) label.textContent = `Item ${letter}`;
+    
+    const nameParts = textarea.name.split('_');
+    nameParts[nameParts.length - 1] = letter;
+    textarea.name = nameParts.join('_');
+
+    textarea.placeholder = `Isi item ${letter}`;
+  });
+}
+
+function reindexBagian() {
+  const sections = document.querySelectorAll('.bagian-wrapper');
+  sections.forEach((section, idx) => {
+    const newIndex = idx + 1;
+    const oldIndex = section.getAttribute('data-index');
+
+    // Update label
+    const label = section.querySelector('label.fw-bold');
+    if (label) label.textContent = `Nomor ${newIndex}`;
+
+    // Update textarea name untuk judul
+    const judul = section.querySelector(`textarea[name^="persyaratan_${oldIndex}_judul"]`);
+    if (judul) {
+      judul.name = `persyaratan_${newIndex}_judul`;
+    }
+
+    // Update container ID
+    const itemContainer = section.querySelector(`#items-${oldIndex}`);
+    if (itemContainer) {
+      itemContainer.id = `items-${newIndex}`;
+    }
+
+    // Update all item textareas
+    const items = section.querySelectorAll('.item-wrapper textarea');
+    items.forEach(textarea => {
+      const nameParts = textarea.name.split('_');
+      nameParts[1] = `${newIndex}`; // Update nomor
+      textarea.name = nameParts.join('_');
+    });
+
+    // Update section wrapper ID dan data-index
+    section.id = `bagian-${newIndex}`;
+    section.setAttribute('data-index', newIndex);
+  });
+}
+
+function removeBagian(id) {
+  const div = document.getElementById(`bagian-${id}`);
+  if (div) {
+    div.remove();
+    reindexBagian();
+  }
+}
 </script>
 {% endblock %}

@@ -1,9 +1,13 @@
 from flask import Flask, flash, render_template, request, redirect, url_for, session
+from docx import Document
+from werkzeug.utils import secure_filename
+from reference_data import KATEGORI_LIST, DINAS_LIST, map_dinas_ke_folder
 import os
+import re
 import json
 from pathlib import Path
 from typing import Dict, List
-from docx import Document
+from string import ascii_lowercase
 
 app = Flask(__name__)
 app.secret_key = "supersecretkey"  # Ganti ini di production
@@ -11,6 +15,24 @@ DATA_DIR = Path("data")
 ADMIN_PASSWORD = "klinikinvestasisehat"
 
 # ---------- Helper ----------
+
+def sort_persyaratan(data: dict) -> dict:
+    def sort_key_huruf(k):
+        # ubah huruf jadi angka
+        result = 0
+        for c in k:
+            result = result * 26 + (ord(c) - 96)  # 'a' = 1
+        return result
+
+    sorted_data = {}
+    for section_key in sorted(data["persyaratan"], key=lambda x: int(x)):
+        section = data["persyaratan"][section_key]
+        sorted_items = dict(sorted(section["items"].items(), key=lambda x: sort_key_huruf(x[0])))
+        sorted_data[section_key] = {
+            "judul": section["judul"],
+            "items": sorted_items
+        }
+    return {"persyaratan": sorted_data}
 
 def load_all_kbli_data() -> Dict:
     all_data = {}
@@ -59,33 +81,94 @@ def search_kbli(query: str, kbli_data: Dict, dinas_filter: str = 'semua') -> Lis
 def is_admin():
     return session.get("is_admin", False)
 
-def parse_docx_to_persyaratan(file) -> dict:
+def parse_docx_to_persyaratan(file):
     doc = Document(file)
     persyaratan = {}
+    meta = {
+        "ruang_lingkup": "",
+        "nama": ""
+    }
+
+    # Ambil semua paragraf yang tidak kosong
+    paragraphs = [p.text.strip() for p in doc.paragraphs if p.text.strip()]
     current_section = None
     section_counter = 1
-    item_counter = 1
+    item_index = 0
 
-    for para in doc.paragraphs:
-        text = para.text.strip()
-        if not text:
-            continue
+    def is_heading(text):
+        return bool(re.match(r'^\d+[\.\)]\s+', text)) or (text.endswith(":") and len(text.split()) <= 8)
 
-        # Heading: jika diakhiri titik dua → anggap sebagai judul bagian
-        if text.endswith(":") and len(text.split()) <= 6:
+    def is_intro(text):
+        return (
+            "persyaratan" in text.lower()
+            and "berusaha" in text.lower()
+            and len(text.split()) <= 6
+        )
+
+    i = 0
+    while i < len(paragraphs):
+        text = paragraphs[i]
+
+        # Tangkap RUANG LINGKUP dan cari nama kbli
+        if re.match(r'^\s*RUANG LINGKUP\s*:', text.upper()):
+            ruang_lingkup = re.sub(r'^\s*RUANG LINGKUP\s*:\s*', '', text, flags=re.IGNORECASE).strip()
+            meta["ruang_lingkup"] = ruang_lingkup.title()
+
+            # Coba ambil nama KBLI dari 1-2 baris sebelumnya
+            nama = ""
+            for offset in range(1, 3):
+                if i - offset >= 0:
+                    prev = paragraphs[i - offset]
+                    if not is_heading(prev) and not is_intro(prev) and not re.search(r'KBLI\s*\d+', prev, re.IGNORECASE):
+                        nama = prev.strip()
+                        break
+
+            # Jika tidak ada nama eksplisit, samakan dengan ruang lingkup
+            if not nama:
+                nama = ruang_lingkup
+
+            meta["nama"] = nama.upper()
+            i += 1
+            break
+        i += 1
+
+    # Lewati intro "Persyaratan perizinan berusaha"
+    while i < len(paragraphs):
+        if is_intro(paragraphs[i]):
+            i += 1
+            break
+        i += 1
+
+    # Parse persyaratan
+    while i < len(paragraphs):
+        text = paragraphs[i]
+
+        if is_heading(text):
+            heading = re.sub(r'^\d+[\.\)]\s*', '', text).rstrip(":").strip()
             current_section = {
-                "judul": text.rstrip(":"),
+                "judul": heading,
                 "items": {}
             }
             persyaratan[str(section_counter)] = current_section
             section_counter += 1
-            item_counter = 1
+            item_index = 0
         elif current_section:
-            # Tambahkan item ke bagian saat ini
-            current_section["items"][str(item_counter)] = {"item": text}
-            item_counter += 1
+            if item_index < 26:
+                item_key = ascii_lowercase[item_index]
+            else:
+                first = ascii_lowercase[(item_index // 26) - 1]
+                second = ascii_lowercase[item_index % 26]
+                item_key = first + second
 
-    return persyaratan
+            current_section["items"][item_key] = text
+            item_index += 1
+
+        i += 1
+
+    if not persyaratan:
+        raise ValueError("Dokumen tidak mengandung struktur persyaratan yang dapat dibaca.")
+
+    return persyaratan, meta
 
 # ---------- Routes ----------
 
@@ -142,12 +225,10 @@ def admin():
     else:
         all_kode = []
 
-    # Jika new KBLI
     if request.args.get("draft") == "1":
         kode = session.get("new_kbli_kode")
         data = session.get("new_kbli_data")
-
-    if new_flag:
+    elif new_flag:
         kode = ""
         data = {
             "nama": "",
@@ -164,7 +245,9 @@ def admin():
         data=data,
         kode=kode,
         all_kode=all_kode,
-        data_dict=all_data
+        data_dict=all_data,
+        kategori_list=KATEGORI_LIST,
+        dinas_list=DINAS_LIST
     )
 
 @app.route('/admin/upload', methods=['GET', 'POST'])
@@ -175,13 +258,11 @@ def upload_kbli():
     if request.method == 'POST':
         kode = request.form.get("kode")
         file = request.files.get("file")
-        
-        # Validasi file harus ada dan berformat .docx
+
         if not kode or not file or not file.filename.endswith(".docx"):
             flash("Kode KBLI dan file Word wajib diisi.")
             return redirect(request.url)
 
-        # Validasi apakah kode KBLI sudah ada
         all_data = load_all_kbli_data()
         if kode in all_data:
             flash(f"KBLI dengan kode {kode} sudah ada. Silakan cari dan edit melalui pencarian di panel admin.")
@@ -189,27 +270,44 @@ def upload_kbli():
             session.pop("new_kbli_kode", None)
             return redirect(request.url)
 
-        # Parse dokumen dan simpan ke session
         try:
-            data = {
-                "nama": "",
-                "kategori": "",
-                "ruang_lingkup": "",
-                "dinas": "",
-                "persyaratan": parse_docx_to_persyaratan(file)
-            }
+            persyaratan, meta = parse_docx_to_persyaratan(file)
+            if not persyaratan:
+                flash("Dokumen tidak mengandung persyaratan yang dapat dibaca.")
+                return redirect(request.url)
+            
+            persyaratan = sort_persyaratan({"persyaratan": persyaratan})["persyaratan"]
 
             session.pop("new_kbli_data", None)
             session.pop("new_kbli_kode", None)
 
-            session["new_kbli_data"] = data
+            session["new_kbli_data"] = {
+                "nama": meta.get("nama", "").upper(),
+                "kategori": "",
+                "ruang_lingkup": meta.get("ruang_lingkup", "").title(),
+                "dinas": "",
+                "persyaratan": persyaratan
+            }
+
+            session["new_kbli_data"]["persyaratan"] = sort_persyaratan({
+                "persyaratan": session["new_kbli_data"]["persyaratan"]
+            })["persyaratan"]
+
             session["new_kbli_kode"] = kode
+
+            print(f"✅ KBLI {kode} berhasil diparse, redirect ke /admin?kode={kode}&draft=1")
             return redirect(url_for("admin", kode=kode, draft="1"))
+
         except Exception as e:
             flash(f"Gagal membaca dokumen: {e}")
             return redirect(request.url)
 
-    return render_template("admin_upload.html")
+    return render_template(
+        "admin_upload.html",
+        kategori_list=KATEGORI_LIST,
+        dinas_list=DINAS_LIST,
+        data=None
+    )
 
 @app.route('/admin/add_manual', methods=['POST'])
 def add_kbli_manual():
@@ -241,7 +339,7 @@ def add_kbli_manual():
         "persyaratan": {}
     }
 
-    folder_name = data.get("dinas", "LAINNYA").upper().replace(" ", "_")
+    folder_name = map_dinas_ke_folder.get(data.get("dinas"), "LAINNYA")
     file_path = DATA_DIR / folder_name / f"{kode}.json"
     os.makedirs(file_path.parent, exist_ok=True)
 
@@ -312,7 +410,7 @@ def save():
 
     data["persyaratan"] = persyaratan
 
-    folder_name = data.get("dinas_folder") or "LAINNYA"
+    folder_name = map_dinas_ke_folder.get(data.get("dinas"), "LAINNYA")
     file_path = DATA_DIR / folder_name / f"{kode}.json"
     os.makedirs(file_path.parent, exist_ok=True)
 
@@ -321,22 +419,33 @@ def save():
 
     return redirect(url_for("admin", kode=kode))
 
-@app.route('/admin/delete/<kode>', methods=['POST'])
-def delete_kbli(kode):
+@app.route('/admin/delete', methods=['POST'])
+def delete_kbli():
     if not is_admin():
         return "Unauthorized", 403
 
+    kode = request.form.get("kode")
+    password = request.form.get("password")
+
+    if password != ADMIN_PASSWORD:
+        flash("Password salah. Penghapusan dibatalkan.", "danger")
+        return redirect(url_for("admin", kode=kode))
+
     all_data = load_all_kbli_data()
     data = all_data.get(kode)
+
     if not data:
-        flash("KBLI tidak ditemukan.", "warning")
+        flash("Data KBLI tidak ditemukan.", "warning")
         return redirect(url_for("admin"))
 
-    folder_name = data.get("dinas_folder", "LAINNYA")
-    file_path = DATA_DIR / folder_name / f"{kode}.json"
+    folder = data.get("dinas_folder") or "LAINNYA"
+    file_path = DATA_DIR / folder / f"{kode}.json"
+
     if file_path.exists():
         os.remove(file_path)
         flash(f"KBLI {kode} berhasil dihapus.", "success")
+    else:
+        flash("File tidak ditemukan saat menghapus.", "warning")
 
     return redirect(url_for("admin"))
 
@@ -344,6 +453,17 @@ def delete_kbli(kode):
 def logout():
     session.pop("is_admin", None)
     return redirect(url_for('index'))
+
+@app.template_filter('to_letter')
+def to_letter_filter(n):
+    """Ubah angka menjadi huruf a, b, c, ..., aa, ab, ..."""
+    n = int(n)
+    result = ""
+    while n > 0:
+        n -= 1
+        result = chr(97 + (n % 26)) + result
+        n //= 26
+    return result
 
 # ---------- Main ----------
 if __name__ == '__main__':

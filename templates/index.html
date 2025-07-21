@@ -38,10 +38,10 @@
         <div class="overlay"></div>
         <div class="container text-white text-center d-flex align-items-center justify-content-center" style="min-height: 500px;">
             <div class="w-100 px-3">
-                <h1 class="display-3 fw-bold">CARI PERSYARATAN TIAP KBLI DENGAN MUDAH</h1>
+                <h1 class="display-3 fw-bold">CARI PERSYARATAN PERIZINAN TIAP KBLI DENGAN MUDAH</h1>
                 <h2 class="fw-bold">Berdasarkan kode KBLI, ruang lingkup, atau kategori usaha</h2>
                 <p class="mt-4 lead fw-normal">
-                    Temukan persyaratan lengkap yang dapat membantu melengkapi proses 
+                    Temukan persyaratan perizinan lengkap yang dapat membantu melengkapi proses 
                     perizinan sesuai KBLI yang Anda butuhkan.
                 </p>
             </div>
@@ -108,4 +108,29 @@
         {% endfor %}
     </div>
 </div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      items: 1,
+      rewind: true,
+      loop: false,
+      autoplay: true,
+      autoplayTimeout: 5000,      // delay antar slide (ms)
+      autoplaySpeed: 600,         // durasi transisi
+      smartSpeed: 600,            // transisi manual
+      autoplayHoverPause: true,   // saat hover
+      nav: true,
+      dots: true
+    });
+
+    // Stop autoplay saat user interaksi
+    const owl = $('.owl-carousel');
+    owl.on('click', '.owl-next, .owl-prev', function() {
+      owl.trigger('stop.owl.autoplay');
+    });
+  });
+</script>
 {% endblock %}
