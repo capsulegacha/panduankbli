@@ -88,16 +88,14 @@ def parse_docx_to_persyaratan(file):
         "nama": ""
     }
 
+    # Ambil semua paragraf yang tidak kosong
     paragraphs = [p.text.strip() for p in doc.paragraphs if p.text.strip()]
     current_section = None
     section_counter = 1
     item_index = 0
 
     def is_heading(text):
-        return (
-            bool(re.match(r'^\d+[\.\)]\s+', text)) or
-            (text.endswith(":") and len(text.split()) <= 8)
-        )
+        return bool(re.match(r'^\d+[\.\)]\s+', text)) or (text.endswith(":") and len(text.split()) <= 8)
 
     def is_intro(text):
         return (
@@ -110,37 +108,37 @@ def parse_docx_to_persyaratan(file):
     while i < len(paragraphs):
         text = paragraphs[i]
 
-        # --- Tangkap RUANG LINGKUP dan Nama KBLI ---
+        # Tangkap RUANG LINGKUP dan cari nama kbli
         if re.match(r'^\s*RUANG LINGKUP\s*:', text.upper()):
             ruang_lingkup = re.sub(r'^\s*RUANG LINGKUP\s*:\s*', '', text, flags=re.IGNORECASE).strip()
+            meta["ruang_lingkup"] = ruang_lingkup.title()
 
-            # Deteksi nama di sekitar ruang lingkup
+            # Coba ambil nama KBLI dari 1-2 baris sebelumnya
             nama = ""
-            if i >= 2 and not re.search(r'KBLI\s*\d+', paragraphs[i - 2], re.IGNORECASE):
-                nama = paragraphs[i - 2].strip()
-            elif i + 1 < len(paragraphs):
-                next_line = paragraphs[i + 1].strip()
-                if not is_heading(next_line) and not is_intro(next_line):
-                    nama = next_line
+            for offset in range(1, 3):
+                if i - offset >= 0:
+                    prev = paragraphs[i - offset]
+                    if not is_heading(prev) and not is_intro(prev) and not re.search(r'KBLI\s*\d+', prev, re.IGNORECASE):
+                        nama = prev.strip()
+                        break
 
+            # Jika tidak ada nama eksplisit, samakan dengan ruang lingkup
             if not nama:
                 nama = ruang_lingkup
 
-            meta["ruang_lingkup"] = ruang_lingkup.title()
             meta["nama"] = nama.upper()
             i += 1
             break
         i += 1
 
-    # Lewati hingga masuk ke bagian persyaratan
+    # Lewati intro "Persyaratan perizinan berusaha"
     while i < len(paragraphs):
-        text = paragraphs[i]
-        if is_intro(text):
+        if is_intro(paragraphs[i]):
             i += 1
             break
         i += 1
 
-    # Parsing bagian persyaratan
+    # Parse persyaratan
     while i < len(paragraphs):
         text = paragraphs[i]
 
@@ -154,7 +152,6 @@ def parse_docx_to_persyaratan(file):
             section_counter += 1
             item_index = 0
         elif current_section:
-            # Gunakan huruf a, b, c... aa, ab...
             if item_index < 26:
                 item_key = ascii_lowercase[item_index]
             else:
