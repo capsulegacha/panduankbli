@@ -5,9 +5,17 @@
   "ruang_lingkup": "Usaha budi daya (meliputi antara lain penyediaan saprodi yang tepat, pertanaman, pemeliharaan, panen, dan/atau pascapanen) tanaman jagung",
   "dinas": "Dinas Ketahanan Pangan dan Pertanian",
   "persyaratan": {
-    "1": "Lahan usaha berlokasi di kabupaten/kota",
-    "2": "Lahan usaha berlokasi di lintas kabupaten/kota",
-    "3": "Lahan usaha berlokasi di lintas provinsi",
-    "4": "PMA"
+    "1": {
+      "judul": "Lahan usaha berlokasi di kabupaten/kota"
+    },
+    "2": {
+      "judul": "Lahan usaha berlokasi di lintas kabupaten/kota"
+    },
+    "3": {
+      "judul": "Lahan usaha berlokasi di lintas provinsi"
+    },
+    "4": {
+      "judul": "PMA"
+    }
   }
 }

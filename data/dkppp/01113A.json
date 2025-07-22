@@ -5,8 +5,14 @@
   "ruang_lingkup": "Usaha budi daya (meliputi antara lain penyedian saprodi yang tepat, pertanaman, pemeliharaan, panen, dan/atau pascapanen) tanaman kedelai",
   "dinas": "Dinas Ketahanan Pangan dan Pertanian",
   "persyaratan": {
-    "1": "Bukti penguasaan lahan usaha",
-    "2": "Rencana kerja usaha budidaya",
-    "3": "Perizinan lingkungan"
+    "1": {
+      "judul": "Bukti penguasaan lahan usaha"
+    },
+    "2": {
+      "judul": "Rencana kerja usaha budidaya"
+    },
+    "3": {
+      "judul": "Perizinan lingkungan"
+    }
   }
 }

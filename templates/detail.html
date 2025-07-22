@@ -30,7 +30,7 @@
 </style>
 
 <div class="container py-4">
-  <a href="{{ referrer or url_for('index') }}" class="btn btn-outline-secondary mb-3">← Kembali</a>
+  <a href="{{ url_for('index') }}#semua-kbli" class="btn btn-outline-secondary">← Kembali</a>
 
   <div class="kbli-detail">
     <h3>KBLI {{ kbli_code }} - {{ data.get('nama', 'N/A') }}</h3>
