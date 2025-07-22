@@ -89,7 +89,6 @@ def parse_docx_to_persyaratan(file):
         "nama": ""
     }
 
-    # Ambil semua paragraf yang tidak kosong
     paragraphs = [p.text.strip() for p in doc.paragraphs if p.text.strip()]
     current_section = None
     section_counter = 1
@@ -108,13 +107,11 @@ def parse_docx_to_persyaratan(file):
     i = 0
     while i < len(paragraphs):
         text = paragraphs[i]
-
-        # Tangkap RUANG LINGKUP dan cari nama kbli
         if re.match(r'^\s*RUANG LINGKUP\s*:', text.upper()):
             ruang_lingkup = re.sub(r'^\s*RUANG LINGKUP\s*:\s*', '', text, flags=re.IGNORECASE).strip()
             meta["ruang_lingkup"] = ruang_lingkup.title()
 
-            # Coba ambil nama KBLI dari 1-2 baris sebelumnya
+            # Coba ambil nama dari atasnya
             nama = ""
             for offset in range(1, 3):
                 if i - offset >= 0:
@@ -122,53 +119,67 @@ def parse_docx_to_persyaratan(file):
                     if not is_heading(prev) and not is_intro(prev) and not re.search(r'KBLI\s*\d+', prev, re.IGNORECASE):
                         nama = prev.strip()
                         break
-
-            # Jika tidak ada nama eksplisit, samakan dengan ruang lingkup
             if not nama:
                 nama = ruang_lingkup
-
             meta["nama"] = nama.upper()
-            i += 1
             break
         i += 1
 
-    # Lewati intro "Persyaratan perizinan berusaha"
+    # Lewati "Persyaratan perizinan berusaha:"
     while i < len(paragraphs):
         if is_intro(paragraphs[i]):
             i += 1
             break
         i += 1
 
-    # Parse persyaratan
-    while i < len(paragraphs):
-        text = paragraphs[i]
+    # Hitung apakah dokumen mengandung banyak heading
+    heading_count = sum(1 for p in paragraphs[i:] if is_heading(p))
+    use_flat_mode = heading_count <= 1
 
-        if is_heading(text):
-            heading = re.sub(r'^\d+[\.\)]\s*', '', text).rstrip(":").strip()
-            current_section = {
-                "judul": heading,
+    # Mode FLAT (untuk 01114 dan sejenis)
+    if use_flat_mode:
+        section_counter = 1
+        while i < len(paragraphs):
+            text = paragraphs[i]
+            if is_intro(text):
+                i += 1
+                continue
+            persyaratan[str(section_counter)] = {
+                "judul": text,
                 "items": {}
             }
-            persyaratan[str(section_counter)] = current_section
             section_counter += 1
-            item_index = 0
-        elif current_section:
-            if item_index < 26:
-                item_key = ascii_lowercase[item_index]
-            else:
-                first = ascii_lowercase[(item_index // 26) - 1]
-                second = ascii_lowercase[item_index % 26]
-                item_key = first + second
+            i += 1
 
-            current_section["items"][item_key] = text
-            item_index += 1
-
-        i += 1
+    # Mode STRUCTURED (untuk 86903 dan sejenis)
+    else:
+        while i < len(paragraphs):
+            text = paragraphs[i]
+            if is_heading(text):
+                heading = re.sub(r'^\d+[\.\)]\s*', '', text).rstrip(":").strip()
+                current_section = {
+                    "judul": heading,
+                    "items": {}
+                }
+                persyaratan[str(section_counter)] = current_section
+                section_counter += 1
+                item_index = 0
+            elif current_section:
+                if item_index < 26:
+                    item_key = ascii_lowercase[item_index]
+                else:
+                    first = ascii_lowercase[(item_index // 26) - 1]
+                    second = ascii_lowercase[item_index % 26]
+                    item_key = first + second
+                current_section["items"][item_key] = text
+                item_index += 1
+            i += 1
 
     if not persyaratan:
         raise ValueError("Dokumen tidak mengandung struktur persyaratan yang dapat dibaca.")
 
     return persyaratan, meta
+
 
 # ---------- Routes ----------
 
