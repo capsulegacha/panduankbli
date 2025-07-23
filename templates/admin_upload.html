@@ -61,10 +61,24 @@
         <label class="form-label">Kode KBLI</label>
         <input type="text" name="kode" class="form-control" required>
       </div>
+
       <div class="mb-3">
         <label class="form-label">Upload File (.docx)</label>
+        
+        <!-- Link Download di bawah label -->
+        <div style="margin-top: -0.7rem; margin-bottom: 0.5rem;">
+          <a href="https://docs.google.com/document/d/1iqiYx1n2N-5OIRo5U-oafFSvp4k4e8kcwtKwv7NIFgI/edit?usp=sharing"
+            target="_blank"
+            class="link-primary fw-semibold text-decoration-none"
+            style="font-size: 0.9rem;">
+            📄 Download template di sini
+          </a>
+        </div>
+
+        <!-- Input file -->
         <input type="file" name="file" class="form-control" accept=".docx" required>
       </div>
+
       <button class="btn btn-primary" type="submit">Lanjutkan ke Form</button>
     </form>
 
