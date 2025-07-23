@@ -1,7 +1,7 @@
 from flask import Flask, flash, render_template, request, redirect, url_for, session
 from docx import Document
 from werkzeug.utils import secure_filename
-from reference_data import KATEGORI_LIST, DINAS_LIST, map_dinas_ke_folder
+from reference_data import KATEGORI_LIST, DINAS_LIST, map_dinas_ke_folder, KODE_KBLI_KE_KATEGORI
 import os
 import re
 import json
@@ -317,9 +317,12 @@ def upload_kbli():
             session.pop("new_kbli_data", None)
             session.pop("new_kbli_kode", None)
 
+            kode_awal = kode[:2]
+            kategori_otomatis = KODE_KBLI_KE_KATEGORI.get(kode_awal, "")
+
             session["new_kbli_data"] = {
                 "nama": meta.get("nama", "").upper(),
-                "kategori": "",
+                "kategori": kategori_otomatis,
                 "ruang_lingkup": meta.get("ruang_lingkup", "").title(),
                 "dinas": "",
                 "persyaratan": persyaratan
@@ -365,11 +368,14 @@ def add_kbli_manual():
     if kode in all_data:
         flash(f"Kode {kode} sudah terdaftar!", "warning")
         return redirect(url_for("admin", kode=kode))
+    
+    kode_awal = kode[:2]
+    kategori_otomatis = KODE_KBLI_KE_KATEGORI.get(kode_awal, kategori)
 
     # Simpan ke file
     data = {
         "nama": nama,
-        "kategori": kategori,
+        "kategori": kategori_otomatis,
         "ruang_lingkup": ruang_lingkup,
         "dinas": dinas,
         "persyaratan": {}
@@ -405,6 +411,14 @@ def save():
 
     data['nama'] = request.form.get("nama", "")
     data['kategori'] = request.form.get("kategori", "")
+
+    # Cek jika kategori kosong, tetapkan otomatis berdasarkan 2 digit awal kode
+    if not data['kategori']:
+        kode_awal = kode[:2]
+        kategori_otomatis = KODE_KBLI_KE_KATEGORI.get(kode_awal)
+        if kategori_otomatis:
+            data['kategori'] = kategori_otomatis
+
     data['ruang_lingkup'] = request.form.get("ruang_lingkup", "")
     data['dinas'] = request.form.get("dinas", "")
 

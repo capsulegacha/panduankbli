@@ -64,3 +64,35 @@ map_dinas_ke_folder = {
     "Satuan Polisi Pamong Praja": "satpolpp",
     "LAINNYA": "LAINNYA"
 }
+
+KODE_KBLI_KE_KATEGORI = {
+    "01": "A - Pertanian, Kehutanan dan Perikanan",
+    "02": "A - Pertanian, Kehutanan dan Perikanan",
+    "03": "A - Pertanian, Kehutanan dan Perikanan",
+
+    "05": "B - Pertambangan dan Penggalian",
+    "06": "B - Pertambangan dan Penggalian",
+    "07": "B - Pertambangan dan Penggalian",
+    "08": "B - Pertambangan dan Penggalian",
+    "09": "B - Pertambangan dan Penggalian",
+
+    **{str(i).zfill(2): "C - Industri Pengolahan" for i in range(10, 34)},
+    "35": "D - Pengadaan Listrik, Gas, Uap/Air Panas Dan Udara Dingin",
+    **{str(i).zfill(2): "E - Treatment Air, Treatment Air Limbah, Treatment dan Pemulihan Material Sampah, dan Aktivitas Remediasi" for i in range(36, 40)},
+    **{str(i).zfill(2): "F - Konstruksi" for i in range(41, 44)},
+    **{str(i).zfill(2): "G - Perdagangan Besar Dan Eceran; Reparasi Dan Perawatan Mobil Dan Sepeda Motor" for i in range(45, 48)},
+    **{str(i).zfill(2): "H - Pengangkutan dan Pergudangan" for i in range(49, 54)},
+    **{str(i).zfill(2): "I - Penyediaan Akomodasi Dan Penyediaan Makan Minum" for i in range(55, 57)},
+    **{str(i).zfill(2): "J - Informasi Dan Komunikasi" for i in range(58, 64)},
+    **{str(i).zfill(2): "K - Aktivitas Keuangan dan Asuransi" for i in range(64, 67)},
+    "68": "L - Real Estat",
+    **{str(i).zfill(2): "M - Aktivitas Profesional, Ilmiah Dan Teknis" for i in range(69, 76)},
+    **{str(i).zfill(2): "N - Aktivitas Penyewaan dan Sewa Guna Usaha Tanpa Hak Opsi, Ketenagakerjaan, Agen Perjalanan dan Penunjang Usaha Lainnya" for i in range(77, 83)},
+    "84": "O - Administrasi Pemerintahan, Pertahanan Dan Jaminan Sosial Wajib",
+    "85": "P - Pendidikan",
+    **{str(i).zfill(2): "Q - Aktivitas Kesehatan Manusia Dan Aktivitas Sosial" for i in range(86, 89)},
+    **{str(i).zfill(2): "R - Kesenian, Hiburan Dan Rekreasi" for i in range(90, 94)},
+    **{str(i).zfill(2): "S - Aktivitas Jasa Lainnya" for i in range(94, 97)},
+    **{str(i).zfill(2): "T - Aktivitas Rumah Tangga Sebagai Pemberi Kerja; Aktivitas Yang Menghasilkan Barang Dan Jasa Oleh Rumah Tangga yang Digunakan untuk Memenuhi Kebutuhan Sendiri" for i in range(97, 99)},
+    "99": "U - Aktivitas Badan Internasional Dan Badan Ekstra Internasional Lainnya"
+}
