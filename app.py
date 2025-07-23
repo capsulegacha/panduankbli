@@ -8,11 +8,22 @@ import json
 from pathlib import Path
 from typing import Dict, List
 from string import ascii_lowercase
+from datetime import timedelta
 
 app = Flask(__name__)
+app.permanent_session_lifetime = timedelta(minutes=10)
 app.secret_key = "supersecretkey"  # Ganti ini di production
 DATA_DIR = Path("data")
 ADMIN_PASSWORD = "klinikinvestasisehat"
+
+@app.before_request
+def before_every_request():
+    session.modified = True  # reset timeout
+    allowed_routes = ['login', 'logout', 'static']
+    if request.endpoint in allowed_routes or request.endpoint.startswith('static'):
+        return
+    if not session.get('is_admin'):
+        return redirect(url_for('login', expired=1))
 
 # ---------- Helper ----------
 
@@ -212,17 +223,32 @@ def about():
 def contact():
     return render_template('contact.html')
 
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    expired = request.args.get("expired")
+    error = None
+
+    if request.method == 'POST':
+        if request.form.get("password") == ADMIN_PASSWORD:
+            session.permanent = True
+            session["is_admin"] = True
+            return redirect(url_for('admin'))
+        else:
+            flash("Password salah!", "danger")
+            return redirect(url_for('login'))
+
+    if expired:
+        flash("Sesi Anda telah berakhir. Silakan login kembali.", "warning")
+
+    return render_template('admin_login.html', error=error)
+
 @app.route('/admin', methods=['GET', 'POST'])
 def admin():
-    if not is_admin():
-        if request.method == 'POST':
-            if request.form.get("password") == ADMIN_PASSWORD:
-                session["is_admin"] = True
-                return redirect(url_for('admin'))
-            else:
-                return render_template('admin_login.html', error="Password salah!")
+    expired = request.args.get("expired")
+    error = None
 
-        return render_template('admin_login.html')
+    if not is_admin():
+        return redirect(url_for('login', expired=1))
 
     all_data = load_all_kbli_data()
     query = request.args.get("q", "")
@@ -462,7 +488,7 @@ def delete_kbli():
 @app.route('/logout')
 def logout():
     session.pop("is_admin", None)
-    return redirect(url_for('index'))
+    return redirect(url_for('login'))
 
 @app.template_filter('to_letter')
 def to_letter_filter(n):
