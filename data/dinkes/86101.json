@@ -201,8 +201,7 @@
       }
     },
     "7": {
-      "judul": "Persyaratan Izin Lainnya",
-      "keterangan": "Mohon dicantumkan jenis dokumen yang diunggah pada baris catatan di bawah",
+      "judul": "Persyaratan Izin Lainnya. (Mohon dicantumkan jenis dokumen yang diunggah pada baris catatan di bawah)",
       "items": {
         "a": {
           "item": "Izin lain yang terkait (BAPETEN, izin TPS, izin IPAL, uji berkala petir, listrik, genset, lift, kebakaran, pesawat uap, dll)"

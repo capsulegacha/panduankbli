@@ -6,24 +6,24 @@
   "dinas": "Dinas Lingkungan Hidup",
   "persyaratan": {
     "1": {
-      "judul": "Menyampaikan dokumen kontrak kerja sama dengan penghasil dan/atau pengangkut lumpur tinja (form kerjasama)",
-      "keterangan": "Melampirkan MoU atau surat kerja sama antara pengusaha atau pemohon dengan IPLT"
+      "judul": "Menyampaikan dokumen kontrak kerja sama dengan penghasil dan/atau pengangkut lumpur tinja (form kerjasama). (Melampirkan MoU atau surat kerja sama antara pengusaha atau pemohon dengan IPLT)"
+
     },
     "2": {
-      "judul": "Menyampaikan dokumen persetujuan lingkungan (lembar pengesahan dokumen perling)",
-      "keterangan": "Dokumen persetujuan lingkungan IPLT"
+      "judul": "Menyampaikan dokumen persetujuan lingkungan (lembar pengesahan dokumen perling). (Dokumen persetujuan lingkungan IPLT)"
+
     },
     "3": {
-      "judul": "Menyampaikan jenis dan karakteristik lumpur tinja yang diolah (copy statement jenis dan karakteristik lumpur tinja yang diolah dari persetujuan lingkungan)",
-      "keterangan": "Melampirkan hasil uji lab lumpur tinja"
+      "judul": "Menyampaikan jenis dan karakteristik lumpur tinja yang diolah (copy statement jenis dan karakteristik lumpur tinja yang diolah dari persetujuan lingkungan). (Melampirkan hasil uji lab lumpur tinja)"
+
     },
     "4": {
-      "judul": "Menyampaikan kapasitas pengolahan lumpur tinja dan bukti perhitungan cakupan daerah pelayanan (copy statement kapasitas pengolahan lumpur tinja yang diolah dari persetujuan lingkungan)",
-      "keterangan": "Melampirkan tabel volume lumpur tinja dan daerah pengambilan sumber tinja yang diolah setiap bulan"
+      "judul": "Menyampaikan kapasitas pengolahan lumpur tinja dan bukti perhitungan cakupan daerah pelayanan (copy statement kapasitas pengolahan lumpur tinja yang diolah dari persetujuan lingkungan). (Melampirkan tabel volume lumpur tinja dan daerah pengambilan sumber tinja yang diolah setiap bulan)"
+
     },
     "5": {
-      "judul": "Menyampaikan layout dan disain teknologi pengolahan lumpur tinja yang dapat mengolah sampai memenuhi baku mutu air limbah dalam bentuk diagram dan menjelaskan dekripsi teknologi (copy statement disain teknologi dari persetujuan lingkungan)",
-      "keterangan": "⁠Melampirkan gambar desain teknis instalasi pengolahan lumpur tinja"
+      "judul": "Menyampaikan layout dan disain teknologi pengolahan lumpur tinja yang dapat mengolah sampai memenuhi baku mutu air limbah dalam bentuk diagram dan menjelaskan dekripsi teknologi (copy statement disain teknologi dari persetujuan lingkungan). (⁠Melampirkan gambar desain teknis instalasi pengolahan lumpur tinja)"
+
     },
     "6": {
       "judul": "Menyampaikan layout lokasi laboratorium atau draft dokumen kontrak kerja sama dengan laboratorium untuk mengontrol lumpur tinja yang masuk"

@@ -79,8 +79,8 @@
           "item": "Data jam praktik toko obat dan jam praktik tenaga kefarmasian lainnya"
         },
         "f": {
-          "item": "Tersedia analisa beban kerja",
-          "keterangan": "(untuk SDM jumlah tenaga sesuai dengan hari dan jam operasional toko obat tidak boleh buka bila tidak ada tenaga kefarmasian yang berpraktek, bila 2 shift minimal 3 tenaga kefarmasian dst)"
+          "item": "Tersedia analisa beban kerja. (untuk SDM jumlah tenaga sesuai dengan hari dan jam operasional toko obat tidak boleh buka bila tidak ada tenaga kefarmasian yang berpraktek, bila 2 shift minimal 3 tenaga kefarmasian dst)"
+
         }
       }
     },

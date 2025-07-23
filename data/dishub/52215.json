@@ -6,40 +6,76 @@
   "dinas": "Dinas Perhubungan",
   "persyaratan": {
     "1": {
-      "judul": "Sirkulasi pergerakan arah kendaraan;"
+      "judul": "Sirkulasi pergerakan arah kendaraan;",
+      "items": {
+        "a": "Dokumentasi foto marka jalan menunjukan arah kendaraan"
+      }
     },
     "2": {
-      "judul": "Alat penerangan yang cukup;"
+      "judul": "Alat penerangan yang cukup;",
+      "items": {
+        "a": "Dokumentasi foto alat penerangan yang ada di lahan parker"
+      }
     },
     "3": {
-      "judul": "Ketersediaan fasilitas pejalan kaki;"
+      "judul": "Ketersediaan fasilitas pejalan kaki;",
+      "items": {
+        "a": "Dokumentasi foto fasilitas pejalan kaki di samping badan jalan"
+      }
     },
     "4": {
-      "judul": "Memiliki gambar rencana fasilitas parkir yang memuat:"
+      "judul": "Memiliki gambar rencana fasilitas parkir yang memuat:",
+      "items": {
+        "a": "Melampirkan gambar denah secara lengkap yang memuat keterangan pada point 5 – 12"
+      }
     },
     "5": {
-      "judul": "Pemasangan dan penempatan Rambu, marka dan media informasi;"
+      "judul": "Pemasangan dan penempatan Rambu, marka dan media informasi;",
+      "items": {
+        "a": "Melampirkan dokumentasi foto yang dimuat dalam satu halaman serta diberi judul sesuai dari persyaratan yang diminta"
+      }
     },
     "6": {
-      "judul": "Penentuan kebutuhan dan Persyaratan satuan ruang parkir;"
+      "judul": "Penentuan kebutuhan dan Persyaratan satuan ruang parkir;",
+      "items": {
+        "a": "Melampirkan gambar denah secara lengkap yang memuat keterangan"
+      }
     },
     "7": {
-      "judul": "Pengaturan Radius putar bagi gedung parkir;"
+      "judul": "Pengaturan Radius putar bagi gedung parkir;",
+      "items": {
+        "a": "Melampirkan dokumentasi foto dengan penjelasan ukuran jarak parkir antar mobil, dan jarak belokan jalan dalam Gedung parkir."
+      }
     },
     "8": {
-      "judul": "Pengaturan Sirkulasi udara yang baik bagi gedung parkir;"
+      "judul": "Pengaturan Sirkulasi udara yang baik bagi gedung parkir;",
+      "items": {
+        "a": "Melampirkan dokumentasi foto terkait sirkulasi udara yang ada di Gedung parkir dimuat dalam satu halaman serta diberi judul."
+      }
     },
     "9": {
-      "judul": "Penyediaan Fasilitas keselamatan;"
+      "judul": "Penyediaan Fasilitas keselamatan;",
+      "items": {
+        "a": "Melampirkan dokumentasi foto terkait fasilitas keamanan yang ada di Gedung parkir dimuat dalam satu halaman serta diberi judul."
+      }
     },
     "10": {
-      "judul": "Penyediaan Fasilitas pemadam kebakaran;"
+      "judul": "Penyediaan Fasilitas pemadam kebakaran;",
+      "items": {
+        "a": "Melampirkan dokumentasi foto terkait fasilitas pemadam kebakaran yang ada di Gedung parkir dimuat dalam satu halaman serta diberi judul."
+      }
     },
     "11": {
-      "judul": "Penyediaan Fasilitas pengaman;"
+      "judul": "Penyediaan Fasilitas pengaman;",
+      "items": {
+        "a": "Melampirkan dokumentasi foto terkait fasilitas pengamanan yang ada di Gedung parkir dimuat dalam satu halaman serta diberi judul."
+      }
     },
     "12": {
-      "judul": "Penyediaan sarana Jalur keluar darurat bagi gedung parkir."
+      "judul": "Penyediaan sarana Jalur keluar darurat bagi gedung parkir.",
+      "items": {
+        "a": "Melampirkan dokumentasi foto terkait jalur keluar darurat yang ada di Gedung parkir dimuat dalam satu halaman serta diberi judul"
+      }
     }
   },
   "dinas_folder": "dishub"

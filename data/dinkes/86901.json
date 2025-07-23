@@ -9,16 +9,15 @@
       "judul": "Sarana",
       "items": {
         "a": {
-          "item": "Bangunan",
+          "item": "Bangunan. (Kondisi Bangunan akan ditinjau langsung oleh dinas Kesehatan untuk memastikan bangunan bersifat permanen serta tidak bergabung fisik dengan tempat tinggal atau unit kerja lain)",
           "subitems": {
             "1": "Memenuhi persyaratan administrasi dan teknis bangunan (Dibuktikan dengan melampirkan IMB)",
             "2": "Memenuhi persyaratan lingkungan sehat (Melampirkan dokumentasi dari kondisi ruangan seperti pada bagian foto toilet, wastafel dengan kelengkapannya, tempat sampah dsb.)",
             "3": "Memperhatikan fungsi, keamanan, kenyamanan, dalam pelayanan kepada semua orang termasuk orang berkebutuhan khusus (Dibuktikan dengan melampirkan dokumentasi foto APAR, ruang tunggu dengan tempat duduk, foto tangga dengan ramp atau jalur landai untuk akses kursi roda, serta fasilitas keamanan dan kenyamanan yang tersedia di griya sehat lainnya.)"
-          },
-          "keterangan": "Kondisi Bangunan akan ditinjau langsung oleh dinas Kesehatan untuk memastikan bangunan bersifat permanen serta tidak bergabung fisik dengan tempat tinggal atau unit kerja lain"
+          }
         },
         "b": {
-          "item": "Ruangan paling sedikit terdiri dari",
+          "item": "Ruangan paling sedikit terdiri dari. (Memastikan fasilitas yang dimiliki harus bersih, terawat dan berfungsi dengan mengupload dokumentasi berupa foto sesuai poin a-f beserta keterangan ruangan.)",
           "subitems": {
             "1": "ruang pendaftaran/ruang tunggu",
             "2": "ruang konsultasi",
@@ -26,8 +25,7 @@
             "4": "ruang pengobatan tradisional",
             "5": "ruang mandi / wc",
             "6": "ruang lain sesuai kebutuhan pelayanan"
-          },
-          "keterangan": "Memastikan fasilitas yang dimiliki harus bersih, terawat dan berfungsi dengan mengupload dokumentasi berupa foto sesuai poin a-f beserta keterangan ruangan."
+          }
         }
       }
     },

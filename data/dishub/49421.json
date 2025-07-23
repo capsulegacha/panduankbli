@@ -5,40 +5,50 @@
   "ruang_lingkup": "Angkutan Taksi",
   "dinas": "Dinas Perhubungan",
   "persyaratan": {
-
-      "1": {
-        "judul": "Kesesuaian dengan perencanaan kebutuhan kendaraan (kuota) yang ditetapkan;",
-        "keterangan": "Melampirkan gambar denah parkir kendaraan"
-      },
-      "2": {
-        "judul": "Memasang alat pemantauan pergerakan kendaraan secara elektronik.",
-        "keterangan": "Melampirkan dokumentasi foto GPS dan tampilan software pelacakan."
-      },
-      "3": {
-        "judul": "Memenuhi Standar Pelayanan Minimal angkutan orang dalam trayek;",
-        "keterangan": "Dibuktikan dengan surat sertifikat kelayakan kendaraan DISHUB"
-      },
-      "4": {
-        "judul": "Memiliki dan/atau bekerjasama dengan pihak lain yang mampu menyediakan fasilitas pemeliharaan kendaraan bermotor;",
-        "keterangan": "Dibuktikan dengan MoU dan foto bukti lahan dengan penyedia fasilitas pemeliharaan kendaraan bermotor"
-      },
-      "5": {
-        "judul": "Memiliki dan/atau menguasai tempat penyimpanan;",
-        "keterangan": "Dibuktikan dengan melampirkan sertifikat tanah"
-      },
-      "6": {
-        "judul": "Memiliki paling sedikit 5 (lima) kendaraan yang dibuktikan dengan salinan STNK, SRUT (untuk kendaraan baru), bukti lulus uji berkala dan foto kendaraan;"
-      },
-      "7": {
-        "judul": "Menerapkan sistem pemesanan secara elektronik;",
-        "keterangan": "Dibuktikan dengan melampirkan dokumentasi aplikasi pemesanan elektronik, namun jika tidak memiliki aplikasi pemesanan elektronik dapat melampirkan dokumentasi pemesanan tiket secara manual"
-      },
-      "8": {
-        "judul": "Menyiapkan dokumen Sistem Manajemen Keselamatan"
-      },
-      "9": {
-        "judul": "Menyusun rencana bisnis (business plan) Perusahaan Angkutan Umum;"
+    "1": {
+      "judul": "Kesesuaian dengan perencanaan kebutuhan kendaraan (kuota) yang ditetapkan;",
+      "items": {
+        "a": "Melampirkan gambar denah parkir kendaraan"
       }
+    },
+    "2": {
+      "judul": "Memasang alat pemantauan pergerakan kendaraan secara elektronik.",
+      "items": {
+        "a": "Melampirkan dokumentasi foto GPS dan tampilan software pelacakan."
+      }
+    },
+    "3": {
+      "judul": "Memenuhi Standar Pelayanan Minimal angkutan orang dalam trayek;",
+      "items": {
+        "a": "Dibuktikan dengan surat sertifikat kelayakan kendaraan DISHUB"
+      }
+    },
+    "4": {
+      "judul": "Memiliki dan/atau bekerjasama dengan pihak lain yang mampu menyediakan fasilitas pemeliharaan kendaraan bermotor;",
+      "items": {
+        "a": "Dibuktikan dengan MoU dan foto bukti lahan dengan penyedia fasilitas pemeliharaan kendaraan bermotor"
+      }
+    },
+    "5": {
+      "judul": "Memiliki dan/atau menguasai tempat penyimpanan;",
+      "items": {
+        "a": "Dibuktikan dengan melampirkan sertifikat tanah"
+      }
+    },
+    "6": {
+      "judul": "Memiliki paling sedikit 5 (lima) kendaraan yang dibuktikan dengan salinan STNK, SRUT (untuk kendaraan baru), bukti lulus uji berkala dan foto kendaraan;"
+    },
+    "7": {
+      "judul": "Menerapkan sistem pemesanan secara elektronik;",
+      "items": {
+        "a": "Dibuktikan dengan melampirkan dokumentasi aplikasi pemesanan elektronik, namun jika tidak memiliki aplikasi pemesanan elektronik dapat melampirkan dokumentasi pemesanan tiket secara manual"
+      }
+    },
+    "8": {
+      "judul": "Menyiapkan dokumen Sistem Manajemen Keselamatan"
+    },
+    "9": {
+      "judul": "Menyusun rencana bisnis (business plan) Perusahaan Angkutan Umum;"
     }
-  
+  }
 }

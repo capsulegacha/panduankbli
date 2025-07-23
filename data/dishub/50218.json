@@ -5,36 +5,31 @@
   "ruang_lingkup": "Angkutan Penyeberangan Dalam Kabupaten/Kota Untuk Penumpang",
   "dinas": "Dinas Perhubungan",
   "persyaratan": {
-      "1": {
-        "judul": "Persetujuan pendahuluan pengadaan kapal sesuai dengan daerah operasi bagi badan usaha yang belum memiliki kapal;"
-      },
-      "2": {
-        "judul": "Pemenuhan standar pelayanan minimal angkutan penyeberangan; dan"
-      },
-      "3": {
-        "judul": "Kesesuaian spesifikasi teknis kapal yang akan dioperasikan;"
-      },
-      "4": {
-        "judul": "Kesesuaian lintas yang dilayani;",
-        "keterangan": "Point 2-4 dibuktikan surat rekomendasi Dinas Perhubungan Laut Provinsi yang berisi, IMB Kantor, perencanaan rute laut, peruntukan kapal oleh pemohon, surat keakhlian dari ABK kapal"
-      },
-      "5": {
-        "judul": "Dokumen persyaratan kelaiklautan kapal yang permanen atau sementara;"
-      },
-      "6": {
-        "judul": "Bukti kepemilikan kapal (Grosse Akta) yang meliputi :",
-        "subjuduls": {
-          "a": {
-            "judul": "Akte pembelian kapal dari distributor ke pemohon"
-          },
-          "b": {
-            "judul": "Akter pendirian Perusahaan yang berkegiatan di laut"
-          },
-          "c": {
-            "judul": "Penyesuaian KBLI di OSS"
-          }
-        }
+    "1": {
+      "judul": "Persetujuan pendahuluan pengadaan kapal sesuai dengan daerah operasi bagi badan usaha yang belum memiliki kapal;"
+    },
+    "2": {
+      "judul": "Pemenuhan standar pelayanan minimal angkutan penyeberangan; dan"
+    },
+    "3": {
+      "judul": "Kesesuaian spesifikasi teknis kapal yang akan dioperasikan;"
+    },
+    "4": {
+      "judul": "Kesesuaian lintas yang dilayani;",
+      "items": {
+        "a": "Point 2-4 dibuktikan surat rekomendasi Dinas Perhubungan Laut Provinsi yang berisi, IMB Kantor, perencanaan rute laut, peruntukan kapal oleh pemohon, surat keakhlian dari ABK kapal"
+      }
+    },
+    "5": {
+      "judul": "Dokumen persyaratan kelaiklautan kapal yang permanen atau sementara;"
+    },
+    "6": {
+      "judul": "Bukti kepemilikan kapal (Grosse Akta) yang meliputi :",
+      "items": {
+        "a": "Akte pembelian kapal dari distributor ke pemohon",
+        "b": "Akter pendirian Perusahaan yang berkegiatan di laut",
+        "c": "Penyesuaian KBLI di OSS"
       }
     }
-  
+  }
 }
