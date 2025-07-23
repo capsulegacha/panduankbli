@@ -96,3 +96,27 @@ KODE_KBLI_KE_KATEGORI = {
     **{str(i).zfill(2): "T - Aktivitas Rumah Tangga Sebagai Pemberi Kerja; Aktivitas Yang Menghasilkan Barang Dan Jasa Oleh Rumah Tangga yang Digunakan untuk Memenuhi Kebutuhan Sendiri" for i in range(97, 99)},
     "99": "U - Aktivitas Badan Internasional Dan Badan Ekstra Internasional Lainnya"
 }
+
+KATEGORI_KE_DINAS = {
+    "A - Pertanian, Kehutanan dan Perikanan": "Dinas Ketahanan Pangan dan Pertanian",
+    "B - Pertambangan dan Penggalian": "Dinas Lingkungan Hidup",
+    "C - Industri Pengolahan": "Dinas Perindustrian dan Tenaga Kerja",
+    "D - Pengadaan Listrik, Gas, Uap/Air Panas Dan Udara Dingin": "Dinas Lingkungan Hidup",
+    "E - Treatment Air, Treatment Air Limbah, Treatment dan Pemulihan Material Sampah, dan Aktivitas Remediasi": "Dinas Lingkungan Hidup",
+    "F - Konstruksi": "Dinas Sumber Daya Air dan Bina Marga",
+    "G - Perdagangan Besar Dan Eceran; Reparasi Dan Perawatan Mobil Dan Sepeda Motor": "Dinas Koperasi Usaha Kecil dan Menengah dan Perdagangan",
+    "H - Pengangkutan dan Pergudangan": "Dinas Perhubungan",
+    "I - Penyediaan Akomodasi Dan Penyediaan Makan Minum": "Dinas Kebudayaan, Kepemudaan dan Olahraga serta Pariwisata",
+    "J - Informasi Dan Komunikasi": "Dinas Komunikasi dan Informatika",
+    "K - Aktivitas Keuangan dan Asuransi": "Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu",
+    "L - Real Estat": "Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu",
+    "M - Aktivitas Profesional, Ilmiah Dan Teknis": "Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu",
+    "N - Aktivitas Penyewaan dan Sewa Guna Usaha Tanpa Hak Opsi, Ketenagakerjaan, Agen Perjalanan dan Penunjang Usaha Lainnya": "Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu",
+    "O - Administrasi Pemerintahan, Pertahanan Dan Jaminan Sosial Wajib": "Satuan Polisi Pamong Praja",
+    "P - Pendidikan": "Dinas Pendidikan",
+    "Q - Aktivitas Kesehatan Manusia Dan Aktivitas Sosial": "Dinas Kesehatan",
+    "R - Kesenian, Hiburan Dan Rekreasi": "Dinas Kebudayaan, Kepemudaan dan Olahraga serta Pariwisata",
+    "S - Aktivitas Jasa Lainnya": "Dinas Sosial",
+    "T - Aktivitas Rumah Tangga Sebagai Pemberi Kerja; Aktivitas Yang Menghasilkan Barang Dan Jasa Oleh Rumah Tangga yang Digunakan untuk Memenuhi Kebutuhan Sendiri": "LAINNYA",
+    "U - Aktivitas Badan Internasional Dan Badan Ekstra Internasional Lainnya": "LAINNYA"
+}

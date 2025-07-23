@@ -1,7 +1,7 @@
 from flask import Flask, flash, render_template, request, redirect, url_for, session
 from docx import Document
 from werkzeug.utils import secure_filename
-from reference_data import KATEGORI_LIST, DINAS_LIST, map_dinas_ke_folder, KODE_KBLI_KE_KATEGORI
+from reference_data import KATEGORI_LIST, DINAS_LIST, map_dinas_ke_folder, KODE_KBLI_KE_KATEGORI, KATEGORI_KE_DINAS
 import os
 import re
 import json
@@ -410,7 +410,10 @@ def save():
     })
 
     data['nama'] = request.form.get("nama", "")
-    data['kategori'] = request.form.get("kategori", "")
+    data['ruang_lingkup'] = request.form.get("ruang_lingkup", "")
+    
+    kategori = request.form.get("kategori", "")
+    data['kategori'] = kategori
 
     # Cek jika kategori kosong, tetapkan otomatis berdasarkan 2 digit awal kode
     if not data['kategori']:
@@ -419,8 +422,11 @@ def save():
         if kategori_otomatis:
             data['kategori'] = kategori_otomatis
 
-    data['ruang_lingkup'] = request.form.get("ruang_lingkup", "")
-    data['dinas'] = request.form.get("dinas", "")
+    # Otomatis isi dinas jika kosong
+    if not request.form.get("dinas"):
+        data['dinas'] = KATEGORI_KE_DINAS.get(kategori, "")
+    else:
+        data['dinas'] = request.form.get("dinas", "")
 
     # Siapkan dict kosong untuk persyaratan
     persyaratan = {}
