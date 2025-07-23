@@ -94,65 +94,100 @@ def is_admin():
 
 def parse_docx_to_persyaratan(file):
     doc = Document(file)
-    paragraphs = [p.text.strip() for p in doc.paragraphs if p.text.strip()]
-    
     persyaratan = {}
     meta = {
         "ruang_lingkup": "",
         "nama": ""
     }
 
+    paragraphs = [p.text.strip() for p in doc.paragraphs if p.text.strip()]
     current_section = None
     section_counter = 1
-    i = 0
+    item_index = 0
 
-    # Ambil meta KBLI
+    def is_heading(text):
+        return bool(re.match(r'^\d+[\.\)]\s+', text)) or (text.endswith(":") and len(text.split()) <= 8)
+
+    def is_intro(text):
+        return (
+            "persyaratan" in text.lower()
+            and "berusaha" in text.lower()
+            and len(text.split()) <= 6
+        )
+
+    i = 0
     while i < len(paragraphs):
-        line = paragraphs[i]
-        if re.match(r'^\s*KODE KBLI\s*:', line, re.IGNORECASE):
-            # Ambil nama & ruang lingkup di bawahnya
-            for j in range(i+1, len(paragraphs)):
-                if re.match(r'^\s*NAMA KBLI\s*:', paragraphs[j], re.IGNORECASE):
-                    meta['nama'] = paragraphs[j].split(":", 1)[-1].strip().upper()
-                elif re.match(r'^\s*RUANG LINGKUP\s*:', paragraphs[j], re.IGNORECASE):
-                    meta['ruang_lingkup'] = paragraphs[j].split(":", 1)[-1].strip().title()
-                    i = j
-                    break
+        text = paragraphs[i]
+        if re.match(r'^\s*RUANG LINGKUP\s*:', text.upper()):
+            ruang_lingkup = re.sub(r'^\s*RUANG LINGKUP\s*:\s*', '', text, flags=re.IGNORECASE).strip()
+            meta["ruang_lingkup"] = ruang_lingkup.title()
+
+            # Coba ambil nama dari atasnya
+            nama = ""
+            for offset in range(1, 3):
+                if i - offset >= 0:
+                    prev = paragraphs[i - offset]
+                    if not is_heading(prev) and not is_intro(prev) and not re.search(r'KBLI\s*\d+', prev, re.IGNORECASE):
+                        nama = prev.strip()
+                        break
+            if not nama:
+                nama = ruang_lingkup
+            meta["nama"] = nama.upper()
+            break
         i += 1
 
-    # Cari awal persyaratan
+    # Lewati "Persyaratan perizinan berusaha:"
     while i < len(paragraphs):
-        if "persyaratan" in paragraphs[i].lower():
+        if is_intro(paragraphs[i]):
             i += 1
             break
         i += 1
 
-    # Mulai parsing struktur
-    item_index = 0
-    while i < len(paragraphs):
-        text = paragraphs[i]
+    # Hitung apakah dokumen mengandung banyak heading
+    heading_count = sum(1 for p in paragraphs[i:] if is_heading(p))
+    use_flat_mode = heading_count <= 1
 
-        # Cek apakah baris ini heading section (1. Nomor 1 …)
-        section_match = re.match(r'^(\d+)[\.\)]\s*(.+)', text)
-        item_match = re.match(r'^([a-zA-Z])[\.\)]\s*(.+)', text)
-
-        if section_match:
-            nomor = section_match.group(1)
-            judul = section_match.group(2).strip()
-            current_section = {
-                "judul": judul,
+    # Mode FLAT (untuk 01114 dan sejenis)
+    if use_flat_mode:
+        section_counter = 1
+        while i < len(paragraphs):
+            text = paragraphs[i]
+            if is_intro(text):
+                i += 1
+                continue
+            persyaratan[str(section_counter)] = {
+                "judul": text,
                 "items": {}
             }
-            persyaratan[nomor] = current_section
-            item_index = 0
-        elif item_match and current_section:
-            huruf = item_match.group(1).lower()
-            isi = item_match.group(2).strip()
-            current_section["items"][huruf] = isi
-        i += 1
+            section_counter += 1
+            i += 1
+
+    # Mode STRUCTURED (untuk 86903 dan sejenis)
+    else:
+        while i < len(paragraphs):
+            text = paragraphs[i]
+            if is_heading(text):
+                heading = re.sub(r'^\d+[\.\)]\s*', '', text).rstrip(":").strip()
+                current_section = {
+                    "judul": heading,
+                    "items": {}
+                }
+                persyaratan[str(section_counter)] = current_section
+                section_counter += 1
+                item_index = 0
+            elif current_section:
+                if item_index < 26:
+                    item_key = ascii_lowercase[item_index]
+                else:
+                    first = ascii_lowercase[(item_index // 26) - 1]
+                    second = ascii_lowercase[item_index % 26]
+                    item_key = first + second
+                current_section["items"][item_key] = text
+                item_index += 1
+            i += 1
 
     if not persyaratan:
-        raise ValueError("Dokumen tidak mengandung struktur persyaratan yang dapat dibaca. Gunakan template yang telah disediakan.")
+        raise ValueError("Dokumen tidak mengandung struktur persyaratan yang dapat dibaca.")
 
     return persyaratan, meta
 
@@ -376,7 +411,7 @@ def save():
 
     data['nama'] = request.form.get("nama", "")
     data['ruang_lingkup'] = request.form.get("ruang_lingkup", "")
-
+    
     kategori = request.form.get("kategori", "")
     data['kategori'] = kategori
 
