@@ -92,63 +92,64 @@ def search_kbli(query: str, kbli_data: Dict, dinas_filter: str = 'semua') -> Lis
 def is_admin():
     return session.get("is_admin", False)
 
+import re
+from docx import Document
+from string import ascii_lowercase
+
 def parse_docx_to_persyaratan(file):
     doc = Document(file)
-    paragraphs = [p.text.strip() for p in doc.paragraphs if p.text.strip()]
-    
     persyaratan = {}
     meta = {
         "ruang_lingkup": "",
         "nama": ""
     }
 
+    paragraphs = [p.text.strip() for p in doc.paragraphs if p.text.strip()]
+    i = 0
     current_section = None
     section_counter = 1
-    i = 0
 
-    # Ambil meta KBLI
-    while i < len(paragraphs):
-        line = paragraphs[i]
-        if re.match(r'^\s*KODE KBLI\s*:', line, re.IGNORECASE):
-            # Ambil nama & ruang lingkup di bawahnya
-            for j in range(i+1, len(paragraphs)):
-                if re.match(r'^\s*NAMA KBLI\s*:', paragraphs[j], re.IGNORECASE):
-                    meta['nama'] = paragraphs[j].split(":", 1)[-1].strip().upper()
-                elif re.match(r'^\s*RUANG LINGKUP\s*:', paragraphs[j], re.IGNORECASE):
-                    meta['ruang_lingkup'] = paragraphs[j].split(":", 1)[-1].strip().title()
-                    i = j
-                    break
+    # Ambil metadata
+    for idx, text in enumerate(paragraphs):
+        if text.lower().startswith("kode kbli"):
+            continue
+        if text.lower().startswith("nama kbli"):
+            nama_line = paragraphs[idx].split(":", 1)
+            if len(nama_line) == 2:
+                meta["nama"] = nama_line[1].strip()
+        if text.lower().startswith("ruang lingkup"):
+            ruang_line = paragraphs[idx].split(":", 1)
+            if len(ruang_line) == 2:
+                meta["ruang_lingkup"] = ruang_line[1].strip()
+                i = idx + 1
+                break
+
+    # Cari "Persyaratan Perizinan"
+    while i < len(paragraphs) and "persyaratan" not in paragraphs[i].lower():
         i += 1
+    i += 1  # Lewati judul "Persyaratan Perizinan"
 
-    # Cari awal persyaratan
-    while i < len(paragraphs):
-        if "persyaratan" in paragraphs[i].lower():
-            i += 1
-            break
-        i += 1
-
-    # Mulai parsing struktur
-    item_index = 0
+    # Parse struktur isi
     while i < len(paragraphs):
         text = paragraphs[i]
 
-        # Cek apakah baris ini heading section (1. Nomor 1 …)
-        section_match = re.match(r'^(\d+)[\.\)]\s*(.+)', text)
-        item_match = re.match(r'^([a-zA-Z])[\.\)]\s*(.+)', text)
-
-        if section_match:
-            nomor = section_match.group(1)
-            judul = section_match.group(2).strip()
+        # Cek jika baris adalah "Nomor X"
+        nomor_match = re.match(r"^Nomor (\d+)(.*)?", text, re.IGNORECASE)
+        if nomor_match:
+            section_no = str(section_counter)
+            judul = nomor_match.group(0).strip()
             current_section = {
                 "judul": judul,
                 "items": {}
             }
-            persyaratan[nomor] = current_section
-            item_index = 0
-        elif item_match and current_section:
-            huruf = item_match.group(1).lower()
-            isi = item_match.group(2).strip()
-            current_section["items"][huruf] = isi
+            persyaratan[section_no] = current_section
+            section_counter += 1
+            item_counter = 0
+        elif current_section:
+            # Tambah item a, b, c
+            key = ascii_lowercase[item_counter] if item_counter < 26 else f"extra{item_counter}"
+            current_section["items"][key] = text.strip()
+            item_counter += 1
         i += 1
 
     if not persyaratan:
