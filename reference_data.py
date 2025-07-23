@@ -38,7 +38,7 @@ DINAS_LIST = [
     "Dinas Komunikasi dan Informatika",
     "Dinas Koperasi Usaha Kecil dan Menengah dan Perdagangan",
     "Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu",
-    "Dinas Kebudayaan, Kepemudaan dan Olah Raga serta Pariwisata",
+    "Dinas Kebudayaan, Kepemudaan dan Olahraga serta Pariwisata",
     "Dinas Perpustakaan dan Kearsipan",
     "Satuan Polisi Pamong Praja"
 ]
@@ -59,7 +59,7 @@ map_dinas_ke_folder = {
     "Dinas Komunikasi dan Informatika": "diskominfo",
     "Dinas Koperasi Usaha Kecil dan Menengah dan Perdagangan": "dinkopdag",
     "Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu": "dpmptsp",
-    "Dinas Kebudayaan, Kepemudaan dan Olah Raga serta Pariwisata": "disbudporapar",
+    "Dinas Kebudayaan, Kepemudaan dan Olahraga serta Pariwisata": "disbudporapar",
     "Dinas Perpustakaan dan Kearsipan": "dispusip",
     "Satuan Polisi Pamong Praja": "satpolpp",
     "LAINNYA": "LAINNYA"
