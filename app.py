@@ -14,7 +14,7 @@ app = Flask(__name__)
 app.permanent_session_lifetime = timedelta(minutes=10)
 app.secret_key = "supersecretkey"  # Ganti ini di production
 DATA_DIR = Path("data")
-ADMIN_PASSWORD = "klinikinvestasisehat"
+ADMIN_PASSWORD = "1234567890"
 
 @app.before_request
 def before_every_request():
@@ -198,7 +198,7 @@ def login():
         if request.form.get("password") == ADMIN_PASSWORD:
             session.permanent = True
             session["is_admin"] = True
-            return redirect(url_for('admin'))
+            return redirect(url_for('index'))
         else:
             flash("Password salah!", "danger")
             return redirect(url_for('login'))
