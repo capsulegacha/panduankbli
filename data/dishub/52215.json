@@ -1,0 +1,46 @@
+{
+  "kode": "52215",
+  "nama": "AKTIVITAS PERPARKIRAN DI LUAR BADAN JALAN (OFF STREET PARKING)",
+  "kategori": "H - Pengangkutan dan Pergudangan",
+  "ruang_lingkup": "Aktivitas Perparkiran Di Luar Badan Jalan",
+  "dinas": "Dinas Perhubungan",
+  "persyaratan": {
+    "1": {
+      "judul": "Sirkulasi pergerakan arah kendaraan;"
+    },
+    "2": {
+      "judul": "Alat penerangan yang cukup;"
+    },
+    "3": {
+      "judul": "Ketersediaan fasilitas pejalan kaki;"
+    },
+    "4": {
+      "judul": "Memiliki gambar rencana fasilitas parkir yang memuat:"
+    },
+    "5": {
+      "judul": "Pemasangan dan penempatan Rambu, marka dan media informasi;"
+    },
+    "6": {
+      "judul": "Penentuan kebutuhan dan Persyaratan satuan ruang parkir;"
+    },
+    "7": {
+      "judul": "Pengaturan Radius putar bagi gedung parkir;"
+    },
+    "8": {
+      "judul": "Pengaturan Sirkulasi udara yang baik bagi gedung parkir;"
+    },
+    "9": {
+      "judul": "Penyediaan Fasilitas keselamatan;"
+    },
+    "10": {
+      "judul": "Penyediaan Fasilitas pemadam kebakaran;"
+    },
+    "11": {
+      "judul": "Penyediaan Fasilitas pengaman;"
+    },
+    "12": {
+      "judul": "Penyediaan sarana Jalur keluar darurat bagi gedung parkir."
+    }
+  },
+  "dinas_folder": "dishub"
+}
