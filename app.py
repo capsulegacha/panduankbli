@@ -92,10 +92,6 @@ def search_kbli(query: str, kbli_data: Dict, dinas_filter: str = 'semua') -> Lis
 def is_admin():
     return session.get("is_admin", False)
 
-import re
-from docx import Document
-from string import ascii_lowercase
-
 def parse_docx_to_persyaratan(file):
     doc = Document(file)
     persyaratan = {}
